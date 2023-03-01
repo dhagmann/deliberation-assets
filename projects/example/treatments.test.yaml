@@ -143,7 +143,7 @@ treatments:
               style: thin
               displayTime: 10
               hideTime: 25
-            - example/multipleChoice.md
+            - projects/example/multipleChoice.md
             - type: separator
               style: thick
               displayTime: 30
@@ -186,7 +186,7 @@ treatments:
           duration: 30
           chatType: none
           elements:
-            - example/multipleChoice.md
+            - projects/example/multipleChoice.md
             - type: submitButton
         - name: Survey Library
           duration: 30

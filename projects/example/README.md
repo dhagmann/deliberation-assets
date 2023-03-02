@@ -1,20 +1,20 @@
-# Example Topic
+# Example Study
 
-This topic is an example topic meant for use in developing and testing the deliberation experiment infrastructure.
+This project holds example files used to demonstrate how to construct the various resources needed by the platform, and that are also used in the test suite.
 
-This readme file contains descriptions about where the topic originated and how it has been used in deliberative exercises in the past.
-It also includes descriptions of why it was included in this collection, and what it is intended to test.
+To run a single-player demo, use a variation on the config:
 
-### Background Information
-
-The question is facetious - we were always going to use markdown.
-
-### Sources
-
-This topic was spontaneously extemporized at need, and has (to my knowledge) not previously been used in deliberative exercises.
-
-### Revision History
-
-| Editor         | Email or GH Handle | Date          | Reason  |
-| -------------- | ------------------ | ------------- | ------- |
-| James Houghton | James Houghton     | March 24 2022 | Created |
+```json
+{
+  "batchName": "labDemo",
+  "treatmentFile": "projects/example/treatments.test.yaml",
+  "dispatchWait": 1,
+  "useTreatments": ["demo1p"],
+  "useIntroSequence": "cypress_standard",
+  "platformConsent": "US",
+  "consentAddendum": "projects/example/consentAddendum.md",
+  "launchDate": "18 Nov 2022 13:15:00 EST",
+  "lastEntryDate": "18 Nov 2022 13:45:00 EST",
+  "closeDate": "18 Nov 2022 14:45:00 EST"
+}
+```

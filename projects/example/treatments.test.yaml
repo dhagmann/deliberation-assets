@@ -160,7 +160,6 @@ treatments:
               displayTime: 15
               hideTime: 30
             - type: separator
-
             - type: submitButton
               displayTime: 10
         - name: Survey Library

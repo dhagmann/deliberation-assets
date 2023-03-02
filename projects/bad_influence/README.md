@@ -1,7 +1,7 @@
 ```json
 {
   "batchName": "labDemo",
-  "treatmentFile": "treatments.policing.yaml",
+  "treatmentFile": "projects/bad_influence/treatments.policing.yaml",
   "dispatchWait": 3,
   "useTreatments": ["assigned_leader"],
   "useIntroSequence": "cross_party_match",

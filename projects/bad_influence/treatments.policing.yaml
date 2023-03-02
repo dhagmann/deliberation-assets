@@ -192,11 +192,10 @@ treatments:
             - type: submitButton
 
       exitSurveys:
-        - ListeningQualityPartner
+        - ConstructiveListeningBehaviors
+        - DiscussionSelfInsight
         - AutonomyNeedSatisfaction
         - RelatednessNeedSatisfaction
-        - LonelinessSingleItem
-        - ListeningQualityOwn
         - Demographics
 
   - name: No Leader Assigned
@@ -301,9 +300,8 @@ treatments:
             - type: submitButton
 
       exitSurveys:
-        - ListeningQualityPartner
+        - ConstructiveListeningBehaviors
+        - DiscussionSelfInsight
         - AutonomyNeedSatisfaction
         - RelatednessNeedSatisfaction
-        - LonelinessSingleItem
-        - ListeningQualityOwn
         - Demographics

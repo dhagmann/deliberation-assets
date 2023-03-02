@@ -13,8 +13,8 @@ To run a single-player demo, use a variation on the config:
   "useIntroSequence": "cypress_standard",
   "platformConsent": "US",
   "consentAddendum": "projects/example/consentAddendum.md",
-  "launchDate": "18 Nov 2022 13:15:00 EST",
-  "lastEntryDate": "18 Nov 2022 13:45:00 EST",
-  "closeDate": "18 Nov 2022 14:45:00 EST"
+  "launchDate": "01 Mar 2023 23:30:00 EST",
+  "lastEntryDate": "01 Mar 2023 23:59:00 EST",
+  "closeDate": "02 Mar 2023 00:30:00 EST"
 }
 ```

@@ -49,7 +49,7 @@ treatments:
         - TeamViability
 
   - name: cypress_omnibus
-    desc: Cypress testing everything possible in one go
+    desc: Cypress testing everything possible in one go.
     factors:
       name: cypress_omnibus
       playerCount: 2

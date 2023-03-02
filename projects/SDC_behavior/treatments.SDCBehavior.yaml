@@ -21,7 +21,7 @@ treatments:
   - name: SDC_A
     desc: first test
     factors:
-      playerCount: 2
+      playerCount: 1
       assignPositionsBy: random
       gameStages:
         # - name: Intro
@@ -35,21 +35,33 @@ treatments:
           elements:
             - type: prompt
               file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+            - type: separator
             - type: prompt
               file: projects/SDC_behavior/urban_unrest_survey.md
+            - type: separator
+
             - type: submitButton
-        - name: SDC Intervention - Utah Cues
+
+        - name: Misperception Democratic
           duration: 900
           elements:
-            - name: Listening Training
-              type: video
-              url: https://video.wixstatic.com/video/2f07d4_6a4f3627e3474f9f84dcbefb9b932125/720p/mp4/file.mp4
-        - name: SDC Intervention - Utah Cues attention check
-          duration: 120
-          elements:
-            - type: prompt
-              file: projects/SDC_behavior/utah_cues_attention_check.md
-            - type: submitButton
+            - name: Misperception Democratic Qualtrics Survey
+              type: qualtrics
+              url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW?Condition=Misperception_Democratic
+
+        # - name: SDC Intervention - Utah Cues
+        #   duration: 900
+        #   elements:
+        #     - name: Listening Training
+        #       type: video
+        #       url: https://video.wixstatic.com/video/2f07d4_6a4f3627e3474f9f84dcbefb9b932125/720p/mp4/file.mp4
+        # - name: SDC Intervention - Utah Cues attention check
+        #   duration: 120
+        #   elements:
+        #     - type: prompt
+        #       file: projects/SDC_behavior/utah_cues_attention_check.md
+        #     - type: submitButton
+
         - name: Discussion
           duration: 600
           chatType: video

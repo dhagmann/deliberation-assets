@@ -63,6 +63,11 @@ treatments:
               comparator: equals
               value: Democrat
       gameStages:
+        - name: Qualtrics Test
+          duration: 600
+          elements:
+            - type: qualtrics
+              url: https://upenn.co1.qualtrics.com/jfe/form/SV_czNcL28CkElpBcO
         - name: Topic Survey
           duration: 60
           chatType: none
@@ -130,6 +135,11 @@ treatments:
     factors:
       playerCount: 1
       gameStages:
+        - name: Qualtrics Test
+          duration: 3000
+          elements:
+            - type: qualtrics
+              url: https://upenn.co1.qualtrics.com/jfe/form/SV_czNcL28CkElpBcO
         - name: Stars Video
           duration: 50
           elements:

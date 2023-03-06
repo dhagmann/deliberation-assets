@@ -11,146 +11,6 @@ introSequences:
             surveyName: PoliticalPartyUS
 
 treatments:
-  - name: weinstein_LIM
-    desc: Listening In Motion Condition
-    playerCount: 2
-    gameStages:
-      - name: Intro
-        type: prompt
-        prompt:
-          - projects/weinstein_listening/intro_videos.md
-        duration: 45
-      - name: Video - How to listen in motion
-        type: video
-        url: https://youtu.be/FNcG-OtPpJU
-      - name: Attention Check Quiz
-        type: prompt
-        duration: 120
-        prompt:
-          - projects/weinstein_listening/motion_expert.md
-          - projects/weinstein_listening/motion_technique.md
-          - projects/weinstein_listening/motion_strategies.md
-      - name: Reflect on Rejection
-        type: prompt
-        duration: 120
-        prompt:
-          - projects/weinstein_listening/reflect_rejection.md
-      - name: Discussion prompt
-        type: prompt
-        prompt: projects/weinstein_listening/topic_rejection.md
-        duration: 20
-      - name: Discussion
-        type: discussion
-        duration: 600
-    exitSurveys:
-      - ListeningQualityPartner
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - LonelinessSingleItem
-      - ListeningQualityOwn
-      - Demographics
-
-  - name: weinstein_listening
-    desc: Listening condition - 13 minute video
-    playerCount: 2
-    payment: 5.25
-    gameStages:
-      - name: Intro
-        type: prompt
-        prompt:
-          - projects/weinstein_listening/intro_videos.md
-        duration: 45
-      - name: Video - How to listen like a pro (Bitesize)
-        type: video
-        url: https://youtu.be/FNcG-OtPpJU
-      - name: Attention Check Quiz
-        type: prompt
-        duration: 120
-        prompt:
-          - projects/weinstein_listening/listening_expert.md
-          - projects/weinstein_listening/listening_technique.md
-          - projects/weinstein_listening/listening_strategies.md
-      - name: Reflect on Rejection
-        type: prompt
-        duration: 120
-        prompt:
-          - projects/weinstein_listening/reflect_rejection.md
-      - name: Discussion
-        type: discussion
-        prompt: projects/weinstein_listening/topic_rejection.md
-        duration: 600
-    exitSurveys:
-      - ListeningQualityPartner
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - LonelinessSingleItem
-      - ListeningQualityOwn
-      - Demographics
-
-  - name: weinstein_speaking
-    desc: 13 minute speaking training video
-    playerCount: 2
-    payment: 5.25
-    gameStages:
-      - name: Intro
-        type: prompt
-        prompt:
-          - projects/weinstein_listening/intro_videos.md
-        duration: 45
-      - name: Video - How to Speak Consciously
-        type: video
-        url: https://youtu.be/2cNP2r2lrLU
-      - name: Attention Check Quiz
-        type: prompt
-        duration: 120
-        prompt:
-          - projects/weinstein_listening/speaking_expert.md
-          - projects/weinstein_listening/speaking_technique.md
-          - projects/weinstein_listening/speaking_strategies.md
-      - name: Reflect on Rejection
-        type: prompt
-        duration: 120
-        prompt:
-          - projects/weinstein_listening/reflect_rejection.md
-      - name: Discussion
-        type: discussion
-        prompt: projects/weinstein_listening/topic_rejection.md
-        duration: 600
-    exitSurveys:
-      - ListeningQualityPartner
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - LonelinessSingleItem
-      - ListeningQualityOwn
-      - Demographics
-
-  - name: weinstein_null
-    desc: No training, just discussion
-    playerCount: 2
-    payment: 5.25
-    gameStages:
-      - name: Intro
-        type: prompt
-        prompt:
-          - projects/weinstein_listening/intro_no_training.md
-        duration: 45
-      - name: Reflect on Rejection
-        type: prompt
-        duration: 120
-        prompt:
-          - projects/weinstein_listening/reflect_rejection.md
-      - name: Discussion
-        type: discussion
-        prompt: projects/weinstein_listening/topic_rejection.md
-        duration: 600
-    exitSurveys:
-      - ListeningQualityPartner
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - LonelinessSingleItem
-      - ListeningQualityOwn
-      - Demographics
-
   - name: weinstein_listener_speaker
     desc: Provide listening and speaking training to one player each
     playerCount: 2
@@ -164,7 +24,7 @@ treatments:
           - type: submitButton
 
       - name: Training Videos
-        duration: 900
+        duration: 780
         elements:
           - name: Listening Training
             type: video
@@ -229,6 +89,8 @@ treatments:
             file: projects/weinstein_listening/instructions_speaker.md
             showToPositions:
               - 1
+          - type: prompt
+            file: projects/weinstein_listening/instructions_use_training.md
 
       - name: Attitude Postsurvey
         duration: 120
@@ -257,7 +119,7 @@ treatments:
           - type: submitButton
 
       - name: Training Videos
-        duration: 900
+        duration: 780
         elements:
           - name: Speaking Training
             type: video
@@ -297,6 +159,8 @@ treatments:
             file: projects/weinstein_listening/instructions_speaker.md
             showToPositions:
               - 1
+          - type: prompt
+            file: projects/weinstein_listening/instructions_use_training.md
 
       - name: Attitude Postsurvey
         duration: 120

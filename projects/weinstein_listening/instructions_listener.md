@@ -6,9 +6,7 @@ modified: Jan 20 2023
 description: In a Listener/Speaker condition, to be shown to the listener during discussion
 ---
 
-## Your partner is now going to share THEIR views on the following topic. Please have a discussion about _their views_.
-
-Your goal is to use what you learned from the video training in your discussion.
+### Your partner will now share THEIR views on this topic. Please have a conversation about the views held by _your partner_.
 
 _Please remember that you have agreed to keep any information shared during the discussion confidential._
 

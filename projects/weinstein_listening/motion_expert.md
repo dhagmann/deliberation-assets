@@ -5,7 +5,7 @@ author: Tia Moin
 modified: Oct 2022
 ---
 
-#### What did listening expert Oscar Trimboli recommend?
+#### What did communication expert Oscar Trimboli recommend?
 
 ---
 

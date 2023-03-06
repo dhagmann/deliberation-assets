@@ -1,5 +1,5 @@
 ---
-name: example/multipleChoiceWizards.md
+name: projects/example/multipleChoiceWizards.md
 type: multipleChoice
 author: James Houghton
 modified: Jan 6, 2023

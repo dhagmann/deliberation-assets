@@ -1,5 +1,5 @@
 ---
-name: example/multipleChoiceColors.md
+name: projects/example/multipleChoiceColors.md
 type: multipleChoice
 author: James Houghton
 modified: Jan 6, 2023

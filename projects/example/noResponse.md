@@ -1,5 +1,5 @@
 ---
-name: example/noResponse.md
+name: projects/example/noResponse.md
 type: noResponse
 author: James Houghton
 modified: Oct 19, 2022

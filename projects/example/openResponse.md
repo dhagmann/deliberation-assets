@@ -1,5 +1,5 @@
 ---
-name: example/openResponse.md
+name: projects/example/openResponse.md
 type: openResponse
 author: James Houghton
 modified: Oct 19, 2022

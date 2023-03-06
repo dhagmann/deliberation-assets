@@ -1,8 +1,6 @@
 ---
-name: policing_2020/final_discussion_question_header_position.md
+name: projects/policing_2020/final_discussion_question_header_position.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 30, 2022
 ---
 
 # Final Discussion Question: Overall Position

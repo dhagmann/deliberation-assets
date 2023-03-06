@@ -1,8 +1,6 @@
 ---
-name: weinstein_listening/speaking_expert.md
+name: projects/weinstein_listening/speaking_expert.md
 type: multipleChoice
-author: Tia Moin
-modified: Oct 2022
 ---
 
 #### What did communication expert Oscar Trimboli recommend?

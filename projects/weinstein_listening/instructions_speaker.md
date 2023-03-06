@@ -1,5 +1,5 @@
 ---
-name: weinstein_listening/instructions_speaker.md
+name: projects/weinstein_listening/instructions_speaker.md
 type: noResponse
 author: James Houghton
 modified: Jan 20 2023

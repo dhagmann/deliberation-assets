@@ -1,5 +1,5 @@
 ---
-name: weinstein_listening/speaking_strategies.md
+name: projects/weinstein_listening/speaking_strategies.md
 type: openResponse
 author: Tia Moin
 modified: Oct 2022

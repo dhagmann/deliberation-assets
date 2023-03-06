@@ -1,5 +1,5 @@
 ---
-name: weinstein_listening/intro_no_training.md
+name: projects/weinstein_listening/intro_no_training.md
 type: noResponse
 author: Tia Moin
 modified: Oct 2022

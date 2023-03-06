@@ -1,8 +1,6 @@
 ---
-name: policing_2020/ice_breaker.md
+name: projects/policing_2020/ice_breaker.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 30, 2022
 ---
 
 # Ice-Breaker

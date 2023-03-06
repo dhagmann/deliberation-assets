@@ -1,8 +1,6 @@
 ---
-name: houghton_SDC_followup/urban_unrest_survey.md
+name: projects/SDC_behavior/urban_unrest_survey.md
 type: multipleChoice
-author: James Houghton
-modified: Feb 1, 2023
 notes: pre/post survey for urban_unrest_discussion.md
 ---
 

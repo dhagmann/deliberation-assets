@@ -1,8 +1,6 @@
 ---
-name: weinstein_listening/speaking_technique.md
+name: projects/weinstein_listening/speaking_technique.md
 type: multipleChoice
-author: Tia Moin
-modified: Oct 2022
 ---
 
 #### What is one powerful technique you can apply to ensure the listener knows we mean what we say?

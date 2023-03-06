@@ -1,8 +1,6 @@
 ---
-name: policing_2020/structured_discussion_persistent_instructions.md
+name: projects/policing_2020/structured_discussion_persistent_instructions.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 30, 2022
 ---
 
 # Discussion Instructions

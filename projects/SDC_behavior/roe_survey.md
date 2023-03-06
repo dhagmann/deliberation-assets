@@ -1,8 +1,6 @@
 ---
-name: houghton_SDC_followup/roe_survey.md
+name: projects/SDC_behavior/roe_survey.md
 type: multipleChoice
-author: James Houghton
-modified: Feb 1, 2023
 notes: pre/post survey for roe_discussion.md
 ---
 

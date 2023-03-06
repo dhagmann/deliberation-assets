@@ -1,8 +1,6 @@
 ---
-name: policing_2022/leader_floor.md
+name: projects/policing_2022/leader_floor.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 30, 2022
 ---
 
 # 📣 Leader, You Have The Floor

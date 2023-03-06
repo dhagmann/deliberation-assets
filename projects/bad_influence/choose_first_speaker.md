@@ -1,8 +1,6 @@
 ---
-name: policing_2020/choose_first_speaker.md
+name: projects/policing_2020/choose_first_speaker.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 14, 2022
 ---
 
 # Assign first speaker

@@ -1,8 +1,6 @@
 ---
-name: policing_2020/group_free_discussion.md
+name: projects/policing_2020/group_free_discussion.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 30, 2022
 ---
 
 # Group Free Discussion (2 Minutes)

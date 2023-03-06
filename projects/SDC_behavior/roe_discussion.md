@@ -1,8 +1,6 @@
 ---
-name: houghton_SDC_followup/roe_discussion.md
+name: projects/SDC_behavior/roe_discussion.md
 type: noResponse
-author: James Houghton
-modified: Feb 1, 2023
 notes: discussion prompt for roe_survey.md
 ---
 

@@ -1,8 +1,6 @@
 ---
-name: houghton_SDC_followup/ban_assault_rifles_survey.md
+name: projects/SDC_behavior/ban_assault_rifles_survey.md
 type: multipleChoice
-author: James Houghton
-modified: Feb 1, 2023
 notes: pre/post survey for ban_assault_rifles_discussion.md
 ---
 

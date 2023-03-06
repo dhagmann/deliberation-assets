@@ -1,5 +1,5 @@
 ---
-name: weinstein_listening/instructions_use_training.md
+name: projects/weinstein_listening/instructions_use_training.md
 type: noResponse
 description: To be shown when a participants have been trained.
 ---

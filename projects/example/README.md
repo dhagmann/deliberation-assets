@@ -18,3 +18,11 @@ To run a single-player demo, use a variation on the config:
   "closeDate": "02 Mar 2023 00:30:00 EST"
 }
 ```
+
+```json
+{
+  "batchName": "labDemo",
+  "treatmentFile": "projects/example/treatments.test.yaml",
+  "useTreatments": ["demo1p"]
+}
+```

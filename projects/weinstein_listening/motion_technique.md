@@ -1,8 +1,6 @@
 ---
-name: weinstein_listening/motion_technique.md
+name: projects/projects/weinstein_listening/motion_technique.md
 type: multipleChoice
-author: Tia Moin
-modified: Oct 2022
 ---
 
 #### What is one powerful technique you can apply to demonstrate good listening-in-motion?

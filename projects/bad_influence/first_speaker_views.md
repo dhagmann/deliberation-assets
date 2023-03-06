@@ -1,8 +1,6 @@
 ---
-name: policing_2020/first_speaker_views.md
+name: projects/policing_2020/first_speaker_views.md
 type: multipleChoice
-author: Will Schulz, James Houghton
-modified: Nov 14, 2022
 ---
 
 ### What would you say was the first speaker's position on policing?

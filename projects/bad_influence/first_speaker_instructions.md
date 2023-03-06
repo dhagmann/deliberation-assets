@@ -1,8 +1,6 @@
 ---
-name: policing_2020/first_speaker_instructions.md
+name: projects/policing_2020/first_speaker_instructions.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 30, 2022
 ---
 
 # Person with soonest birthday: please get us started

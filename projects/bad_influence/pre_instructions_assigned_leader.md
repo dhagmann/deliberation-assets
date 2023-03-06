@@ -1,8 +1,6 @@
 ---
-name: policing_2020/pre_instructions_assigned_leader.md
+name: projects/policing_2020/pre_instructions_assigned_leader.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Jan 11, 2023
 ---
 
 # Discussion instructions

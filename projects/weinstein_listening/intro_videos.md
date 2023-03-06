@@ -1,8 +1,6 @@
 ---
-name: weinstein_listening/intro_videos.md
+name: projects/weinstein_listening/intro_videos.md
 type: noResponse
-author: Tia Moin, James Houghton
-modified: Oct 2022
 description: This is to be used with participants who receive a training video
 ---
 

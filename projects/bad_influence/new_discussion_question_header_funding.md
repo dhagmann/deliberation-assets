@@ -1,8 +1,6 @@
 ---
-name: policing_2020/new_discussion_question_header_funding.md
+name: projects/policing_2020/new_discussion_question_header_funding.md
 type: noResponse
-author: Will Schulz, James Houghton
-modified: Nov 30, 2022
 ---
 
 # Discussion Question #1: Police Funding

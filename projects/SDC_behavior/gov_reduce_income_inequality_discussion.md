@@ -1,8 +1,6 @@
 ---
-name: houghton_SDC_followup/gov_reduce_income_inequality_discussion.md
+name: projects/SDC_behavior/gov_reduce_income_inequality_discussion.md
 type: noResponse
-author: James Houghton
-modified: Feb 1, 2023
 notes: discussion prompt for gov_reduce_income_inequality_unrest_survey.md
 ---
 

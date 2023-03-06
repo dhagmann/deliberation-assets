@@ -1,8 +1,6 @@
 ---
-name: houghton_SDC_followup/ban_assault_rifles_discussion.md
+name: projects/SDC_behavior/ban_assault_rifles_discussion.md
 type: noResponse
-author: James Houghton
-modified: Feb 1, 2023
 notes: discussion prompt for ban_assault_rifles_survey.md
 ---
 

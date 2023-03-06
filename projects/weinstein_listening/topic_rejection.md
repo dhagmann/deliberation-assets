@@ -1,8 +1,6 @@
 ---
-name: weinstein_listening/topic_rejection.md
+name: projects/weinstein_listening/topic_rejection.md
 type: noResponse
-author: Tia Moin
-modified: Oct 2022
 ---
 
 **"When you engage with your conversation partner, please attempt to apply the learning from the

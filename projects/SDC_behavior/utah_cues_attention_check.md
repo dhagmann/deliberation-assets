@@ -1,5 +1,5 @@
 ---
-name: SDC_behavior/utah_cues_attention_check.md
+name: projects/SDC_behavior/utah_cues_attention_check.md
 type: multipleChoice
 ---
 

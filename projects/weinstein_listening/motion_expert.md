@@ -1,5 +1,5 @@
 ---
-name: weinstein_listening/motion_expert.md
+name: projects/weinstein_listening/motion_expert.md
 type: multipleChoice
 author: Tia Moin
 modified: Oct 2022

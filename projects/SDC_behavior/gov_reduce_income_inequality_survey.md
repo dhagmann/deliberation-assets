@@ -1,8 +1,6 @@
 ---
-name: houghton_SDC_followup/gov_reduce_income_inequality_survey.md
+name: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
 type: multipleChoice
-author: James Houghton
-modified: Feb 1, 2023
 notes: pre/post survey for gov_reduce_income_inequality_discussion.md
 ---
 

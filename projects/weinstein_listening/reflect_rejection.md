@@ -1,8 +1,6 @@
 ---
-name: weinstein_listening/reflect_rejection.md
+name: projects/weinstein_listening/reflect_rejection.md
 type: openResponse
-author: Tia Moin
-modified: Oct 2022
 ---
 
 #### Please write about an important time when you were rejected by another person or group of people.

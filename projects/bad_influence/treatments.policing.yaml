@@ -18,7 +18,7 @@ treatments:
     assignPositionsBy: random
     gameStages:
       - name: Pretest
-        duration: 90
+        duration: 150
         elements:
           - projects/bad_influence/police_involve_survey.md
           - projects/bad_influence/police_racism_survey.md
@@ -26,7 +26,7 @@ treatments:
           - projects/bad_influence/police_anes_excess_force_survey.md
           - projects/bad_influence/police_force_easy_hard_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel.md
+          - projects/bad_influence/police_overall_feel_survey.md
           - type: submitButton
       - name: Pre-discussion instructions
         duration: 45
@@ -35,7 +35,7 @@ treatments:
           - type: submitButton
       - name: Discussion
         chatType: video
-        duration: 600
+        duration: 1890
         elements:
           - type: prompt
             file: projects/bad_influence/initial_instructions.md
@@ -64,6 +64,9 @@ treatments:
           - type: prompt
             file: projects/bad_influence/police_overall_feel_discussion.md
             displayTime: 30
+            hideTime: 210
+          - type: separator
+            displayTime: 30 #180
             hideTime: 210
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
@@ -104,6 +107,9 @@ treatments:
             file: projects/bad_influence/police_involve_discussion.md
             displayTime: 210
             hideTime: 390
+          - type: separator
+            displayTime: 210 #180
+            hideTime: 390
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
             displayTime: 210
@@ -143,6 +149,9 @@ treatments:
             file: projects/bad_influence/police_racism_discussion.md
             displayTime: 390 #180
             hideTime: 570
+          - type: separator
+            displayTime: 390 #180
+            hideTime: 570
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
             displayTime: 390 #30
@@ -177,9 +186,13 @@ treatments:
             file: shared/counter_bell.mp3
             displayTime: 570 #5
             hideTime: 575
+
           #fix time below here
           - type: prompt
             file: projects/bad_influence/police_anes_riot_discussion.md
+            displayTime: 570 #180
+            hideTime: 750
+          - type: separator
             displayTime: 570 #180
             hideTime: 750
           - type: prompt
@@ -221,6 +234,9 @@ treatments:
             file: projects/bad_influence/police_anes_excess_force_discussion.md
             displayTime: 750 #180
             hideTime: 930
+          - type: separator
+            displayTime: 750 #180
+            hideTime: 930
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
             displayTime: 750 #30
@@ -258,6 +274,9 @@ treatments:
 
           - type: prompt
             file: projects/bad_influence/police_order_violence_discussion.md
+            displayTime: 930 #180
+            hideTime: 1110
+          - type: separator
             displayTime: 930 #180
             hideTime: 1110
           - type: prompt
@@ -299,6 +318,9 @@ treatments:
             file: projects/bad_influence/police_gss_situations_strike_discussion.md
             displayTime: 1110 #180
             hideTime: 1680
+          - type: separator
+            displayTime: 1110 #180
+            hideTime: 1680
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
             displayTime: 1110 #30
@@ -336,6 +358,9 @@ treatments:
 
           - type: prompt
             file: projects/bad_influence/police_force_easy_hard_discussion.md
+            displayTime: 1680 #180
+            hideTime: 1860
+          - type: separator
             displayTime: 1680 #180
             hideTime: 1860
           - type: prompt
@@ -380,7 +405,7 @@ treatments:
             displayTime: 1860
 
       - name: Posttest
-        duration: 120
+        duration: 150
         elements:
           - projects/bad_influence/police_involve_survey.md
           - projects/bad_influence/police_racism_survey.md
@@ -388,7 +413,7 @@ treatments:
           - projects/bad_influence/police_anes_excess_force_survey.md
           - projects/bad_influence/police_force_easy_hard_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel.md
+          - projects/bad_influence/police_overall_feel_survey.md
           - type: submitButton
 
     exitSurveys:
@@ -412,7 +437,7 @@ treatments:
           - projects/bad_influence/police_anes_excess_force_survey.md
           - projects/bad_influence/police_force_easy_hard_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel.md
+          - projects/bad_influence/police_overall_feel_survey.md
           - type: submitButton
       - name: Pre-discussion instructions
         duration: 45
@@ -499,7 +524,7 @@ treatments:
           - projects/bad_influence/police_anes_riot_survey.md
           - projects/bad_influence/police_anews_excess_force_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel.md
+          - projects/bad_influence/police_overall_feel_survey.md
           - type: submitButton
 
     exitSurveys:

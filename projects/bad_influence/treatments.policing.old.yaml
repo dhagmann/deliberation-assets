@@ -18,7 +18,7 @@ treatments:
     assignPositionsBy: random
     gameStages:
       - name: Pretest
-        duration: 150
+        duration: 90
         elements:
           - projects/bad_influence/police_involve_survey.md
           - projects/bad_influence/police_racism_survey.md
@@ -26,7 +26,7 @@ treatments:
           - projects/bad_influence/police_anes_excess_force_survey.md
           - projects/bad_influence/police_force_easy_hard_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel_survey.md
+          - projects/bad_influence/police_overall_feel.md
           - type: submitButton
       - name: Pre-discussion instructions
         duration: 45
@@ -35,7 +35,7 @@ treatments:
           - type: submitButton
       - name: Discussion
         chatType: video
-        duration: 2140
+        duration: 600
         elements:
           - type: prompt
             file: projects/bad_influence/initial_instructions.md
@@ -60,350 +60,327 @@ treatments:
             file: shared/counter_bell.mp3
             displayTime: 30
             hideTime: 35
+
           - type: prompt
             file: projects/bad_influence/police_overall_feel_discussion.md
             displayTime: 30
-            hideTime: 290
-          - type: separator
-            displayTime: 30
-            hideTime: 290
+            hideTime: 210
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
             displayTime: 30
-            hideTime: 90
+            hideTime: 60
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
             displayTime: 30
-            hideTime: 90
+            hideTime: 60
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
             displayTime: 30
-            hideTime: 90
+            hideTime: 60
           - type: timer
             displayTime: 30
-            hideTime: 90
+            hideTime: 60
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 90
-            hideTime: 95
+            displayTime: 60
+            hideTime: 65
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 90
-            hideTime: 290
+            displayTime: 60
+            hideTime: 210
           - type: timer
-            displayTime: 90
-            hideTime: 290
+            displayTime: 60
+            hideTime: 210
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 290
-            hideTime: 295
+            displayTime: 210
+            hideTime: 215
 
           - type: prompt
             file: projects/bad_influence/police_involve_discussion.md
-            displayTime: 290
-            hideTime: 550
-          - type: separator
-            displayTime: 290
-            hideTime: 550
+            displayTime: 210
+            hideTime: 390
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 290
-            hideTime: 350
+            displayTime: 210
+            hideTime: 240
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
-            displayTime: 290
-            hideTime: 350
+            displayTime: 210
+            hideTime: 240
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
-            displayTime: 290
-            hideTime: 350
+            displayTime: 210
+            hideTime: 240
           - type: timer
-            displayTime: 290
-            hideTime: 350
+            displayTime: 210
+            hideTime: 240
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 350
-            hideTime: 355
+            displayTime: 240
+            hideTime: 245
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 350
-            hideTime: 550
+            displayTime: 240
+            hideTime: 390
           - type: timer
-            displayTime: 350
-            hideTime: 550
+            displayTime: 240
+            hideTime: 390
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 550
-            hideTime: 555
+            displayTime: 390
+            hideTime: 395
 
           - type: prompt
             file: projects/bad_influence/police_racism_discussion.md
-            displayTime: 550
-            hideTime: 810
-          - type: separator
-            displayTime: 550
-            hideTime: 810
+            displayTime: 390 #180
+            hideTime: 570
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 550
-            hideTime: 610
+            displayTime: 390 #30
+            hideTime: 420
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
-            displayTime: 550
-            hideTime: 610
+            displayTime: 390 #30
+            hideTime: 420
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
-            displayTime: 550
-            hideTime: 610
+            displayTime: 390 #30
+            hideTime: 420
           - type: timer
-            displayTime: 550
-            hideTime: 610
+            displayTime: 390 #30
+            hideTime: 420
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 610
-            hideTime: 615
+            displayTime: 420 #5
+            hideTime: 425
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 610
-            hideTime: 810
+            displayTime: 420 #150
+            hideTime: 570
           - type: timer
-            displayTime: 610
-            hideTime: 810
+            displayTime: 420 #150
+            hideTime: 570
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 810
-            hideTime: 815
-
+            displayTime: 570 #5
+            hideTime: 575
+          #fix time below here
           - type: prompt
             file: projects/bad_influence/police_anes_riot_discussion.md
-            displayTime: 810
-            hideTime: 1070
-          - type: separator
-            displayTime: 810
-            hideTime: 1070
+            displayTime: 570 #180
+            hideTime: 750
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 810
-            hideTime: 870
+            displayTime: 570 #30
+            hideTime: 600
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
-            displayTime: 810
-            hideTime: 870
+            displayTime: 570 #30
+            hideTime: 600
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
-            displayTime: 810
-            hideTime: 870
+            displayTime: 570 #30
+            hideTime: 600
           - type: timer
-            displayTime: 810
-            hideTime: 870
+            displayTime: 570 #30
+            hideTime: 600
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 870
-            hideTime: 875
+            displayTime: 600 #5
+            hideTime: 605
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 870
-            hideTime: 1070
+            displayTime: 600 #150
+            hideTime: 750
           - type: timer
-            displayTime: 870
-            hideTime: 1070
+            displayTime: 600 #150
+            hideTime: 750
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1070
-            hideTime: 1075
+            displayTime: 750 #5
+            hideTime: 755
 
           - type: prompt
             file: projects/bad_influence/police_anes_excess_force_discussion.md
-            displayTime: 1070
-            hideTime: 1330
-          - type: separator
-            displayTime: 1070
-            hideTime: 1330
+            displayTime: 750 #180
+            hideTime: 930
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 1070
-            hideTime: 1130
+            displayTime: 750 #30
+            hideTime: 780
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
-            displayTime: 1070
-            hideTime: 1130
+            displayTime: 750 #30
+            hideTime: 780
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
-            displayTime: 1070
-            hideTime: 1130
+            displayTime: 750 #30
+            hideTime: 780
           - type: timer
-            displayTime: 1070
-            hideTime: 1130
+            displayTime: 750 #30
+            hideTime: 780
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1130
-            hideTime: 1135
+            displayTime: 780 #5
+            hideTime: 785
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1130
-            hideTime: 1330
+            displayTime: 780 #150
+            hideTime: 930
           - type: timer
-            displayTime: 1130
-            hideTime: 1330
+            displayTime: 780 #150
+            hideTime: 930
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1330
-            hideTime: 1335
+            displayTime: 930 #5
+            hideTime: 935
 
           - type: prompt
             file: projects/bad_influence/police_order_violence_discussion.md
-            displayTime: 1330
-            hideTime: 1590
-          - type: separator
-            displayTime: 1330
-            hideTime: 1590
+            displayTime: 930 #180
+            hideTime: 1110
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 1330
-            hideTime: 1390
+            displayTime: 930 #30
+            hideTime: 960
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
-            displayTime: 1330
-            hideTime: 1390
+            displayTime: 930 #30
+            hideTime: 960
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
-            displayTime: 1330
-            hideTime: 1390
+            displayTime: 930 #30
+            hideTime: 960
           - type: timer
-            displayTime: 1330
-            hideTime: 1390
+            displayTime: 930 #30
+            hideTime: 960
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1390
-            hideTime: 1395
+            displayTime: 960 #5
+            hideTime: 965
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1390
-            hideTime: 1590
+            displayTime: 960 #150
+            hideTime: 1110
           - type: timer
-            displayTime: 1390
-            hideTime: 1590
+            displayTime: 960 #150
+            hideTime: 1110
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1590
-            hideTime: 1595
+            displayTime: 1110 #5
+            hideTime: 1115
 
           - type: prompt
             file: projects/bad_influence/police_gss_situations_strike_discussion.md
-            displayTime: 1590
-            hideTime: 1850
-          - type: separator
-            displayTime: 1590
-            hideTime: 1850
+            displayTime: 1110 #180
+            hideTime: 1680
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 1590
-            hideTime: 1650
+            displayTime: 1110 #30
+            hideTime: 1140
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
-            displayTime: 1590
-            hideTime: 1650
+            displayTime: 1110 #30
+            hideTime: 1140
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
-            displayTime: 1590
-            hideTime: 1650
+            displayTime: 1110 #30
+            hideTime: 1140
           - type: timer
-            displayTime: 1590
-            hideTime: 1650
+            displayTime: 1110 #30
+            hideTime: 1140
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1650
-            hideTime: 1655
+            displayTime: 1140 #5
+            hideTime: 1145
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1650
-            hideTime: 1850
+            displayTime: 1140 #150
+            hideTime: 1680
           - type: timer
-            displayTime: 1650
-            hideTime: 1850
+            displayTime: 1140 #150
+            hideTime: 1680
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1850
-            hideTime: 1855
+            displayTime: 1680 #5
+            hideTime: 1685
 
           - type: prompt
             file: projects/bad_influence/police_force_easy_hard_discussion.md
-            displayTime: 1850
-            hideTime: 2110
-          - type: separator
-            displayTime: 1850
-            hideTime: 2110
+            displayTime: 1680 #180
+            hideTime: 1860
           - type: prompt
             file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 1850
-            hideTime: 1910
+            displayTime: 1680 #30
+            hideTime: 1710
           - type: prompt
             file: projects/bad_influence/leader_floor.md
             showToPositions:
               - 0
-            displayTime: 1850
-            hideTime: 1910
+            displayTime: 1680 #30
+            hideTime: 1710
           - type: prompt
             file: projects/bad_influence/nonleader_nofloor.md
             hideFromPositions:
               - 0
-            displayTime: 1850
-            hideTime: 1910
+            displayTime: 1680 #30
+            hideTime: 1710
           - type: timer
-            displayTime: 1850
-            hideTime: 1910
+            displayTime: 1680 #30
+            hideTime: 1710
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 1910
-            hideTime: 1915
+            displayTime: 1710 #5
+            hideTime: 1715
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1910
-            hideTime: 2110
+            displayTime: 1710 #150
+            hideTime: 1860
           - type: timer
-            displayTime: 1910
-            hideTime: 2110
+            displayTime: 1710 #150
+            hideTime: 1860
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 2110
-            hideTime: 2115
+            displayTime: 1860 #5
+            hideTime: 1865
 
           - type: prompt
             file: projects/bad_influence/end_instructions.md
-            displayTime: 2110
+            displayTime: 1860
           - type: submitButton
-            displayTime: 2110
+            displayTime: 1860
 
       - name: Posttest
-        duration: 150
+        duration: 120
         elements:
           - projects/bad_influence/police_involve_survey.md
           - projects/bad_influence/police_racism_survey.md
@@ -411,7 +388,7 @@ treatments:
           - projects/bad_influence/police_anes_excess_force_survey.md
           - projects/bad_influence/police_force_easy_hard_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel_survey.md
+          - projects/bad_influence/police_overall_feel.md
           - type: submitButton
 
     exitSurveys:
@@ -423,12 +400,11 @@ treatments:
 
   - name: No Leader Assigned
     desc: Three questions, no instructions for leader
-
     playerCount: 3
     assignPositionsBy: random
     gameStages:
       - name: Pretest
-        duration: 150
+        duration: 90
         elements:
           - projects/bad_influence/police_involve_survey.md
           - projects/bad_influence/police_racism_survey.md
@@ -436,7 +412,7 @@ treatments:
           - projects/bad_influence/police_anes_excess_force_survey.md
           - projects/bad_influence/police_force_easy_hard_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel_survey.md
+          - projects/bad_influence/police_overall_feel.md
           - type: submitButton
       - name: Pre-discussion instructions
         duration: 45
@@ -445,7 +421,7 @@ treatments:
           - type: submitButton
       - name: Discussion
         chatType: video
-        duration: 2140
+        duration: 990
         elements:
           - type: prompt
             file: projects/bad_influence/initial_instructions.md
@@ -462,149 +438,68 @@ treatments:
             hideTime: 35
 
           - type: prompt
-            file: projects/bad_influence/police_overall_feel_discussion.md
+            file: projects/bad_influence/new_discussion_question_header_funding.md
             displayTime: 30
-            hideTime: 290
+            hideTime: 210
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
             displayTime: 30
-            hideTime: 290
+            hideTime: 210
           - type: timer
             displayTime: 30
-            hideTime: 290
+            hideTime: 210
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 290
-            hideTime: 295
+            displayTime: 210
+            hideTime: 215
 
           - type: prompt
-            file: projects/bad_influence/police_involve_discussion.md
-            displayTime: 290
-            hideTime: 550
+            file: projects/bad_influence/new_discussion_question_header_racism.md
+            displayTime: 210
+            hideTime: 390
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 290
-            hideTime: 550
+            displayTime: 210
+            hideTime: 390
           - type: timer
-            displayTime: 290
-            hideTime: 550
+            displayTime: 210
+            hideTime: 390
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 550
-            hideTime: 555
+            displayTime: 390
+            hideTime: 395
 
           - type: prompt
-            file: projects/bad_influence/police_racism_discussion.md
-            displayTime: 550
-            hideTime: 810
+            file: projects/bad_influence/new_discussion_question_header_force.md
+            displayTime: 390
+            hideTime: 570
           - type: prompt
             file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 550
-            hideTime: 810
+            displayTime: 390
+            hideTime: 570
           - type: timer
-            displayTime: 550
-            hideTime: 810
+            displayTime: 390
+            hideTime: 570
           - type: audio
             file: shared/counter_bell.mp3
-            displayTime: 810
-            hideTime: 815
-
-          - type: prompt
-            file: projects/bad_influence/police_anes_riot_discussion.md
-            displayTime: 810
-            hideTime: 1070
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 810
-            hideTime: 1070
-          - type: timer
-            displayTime: 810
-            hideTime: 1070
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1070
-            hideTime: 1075
-
-          - type: prompt
-            file: projects/bad_influence/police_anes_excess_force_discussion.md
-            displayTime: 1070
-            hideTime: 1330
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1070
-            hideTime: 1330
-          - type: timer
-            displayTime: 1070
-            hideTime: 1330
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1330
-            hideTime: 1335
-
-          - type: prompt
-            file: projects/bad_influence/police_order_violence_discussion.md
-            displayTime: 1330
-            hideTime: 1590
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1330
-            hideTime: 1590
-          - type: timer
-            displayTime: 1330
-            hideTime: 1590
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1590
-            hideTime: 1595
-
-          - type: prompt
-            file: projects/bad_influence/police_gss_situations_strike_discussion.md
-            displayTime: 1590
-            hideTime: 1850
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1590
-            hideTime: 1850
-          - type: timer
-            displayTime: 1590
-            hideTime: 1850
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1850
-            hideTime: 1855
-
-          - type: prompt
-            file: projects/bad_influence/police_force_easy_hard_discussion.md
-            displayTime: 1850
-            hideTime: 2110
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1850
-            hideTime: 2110
-          - type: timer
-            displayTime: 1850
-            hideTime: 2110
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 2110
-            hideTime: 2115
+            displayTime: 570
+            hideTime: 575
 
           - type: prompt
             file: projects/bad_influence/end_instructions.md
-            displayTime: 2110
+            displayTime: 570
           - type: submitButton
-            displayTime: 2110
+            displayTime: 570
 
       - name: Posttest
-        duration: 150
+        duration: 120
         elements:
           - projects/bad_influence/police_involve_survey.md
           - projects/bad_influence/police_racism_survey.md
           - projects/bad_influence/police_anes_riot_survey.md
-          - projects/bad_influence/police_anes_excess_force_survey.md
-          - projects/bad_influence/police_force_easy_hard_survey.md
+          - projects/bad_influence/police_anews_excess_force_survey.md
           - projects/bad_influence/police_gss_situations_strike_survey.md
-          - projects/bad_influence/police_overall_feel_survey.md
+          - projects/bad_influence/police_overall_feel.md
           - type: submitButton
 
     exitSurveys:
@@ -613,4 +508,3 @@ treatments:
       - AutonomyNeedSatisfaction
       - RelatednessNeedSatisfaction
       - Demographics
-

@@ -35,7 +35,7 @@ treatments:
           - type: submitButton
       - name: Discussion
         chatType: video
-        duration: 2140
+        duration: 1620
         elements:
           - type: prompt
             file: projects/bad_influence/initial_instructions.md
@@ -103,7 +103,7 @@ treatments:
             hideTime: 295
 
           - type: prompt
-            file: projects/bad_influence/police_involve_discussion.md
+            file: projects/bad_influence/police_racism_discussion.md
             displayTime: 290
             hideTime: 550
           - type: separator
@@ -145,7 +145,7 @@ treatments:
             hideTime: 555
 
           - type: prompt
-            file: projects/bad_influence/police_racism_discussion.md
+            file: projects/bad_influence/police_involve_discussion.md
             displayTime: 550
             hideTime: 810
           - type: separator
@@ -229,7 +229,7 @@ treatments:
             hideTime: 1075
 
           - type: prompt
-            file: projects/bad_influence/police_anes_excess_force_discussion.md
+            file: projects/bad_influence/police_order_violence_discussion.md
             displayTime: 1070
             hideTime: 1330
           - type: separator
@@ -271,7 +271,7 @@ treatments:
             hideTime: 1335
 
           - type: prompt
-            file: projects/bad_influence/police_order_violence_discussion.md
+            file: projects/bad_influence/police_gss_situations_strike_discussion.md
             displayTime: 1330
             hideTime: 1590
           - type: separator
@@ -313,94 +313,10 @@ treatments:
             hideTime: 1595
 
           - type: prompt
-            file: projects/bad_influence/police_gss_situations_strike_discussion.md
-            displayTime: 1590
-            hideTime: 1850
-          - type: separator
-            displayTime: 1590
-            hideTime: 1850
-          - type: prompt
-            file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 1590
-            hideTime: 1650
-          - type: prompt
-            file: projects/bad_influence/leader_floor.md
-            showToPositions:
-              - 0
-            displayTime: 1590
-            hideTime: 1650
-          - type: prompt
-            file: projects/bad_influence/nonleader_nofloor.md
-            hideFromPositions:
-              - 0
-            displayTime: 1590
-            hideTime: 1650
-          - type: timer
-            displayTime: 1590
-            hideTime: 1650
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1650
-            hideTime: 1655
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1650
-            hideTime: 1850
-          - type: timer
-            displayTime: 1650
-            hideTime: 1850
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1850
-            hideTime: 1855
-
-          - type: prompt
-            file: projects/bad_influence/police_force_easy_hard_discussion.md
-            displayTime: 1850
-            hideTime: 2110
-          - type: separator
-            displayTime: 1850
-            hideTime: 2110
-          - type: prompt
-            file: projects/bad_influence/first_speaker_time_footer.md
-            displayTime: 1850
-            hideTime: 1910
-          - type: prompt
-            file: projects/bad_influence/leader_floor.md
-            showToPositions:
-              - 0
-            displayTime: 1850
-            hideTime: 1910
-          - type: prompt
-            file: projects/bad_influence/nonleader_nofloor.md
-            hideFromPositions:
-              - 0
-            displayTime: 1850
-            hideTime: 1910
-          - type: timer
-            displayTime: 1850
-            hideTime: 1910
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1910
-            hideTime: 1915
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1910
-            hideTime: 2110
-          - type: timer
-            displayTime: 1910
-            hideTime: 2110
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 2110
-            hideTime: 2115
-
-          - type: prompt
             file: projects/bad_influence/end_instructions.md
-            displayTime: 2110
+            displayTime: 1590
           - type: submitButton
-            displayTime: 2110
+            displayTime: 1590
 
       - name: Posttest
         duration: 150
@@ -445,7 +361,7 @@ treatments:
           - type: submitButton
       - name: Discussion
         chatType: video
-        duration: 2140
+        duration: 1620
         elements:
           - type: prompt
             file: projects/bad_influence/initial_instructions.md
@@ -478,7 +394,7 @@ treatments:
             hideTime: 295
 
           - type: prompt
-            file: projects/bad_influence/police_involve_discussion.md
+            file: projects/bad_influence/police_racism_discussion.md
             displayTime: 290
             hideTime: 550
           - type: prompt
@@ -494,7 +410,7 @@ treatments:
             hideTime: 555
 
           - type: prompt
-            file: projects/bad_influence/police_racism_discussion.md
+            file: projects/bad_influence/police_involve_discussion.md
             displayTime: 550
             hideTime: 810
           - type: prompt
@@ -526,7 +442,7 @@ treatments:
             hideTime: 1075
 
           - type: prompt
-            file: projects/bad_influence/police_anes_excess_force_discussion.md
+            file: projects/bad_influence/police_order_violence_discussion.md
             displayTime: 1070
             hideTime: 1330
           - type: prompt
@@ -542,7 +458,7 @@ treatments:
             hideTime: 1335
 
           - type: prompt
-            file: projects/bad_influence/police_order_violence_discussion.md
+            file: projects/bad_influence/police_gss_situations_strike_discussion.md
             displayTime: 1330
             hideTime: 1590
           - type: prompt
@@ -558,42 +474,10 @@ treatments:
             hideTime: 1595
 
           - type: prompt
-            file: projects/bad_influence/police_gss_situations_strike_discussion.md
-            displayTime: 1590
-            hideTime: 1850
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1590
-            hideTime: 1850
-          - type: timer
-            displayTime: 1590
-            hideTime: 1850
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 1850
-            hideTime: 1855
-
-          - type: prompt
-            file: projects/bad_influence/police_force_easy_hard_discussion.md
-            displayTime: 1850
-            hideTime: 2110
-          - type: prompt
-            file: projects/bad_influence/group_free_discussion_time_footer.md
-            displayTime: 1850
-            hideTime: 2110
-          - type: timer
-            displayTime: 1850
-            hideTime: 2110
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 2110
-            hideTime: 2115
-
-          - type: prompt
             file: projects/bad_influence/end_instructions.md
-            displayTime: 2110
+            displayTime: 1590
           - type: submitButton
-            displayTime: 2110
+            displayTime: 1590
 
       - name: Posttest
         duration: 150

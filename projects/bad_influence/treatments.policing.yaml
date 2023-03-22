@@ -337,7 +337,7 @@ treatments:
       - RelatednessNeedSatisfaction
       - Demographics
 
-  - name: No Leader Assigned
+  - name: no_leader_assigned
     desc: Three questions, no instructions for leader
 
     playerCount: 3
@@ -357,7 +357,7 @@ treatments:
       - name: Pre-discussion instructions
         duration: 45
         elements:
-          - projects/bad_influence/pre_instruction_no_leader.md
+          - projects/bad_influence/pre_instructions_no_leader.md
           - type: submitButton
       - name: Discussion
         chatType: video
@@ -497,4 +497,3 @@ treatments:
       - AutonomyNeedSatisfaction
       - RelatednessNeedSatisfaction
       - Demographics
-

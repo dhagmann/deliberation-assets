@@ -3,9 +3,9 @@ name: projects/bad_influence/end_instructions.md
 type: noResponse
 ---
 
-# Your discussion is now over.
+# The discussion time is over, please proceed to the post-discussion surveys.
 
-You can say goodbye to each other before proceeding.
+You may say goodbye to each other before proceeding.
 In the next stage, we will ask you to answer some survey questions.
 
 ---

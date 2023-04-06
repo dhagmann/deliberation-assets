@@ -23,6 +23,7 @@ To run a single-player demo, use a variation on the config:
 {
   "batchName": "labDemo",
   "treatmentFile": "projects/example/treatments.test.yaml",
+  "dispatchWait": 1,
   "useTreatments": ["demo1p"]
 }
 ```

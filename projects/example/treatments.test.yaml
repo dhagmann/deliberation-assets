@@ -63,7 +63,10 @@ treatments:
         duration: 600
         elements:
           - type: qualtrics
-            url: https://upenn.co1.qualtrics.com/jfe/form/SV_czNcL28CkElpBcO
+            url: https://upenn.co1.qualtrics.com/jfe/form/SV_cumihDjKknDL702
+            params:
+              - key: dummyData
+                value: "this is it!"
       - name: Topic Survey
         duration: 60
         chatType: none
@@ -134,7 +137,10 @@ treatments:
         duration: 3000
         elements:
           - type: qualtrics
-            url: https://upenn.co1.qualtrics.com/jfe/form/SV_czNcL28CkElpBcO
+            url: https://upenn.co1.qualtrics.com/jfe/form/SV_cumihDjKknDL702
+            params:
+              - key: dummyData
+                value: "this is it!"
       - name: Stars Video
         duration: 50
         elements:

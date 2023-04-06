@@ -24,6 +24,7 @@ To run a single-player demo, use a variation on the config:
   "batchName": "labDemo",
   "treatmentFile": "projects/example/treatments.test.yaml",
   "dispatchWait": 1,
-  "useTreatments": ["demo1p"]
+  "useTreatments": ["demo1p"],
+  "launchDate": "06 Apr 2023 17:00:00 EDT"
 }
 ```

@@ -9,6 +9,10 @@ introSequences:
         elements:
           - type: survey
             surveyName: PoliticalPartyUS
+      - name: Partisan Animosity
+        elements:
+          - type: survey
+            surveyName: PartisanFeelingThermometerUS
 
 treatments:
   - name: SDC_Misperception_Democratic
@@ -82,10 +86,12 @@ treatments:
       - name: Attitude Postsurvey
         duration: 120
         elements:
-          - projects/SDC_behavior/urban_unrest_survey.md
+          - shared/ANES_2020/protest_unrest_survey.md
           - type: submitButton
 
     exitSurveys:
+      - PartisanFeelingThermometerUS
+      - PsychologicalSafety
       - ConstructiveListeningBehaviors
       - DiscussionSelfInsight
       - AutonomyNeedSatisfaction
@@ -151,10 +157,12 @@ treatments:
       - name: Attitude Postsurvey
         duration: 120
         elements:
-          - projects/SDC_behavior/urban_unrest_survey.md
+          - shared/ANES_2020/protest_unrest_survey.md
           - type: submitButton
 
     exitSurveys:
+      - PartisanFeelingThermometerUS
+      - PsychologicalSafety
       - ConstructiveListeningBehaviors
       - DiscussionSelfInsight
       - AutonomyNeedSatisfaction
@@ -220,10 +228,12 @@ treatments:
       - name: Attitude Postsurvey
         duration: 120
         elements:
-          - projects/SDC_behavior/urban_unrest_survey.md
+          - shared/ANES_2020/protest_unrest_survey.md
           - type: submitButton
 
     exitSurveys:
+      - PartisanFeelingThermometerUS
+      - PsychologicalSafety
       - ConstructiveListeningBehaviors
       - DiscussionSelfInsight
       - AutonomyNeedSatisfaction
@@ -289,10 +299,12 @@ treatments:
       - name: Attitude Postsurvey
         duration: 120
         elements:
-          - projects/SDC_behavior/urban_unrest_survey.md
+          - shared/ANES_2020/protest_unrest_survey.md
           - type: submitButton
 
     exitSurveys:
+      - PartisanFeelingThermometerUS
+      - PsychologicalSafety
       - ConstructiveListeningBehaviors
       - DiscussionSelfInsight
       - AutonomyNeedSatisfaction
@@ -358,10 +370,12 @@ treatments:
       - name: Attitude Postsurvey
         duration: 120
         elements:
-          - projects/SDC_behavior/urban_unrest_survey.md
+          - shared/ANES_2020/protest_unrest_survey.md
           - type: submitButton
 
     exitSurveys:
+      - PartisanFeelingThermometerUS
+      - PsychologicalSafety
       - ConstructiveListeningBehaviors
       - DiscussionSelfInsight
       - AutonomyNeedSatisfaction

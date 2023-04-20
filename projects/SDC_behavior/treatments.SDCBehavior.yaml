@@ -9,78 +9,224 @@ introSequences:
         elements:
           - type: survey
             surveyName: PoliticalPartyUS
-      - name: Issue Pretest
-        elements:
-          - type: prompt
-            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
-          - type: prompt
-            file: projects/SDC_behavior/urban_unrest_survey.md
-          - type: submitButton
 
 treatments:
   - name: SDC_A
     desc: first test
-    factors:
-      playerCount: 1
-      assignPositionsBy: random
-      gameStages:
-        # - name: Intro
-        #   type: prompt
-        #   duration: 45
-        #   elements:
-        #     - weinstein_listening/intro_videos.md
-        #     - type: submitButton
-        - name: Issue Presurvey
-          duration: 120
-          elements:
-            - type: prompt
-              file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
-            - type: separator
-            - type: prompt
-              file: projects/SDC_behavior/urban_unrest_survey.md
-            - type: separator
+    playerCount: 2
+    assignPositionsBy: random
+    groupComposition:
+      - position: 0
+        name: democrat
+        conditions:
+          - type: survey
+            fromStep: Party Identification
+            surveyName: PoliticalPartyUS
+            result:
+            comparator:
+            value:
+      - position: 1
+        name: republican
+        conditions:
 
-            - type: submitButton
+    gameStages:
+      - name: Issue Presurvey
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+          - type: separator
+          - type: prompt
+            file: shared/ANES_2020/protest_unrest_survey.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/abort_SPCT_merged.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/ban_assault_rifles_survey.md
+          - type: submitButton
 
-        - name: Misperception Democratic
-          duration: 900
-          elements:
-            - name: Misperception Democratic Qualtrics Survey
-              type: qualtrics
-              url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW?Condition=Misperception_Democratic
+      - name: Misperception Democratic
+        duration: 900
+        elements:
+          - name: Misperception Democratic Qualtrics Survey - Democrat
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Democratic
+              - key: party
+                value: dem
+            showToPositions:
+              - 0
+          - name: Misperception Democratic Qualtrics Survey - Republican
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Democratic
+              - key: party
+                value: rep
+            showToPositions:
+              - 1
 
-        # - name: SDC Intervention - Utah Cues
-        #   duration: 900
-        #   elements:
-        #     - name: Listening Training
-        #       type: video
-        #       url: https://video.wixstatic.com/video/2f07d4_6a4f3627e3474f9f84dcbefb9b932125/720p/mp4/file.mp4
-        # - name: SDC Intervention - Utah Cues attention check
-        #   duration: 120
-        #   elements:
-        #     - type: prompt
-        #       file: projects/SDC_behavior/utah_cues_attention_check.md
-        #     - type: submitButton
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/urban_unrest_discussion.md
+          - type: separator
+            style: thin
 
-        - name: Discussion
-          duration: 600
-          chatType: video
-          elements:
-            - type: prompt
-              file: projects/SDC_Behavior/urban_unrest_discussion.md
-            - type: separator
-              style: thin
+      - name: Attitude Postsurvey
+        duration: 120
+        elements:
+          - projects/SDC_behavior/urban_unrest_survey.md
+          - type: submitButton
 
-        - name: Attitude Postsurvey
-          duration: 120
-          elements:
-            - projects/SDC_Behavior/urban_unrest_survey.md
-            - type: submitButton
+    exitSurveys:
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
+      - Demographics
 
-      exitSurveys:
-        - ConstructiveListeningBehaviors
-        - DiscussionSelfInsight
-        - AutonomyNeedSatisfaction
-        - RelatednessNeedSatisfaction
-        - ConstructiveListeningBehaviorsSelf
-        - Demographics
+  - name: SDC_Contact_Project
+    desc: Dyadic contact project intervention
+    playerCount: 2
+    assignPositionsBy: random
+
+    gameStages:
+      - name: Issue Presurvey
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+          - type: separator
+          - type: prompt
+            file: shared/ANES_2020/protest_unrest_survey.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/abort_SPCT_merged.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/ban_assault_rifles_survey.md
+          - type: submitButton
+
+      - name: Misperception Democratic
+        duration: 900
+        elements:
+          - name: Misperception Democratic Qualtrics Survey - Democrat
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Contact_Project
+              - key: party
+                value: dem
+            showToPositions:
+              - 0
+          - name: Misperception Democratic Qualtrics Survey - Republican
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Contact_Project
+              - key: party
+                value: rep
+            showToPositions:
+              - 1
+
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/urban_unrest_discussion.md
+          - type: separator
+            style: thin
+
+      - name: Attitude Postsurvey
+        duration: 120
+        elements:
+          - projects/SDC_behavior/urban_unrest_survey.md
+          - type: submitButton
+
+    exitSurveys:
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
+      - Demographics
+
+  - name: SDC_Common_Identity
+    desc: Dyadic contact project intervention
+    playerCount: 2
+    assignPositionsBy: random
+
+    gameStages:
+      - name: Issue Presurvey
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+          - type: separator
+          - type: prompt
+            file: shared/ANES_2020/protest_unrest_survey.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/abort_SPCT_merged.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/ban_assault_rifles_survey.md
+          - type: submitButton
+
+      - name: Misperception Democratic
+        duration: 900
+        elements:
+          - name: Misperception Democratic Qualtrics Survey - Democrat
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Common_Identity
+              - key: party
+                value: dem
+            showToPositions:
+              - 0
+          - name: Misperception Democratic Qualtrics Survey - Republican
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Common_Identity
+              - key: party
+                value: rep
+            showToPositions:
+              - 1
+
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/urban_unrest_discussion.md
+          - type: separator
+            style: thin
+
+      - name: Attitude Postsurvey
+        duration: 120
+        elements:
+          - projects/SDC_behavior/urban_unrest_survey.md
+          - type: submitButton
+
+    exitSurveys:
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
+      - Demographics

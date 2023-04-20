@@ -11,7 +11,7 @@ introSequences:
             surveyName: PoliticalPartyUS
 
 treatments:
-  - name: SDC_A
+  - name: SDC_Misperception_Democratic
     desc: first test
     playerCount: 2
     assignPositionsBy: random
@@ -203,6 +203,144 @@ treatments:
             params:
               - key: Condition
                 value: Common_Identity
+              - key: party
+                value: rep
+            showToPositions:
+              - 1
+
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/urban_unrest_discussion.md
+          - type: separator
+            style: thin
+
+      - name: Attitude Postsurvey
+        duration: 120
+        elements:
+          - projects/SDC_behavior/urban_unrest_survey.md
+          - type: submitButton
+
+    exitSurveys:
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
+      - Demographics
+
+  - name: SDC_Misperception_Film
+    desc: Dyadic contact project intervention
+    playerCount: 2
+    assignPositionsBy: random
+
+    gameStages:
+      - name: Issue Presurvey
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+          - type: separator
+          - type: prompt
+            file: shared/ANES_2020/protest_unrest_survey.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/abort_SPCT_merged.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/ban_assault_rifles_survey.md
+          - type: submitButton
+
+      - name: Misperception Democratic
+        duration: 900
+        elements:
+          - name: Misperception Democratic Qualtrics Survey - Democrat
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Film
+              - key: party
+                value: dem
+            showToPositions:
+              - 0
+          - name: Misperception Democratic Qualtrics Survey - Republican
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Film
+              - key: party
+                value: rep
+            showToPositions:
+              - 1
+
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/urban_unrest_discussion.md
+          - type: separator
+            style: thin
+
+      - name: Attitude Postsurvey
+        duration: 120
+        elements:
+          - projects/SDC_behavior/urban_unrest_survey.md
+          - type: submitButton
+
+    exitSurveys:
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
+      - Demographics
+
+  - name: SDC_Misperception_Film
+    desc: Dyadic contact project intervention
+    playerCount: 2
+    assignPositionsBy: random
+
+    gameStages:
+      - name: Issue Presurvey
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+          - type: separator
+          - type: prompt
+            file: shared/ANES_2020/protest_unrest_survey.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/abort_SPCT_merged.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/ban_assault_rifles_survey.md
+          - type: submitButton
+
+      - name: Misperception Democratic
+        duration: 900
+        elements:
+          - name: Misperception Democratic Qualtrics Survey - Democrat
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Film
+              - key: party
+                value: dem
+            showToPositions:
+              - 0
+          - name: Misperception Democratic Qualtrics Survey - Republican
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Film
               - key: party
                 value: rep
             showToPositions:

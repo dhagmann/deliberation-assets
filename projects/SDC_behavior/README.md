@@ -4,10 +4,14 @@
 {
   "batchName": "labDemo",
   "treatmentFile": "projects/SDC_behavior/treatments.SDCBehavior.yaml",
-  "useTreatments": ["SDC_A"],
+  "useTreatments": [
+    "SDC_Contact_Project",
+    "SDC_Common_Identity",
+    "SDC_Misperception_Film",
+    "SDC_Misperception_Democratic"
+  ],
   "useIntroSequence": "cross_party_match",
   "platformConsent": "US",
-  "launchDate": "23 Feb 2023 09:30:00 EST",
-  "dispatchWait": 3
+  "dispatchWait": 1
 }
 ```

@@ -4,7 +4,7 @@ type: multipleChoice
 notes: pre/post survey for urban_unrest_discussion.md
 ---
 
-What is the best way to deal with the problem of urban unrest and rioting?
+### What is the best way to deal with the problem of urban unrest and rioting?
 
 Some say it is more important to use all available force to maintain law and order, no matter what results.
 

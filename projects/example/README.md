@@ -27,3 +27,16 @@ To run a single-player demo, use a variation on the config:
   "useTreatments": ["demo1p"]
 }
 ```
+
+
+## Demo
+```json
+{
+  "batchName": "labDemo",
+  "useData": "false",
+  "treatmentFile": "projects/example/treatments.test.yaml",
+  "dispatchWait": 1,
+  "useIntroSequence": "cypress_standard",
+  "useTreatments": ["multiplayer_demo"]
+}
+```

@@ -326,3 +326,54 @@ treatments:
             surveyName: ExampleSurvey
     exitSurveys:
       - LonelinessSingleItem
+
+  - name: multiplayer_demo
+    desc: Demo for showing off what the deliberation project can do.
+    playerCount: 3
+    gameStages:
+      - name: Pretest
+        duration: 150
+        elements:
+          - projects/bad_influence/police_involve_survey.md
+          - projects/bad_influence/police_racism_survey.md
+          - projects/bad_influence/police_anes_riot_survey.md
+          - type: submitButton
+      - name: Heineken Ad
+        duration: 600
+        elements:
+          - type: video
+            url: https://youtu.be/t9isOc9Gy9Q
+      - name: Pre-discussion instructions
+        duration: 45
+        elements:
+          - projects/example/preDiscussionInstructions.md
+          - type: submitButton
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - name: icebreaker
+            type: prompt
+            file: projects/example/icebreaker.md
+            hideTime: 180
+          - type: timer
+            displayTime: 0
+            hideTime: 180
+          - type: audio
+            file: shared/counter_bell.mp3
+            displayTime: 180
+            hideTime: 185
+
+          - type: prompt
+            file: projects/bad_influence/police_involve_discussion.md
+            displayTime: 185
+          - type: audio
+            file: shared/counter_bell.mp3
+            displayTime: 185
+            hideTime: 190
+
+          - type: submitButton
+            displayTime: 400
+    exitSurveys:
+      - DiscussionSelfInsight
+      - Demographics

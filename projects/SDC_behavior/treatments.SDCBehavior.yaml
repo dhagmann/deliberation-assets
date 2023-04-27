@@ -5,6 +5,10 @@ introSequences:
       value: 1
       currencySymbol: $
     introSteps:
+      - name: Demographics Survey
+        elements:
+          - type: survey
+            surveyName: Demographics
       - name: Party Identification
         elements:
           - type: survey
@@ -15,6 +19,65 @@ introSequences:
             surveyName: PartisanFeelingThermometerUS
 
 treatments:
+  - name: Control
+    desc: No treatment given
+    playerCount: 2
+    assignPositionsBy: random
+    groupComposition:
+      - position: 0
+        name: democrat
+        conditions:
+          - type: survey
+            fromStep: Party Identification
+            surveyName: PoliticalPartyUS
+            result:
+            comparator:
+            value:
+      - position: 1
+        name: republican
+        conditions:
+
+    gameStages:
+      - name: Issue Presurvey
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+          - type: separator
+          - type: prompt
+            file: shared/ANES_2020/protest_unrest_survey.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/abort_SPCT_merged.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/ban_assault_rifles_survey.md
+          - type: submitButton
+
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/urban_unrest_discussion.md
+          - type: separator
+            style: thin
+
+      - name: Attitude Postsurvey
+        duration: 120
+        elements:
+          - shared/ANES_2020/protest_unrest_survey.md
+          - type: submitButton
+
+    exitSurveys:
+      - PartisanFeelingThermometerUS
+      - PsychologicalSafety
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
+
   - name: SDC_Misperception_Democratic
     desc: first test
     playerCount: 2
@@ -50,7 +113,7 @@ treatments:
             file: projects/SDC_behavior/ban_assault_rifles_survey.md
           - type: submitButton
 
-      - name: Misperception Democratic
+      - name: Treatment
         duration: 900
         elements:
           - name: Misperception Democratic Qualtrics Survey - Democrat
@@ -97,7 +160,6 @@ treatments:
       - AutonomyNeedSatisfaction
       - RelatednessNeedSatisfaction
       - ConstructiveListeningBehaviorsSelf
-      - Demographics
 
   - name: SDC_Contact_Project
     desc: Dyadic contact project intervention
@@ -121,7 +183,14 @@ treatments:
             file: projects/SDC_behavior/ban_assault_rifles_survey.md
           - type: submitButton
 
-      - name: Misperception Democratic
+      - name: Treatment
+        duration: 900
+        elements:
+          - name: Contact project video
+            type: video
+            url: https://youtu.be/t9isOc9Gy9Q
+
+      - name: Treatment
         duration: 900
         elements:
           - name: Misperception Democratic Qualtrics Survey - Democrat
@@ -168,7 +237,6 @@ treatments:
       - AutonomyNeedSatisfaction
       - RelatednessNeedSatisfaction
       - ConstructiveListeningBehaviorsSelf
-      - Demographics
 
   - name: SDC_Common_Identity
     desc: Dyadic contact project intervention
@@ -192,7 +260,7 @@ treatments:
             file: projects/SDC_behavior/ban_assault_rifles_survey.md
           - type: submitButton
 
-      - name: Misperception Democratic
+      - name: Treatment
         duration: 900
         elements:
           - name: Misperception Democratic Qualtrics Survey - Democrat
@@ -239,7 +307,76 @@ treatments:
       - AutonomyNeedSatisfaction
       - RelatednessNeedSatisfaction
       - ConstructiveListeningBehaviorsSelf
-      - Demographics
+
+  - name: SDC_Misperception_Film
+    desc: Dyadic contact project intervention
+    playerCount: 2
+    assignPositionsBy: random
+
+    gameStages:
+      - name: Issue Presurvey
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/gov_reduce_income_inequality_survey.md
+          - type: separator
+          - type: prompt
+            file: shared/ANES_2020/protest_unrest_survey.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/abort_SPCT_merged.md
+          - type: separator
+          - type: prompt
+            file: projects/SDC_behavior/ban_assault_rifles_survey.md
+          - type: submitButton
+
+      - name: Treatment
+        duration: 900
+        elements:
+          - name: Misperception Democratic Qualtrics Survey - Democrat
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Film
+              - key: party
+                value: dem
+            showToPositions:
+              - 0
+          - name: Misperception Democratic Qualtrics Survey - Republican
+            type: qualtrics
+            url: https://sshs.qualtrics.com/jfe/form/SV_6VjWZrKyGaCI5IW
+            params:
+              - key: Condition
+                value: Misperception_Film
+              - key: party
+                value: rep
+            showToPositions:
+              - 1
+
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: projects/SDC_behavior/urban_unrest_discussion.md
+          - type: separator
+            style: thin
+
+      - name: Attitude Postsurvey
+        duration: 120
+        elements:
+          - shared/ANES_2020/protest_unrest_survey.md
+          - type: submitButton
+
+    exitSurveys:
+      - PartisanFeelingThermometerUS
+      - PsychologicalSafety
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
 
   - name: SDC_Misperception_Film
     desc: Dyadic contact project intervention
@@ -310,12 +447,10 @@ treatments:
       - AutonomyNeedSatisfaction
       - RelatednessNeedSatisfaction
       - ConstructiveListeningBehaviorsSelf
-      - Demographics
 
-  - name: SDC_Misperception_Film
-    desc: Dyadic contact project intervention
-    playerCount: 2
-    assignPositionsBy: random
+  - name: Solo Fallback
+    desc: No discussion condition, for leftover folks
+    playerCount: 1
 
     gameStages:
       - name: Issue Presurvey
@@ -358,15 +493,6 @@ treatments:
             showToPositions:
               - 1
 
-      - name: Discussion
-        duration: 600
-        chatType: video
-        elements:
-          - type: prompt
-            file: projects/SDC_behavior/urban_unrest_discussion.md
-          - type: separator
-            style: thin
-
       - name: Attitude Postsurvey
         duration: 120
         elements:
@@ -375,10 +501,3 @@ treatments:
 
     exitSurveys:
       - PartisanFeelingThermometerUS
-      - PsychologicalSafety
-      - ConstructiveListeningBehaviors
-      - DiscussionSelfInsight
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - ConstructiveListeningBehaviorsSelf
-      - Demographics

@@ -1,11 +1,11 @@
 ---
 name: projects/example/icebreaker.md
-type: noResponse
+type: openResponse
 ---
 
 # Icebreaker
 
-Please introduce yourselves to one another, and find 2 things you all have in common.
+Please introduce yourselves to one another, and find 3 things you all have in common.
 
 For example:
 
@@ -17,4 +17,11 @@ For example:
 - etc.
 
 
+*Please write your answers below*
+
 ---
+
+> We have in common:
+> 1. 
+> 2. 
+> 3. 

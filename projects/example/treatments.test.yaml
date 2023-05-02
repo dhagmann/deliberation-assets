@@ -366,11 +366,7 @@ treatments:
 
           - type: prompt
             file: projects/bad_influence/police_involve_discussion.md
-            displayTime: 185
-          - type: audio
-            file: shared/counter_bell.mp3
-            displayTime: 185
-            hideTime: 190
+            displayTime: 180
 
           - type: submitButton
             displayTime: 400

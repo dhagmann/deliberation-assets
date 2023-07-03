@@ -7,8 +7,7 @@ jobs:
   s3Backup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: S3 Backup
         uses: Watts-Lab/deliberation-assets@main
         env:

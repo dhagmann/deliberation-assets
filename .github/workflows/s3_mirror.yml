@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout
       - name: S3 Backup
-        uses: Watts-lab/deliberation-assets
+        uses: Watts-lab/deliberation-assets@main
         env:
           ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
           MIRROR_TARGET: ${{ secrets.MIRROR_TARGET }}

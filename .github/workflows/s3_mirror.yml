@@ -7,9 +7,9 @@ jobs:
   s3Backup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: S3 Backup
-        uses: Watts-Lab/deliberation-assets@main
+        uses: peter-evans/s3-backup@v1
         env:
           ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
           MIRROR_TARGET: ${{ secrets.MIRROR_TARGET }}

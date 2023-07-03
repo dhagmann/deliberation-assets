@@ -7,7 +7,10 @@ jobs:
   s3Backup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
       - name: S3 Backup
         uses: Watts-lab/deliberation-assets@main
         env:

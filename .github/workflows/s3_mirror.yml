@@ -8,10 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
-        with:
-          fetch-depth: 0
-          repository: Watts-Lab/deliberation-assets
+        uses: actions/checkout
       - name: S3 Backup
         uses: Watts-Lab/deliberation-assets@main
         env:

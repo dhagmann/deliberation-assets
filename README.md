@@ -2,7 +2,7 @@
 This repository contains assets served to participants in deliberation experiments.
 
 ## License
-The collection presented here is the work of a variety of authors. Unless otherwise specified in 'README.md`or`LICENSE` files within subfolders, the original authors retain all rights to the materials presented.
+The collection presented here is the work of a variety of authors. Unless otherwise specified in `README.md`or`LICENSE` files within subfolders, the original authors retain all rights to the materials presented.
 
 
 ## Production Usage

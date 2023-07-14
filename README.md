@@ -1,27 +1,35 @@
-[![CC BY 4.0][cc-by-shield]][cc-by]
-
-This work is licensed under a
-[Creative Commons Attribution 4.0 International License][cc-by].
-
-[![CC BY 4.0][cc-by-image]][cc-by]
-
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
-
+# Deliberation Assets
 This repository contains assets served to participants in deliberation experiments.
+
+## License
+The collection presented here is the work of a variety of authors. Unless otherwise specified in 'README.md`or`LICENSE` files within subfolders, the original authors retain all rights to the materials presented.
+
+
+## Production Usage
 
 This repo is synced to a CDN, but also provides version control for files, so that
 we can refer to the precise version of a file when tracing the data.
 
+## Dev Usage
+
 During dev, you can start this as a local webserver by running:
 
+```bash
+npx http-server --cors -a localhost -p 9091
 ```
-npx http-server --cors -a localhost -p 9090
+or:
+
+```bash
+npx http-server --cors -a 127.0.0.1 -p 9091
 ```
 
+or:
+
+```bash
 npx serve -l 9091
+```
 
+In the deliberation-empirica admin, specify the cdn as:
 ```json
 {
   "batchName": "dev",

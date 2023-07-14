@@ -67,3 +67,21 @@ Running actual trials with prolific participants:
   "closeDate": "06 Mar 2023 16:30:00 EST"
 }
 ```
+
+```json
+{
+  "batchName": "demo",
+  "useData": "false",
+  "treatmentFile": "projects/weinstein_listening/treatments.weinstein.yaml",
+  "dispatchWait": 10,
+  "treatments": [
+    "weinstein_listener_speaker",
+    "weinstein_speaker_speaker_control",
+    "weinstein_no_training_control"
+  ],
+  "introSequence": "cross_party_match",
+  "platformConsent": "US",
+  "consentAddendum": "projects/weinstein_listening/readingConsentAddendum.md",
+  "launchDate": "06 Mar 2023 14:25:00 EST"
+}
+```

@@ -343,6 +343,8 @@ treatments:
         elements:
           - type: video
             url: https://youtu.be/t9isOc9Gy9Q
+          - type: submitButton
+            displayTime: 10
       - name: Pre-discussion instructions
         duration: 45
         elements:
@@ -369,7 +371,75 @@ treatments:
             displayTime: 180
 
           - type: submitButton
+            displayTime: 10
+    exitSurveys:
+      - DiscussionSelfInsight
+      - Demographics
+
+treatmentTemplates:
+  - name: multiplayer_template
+    desc: Demo for showing off what the deliberation project can do.
+    playerCount: 3
+    gameStages:
+      - name: Pretest
+        duration: 150
+        elements:
+          - projects/bad_influence/police_involve_survey.md
+          - projects/bad_influence/police_racism_survey.md
+          - projects/bad_influence/police_anes_riot_survey.md
+          - type: submitButton
+      - name: Traing Video
+        duration: 600
+        elements:
+          - type: video
+            url: { { trainingVideoURL } }
+      - name: Pre-discussion instructions
+        duration: 45
+        elements:
+          - projects/example/preDiscussionInstructions.md
+          - type: submitButton
+      - name: Discussion
+        duration: 600
+        chatType: video
+        elements:
+          - type: prompt
+            file: { { dicussionTopic } }
+            displayTime: 180
+
+          - type: submitButton
             displayTime: 400
     exitSurveys:
       - DiscussionSelfInsight
       - Demographics
+
+populateTreatments:
+  - name: treatment video A
+    desc: A treatment with a video
+    treatmentTemplate: multiplayer_template
+    params:
+      - key: trainingVideoURL
+        value: https://youtu.be/t9isOc9Gy9Q
+      - key: dicussionTopic
+        value: projects/bad_influence/police_involve_discussion.md
+
+  - name: treatment video B
+    desc: A treatment with a different video
+    treatmentTemplate: multiplayer_template
+    params:
+      - key: trainingVideoURL
+        value: https://youtu.be/t9isOc9Gy9Q
+      - key: dicussionTopic
+        value: projects/bad_influence/police_racism_discussion.md
+
+  - name: treatment video list
+    desc: A treatment with a video from a list
+    treatmentTemplate: multiplayer_template
+    params:
+      - key: trainingVideoURL
+        values: [https://youtu.be/t9isOc9Gy9Q, https://youtu.be/QC8iQqtG0hg]
+      - key: dicussionTopic
+        value:
+          [
+            projects/bad_influence/police_involve_discussion.md,
+            projects/bad_influence/police_racism_discussion.md,
+          ]

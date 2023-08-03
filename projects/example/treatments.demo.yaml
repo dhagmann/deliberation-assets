@@ -11,11 +11,16 @@ introSequences:
       - name: Test Prompts
         elements:
           - type: prompt
+            file: projects/example/instructions_survey.md
+          - type: separator
+          - type: prompt
             file: projects/example/ban_assault_rifles_survey.md
           - type: separator
+            style: thin
           - type: prompt
             file: projects/example/gov_guarantees_job_survey.md
           - type: separator
+            style: thin
           - type: prompt
             file: projects/example/gov_reduce_income_inequality_survey.md
           - type: separator
@@ -103,7 +108,7 @@ treatments:
             hideTime: 60
 
           - type: submitButton
-            displayTime: 30
+            displayTime: 10
 
       - name: Qualtrics survey
         duration: 60

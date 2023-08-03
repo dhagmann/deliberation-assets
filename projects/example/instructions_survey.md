@@ -4,6 +4,8 @@ type: noResponse
 notes: discussion prompt for ban_assault_rifles_survey.md
 ---
 
-# Please consider the following topic:
+# Please answer the following questions
+
+If you aren't sure, make your best guess
 
 ---

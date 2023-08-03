@@ -13,7 +13,7 @@ To run a single-player demo, use a variation on the config:
   "useIntroSequence": "cypress_standard",
   "platformConsent": "US",
   "consentAddendum": "projects/example/consentAddendum.md",
-  "launchDate": "01 Mar 2023 23:30:00 EST",
+  "launchDate": "01 Mar 2023 23:30:00 EST"
 }
 ```
 
@@ -26,15 +26,34 @@ To run a single-player demo, use a variation on the config:
 }
 ```
 
-
 ## Demo
+
 ```json
 {
   "batchName": "labDemo",
   "useData": "false",
-  "treatmentFile": "projects/example/treatments.test.yaml",
+  "treatmentFile": "projects/example/treatments.demo.yaml",
   "dispatchWait": 1,
-  "useIntroSequence": "cypress_standard",
-  "useTreatments": ["multiplayer_demo"]
+  "introSequence": "demoIntro",
+  "treatments": ["demo_2p"],
+  "cdn": "test",
+  "platformConsent": "US",
+  "consentAddendum": "projects/example/consentAddendum.md",
+  "launchDate": "14 Jul 2023 18:45:00 CEST"
+}
+```
+
+```json
+{
+  "batchName": "labDemo",
+  "useData": "false",
+  "treatmentFile": "projects/example/treatments.demo.yaml",
+  "dispatchWait": 1,
+  "introSequence": "demoIntro",
+  "treatments": ["demo_2p"],
+  "cdn": "test",
+  "platformConsent": "US",
+  "consentAddendum": "projects/example/consentAddendum.md",
+  "videoStorageLocation": "deliberation-lab-recordings-test"
 }
 ```

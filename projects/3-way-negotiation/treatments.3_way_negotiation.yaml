@@ -1,0 +1,111 @@
+introSequences:
+
+treatments:
+  - name: Baseline
+    desc: Run through the entire negotiation sequence.
+    playerCount: 3
+    assignPositionsBy: random
+
+    gameStages:
+      - name: Role Assignment and General Instructions
+        duration: 180
+        desc: Assign participants a role
+        elements:
+          - projects/3-way-negotiation/01_instructions_header.md
+          - type: prompt
+            file: projects/3-way-negotiation/01a_instructions_3_way_negotiation.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/3-way-negotiation/01b_instructions_3_way_negotiation.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/3-way-negotiation/01c_instructions_3_way_negotiation.md
+            showToPositions:
+              - 2
+          - projects/3-way-negotiation/02_payoff_table.md
+          - type: submitButton
+
+      - name: Reading Comprehension
+        duration: 180
+        desc: Check that participants understand the rules.
+        elements:
+          - projects/3-way-negotiation/04_readingcomprehension_01setup.md
+          - projects/3-way-negotiation/04_readingcomprehension_q01.md
+          - projects/3-way-negotiation/04_readingcomprehension_q02.md
+          - projects/3-way-negotiation/04_readingcomprehension_q03.md
+          - projects/3-way-negotiation/04_readingcomprehension_q04.md
+          - projects/3-way-negotiation/01_repeated_instructions_header.md
+          - type: prompt
+            file: projects/3-way-negotiation/01a_instructions_3_way_negotiation.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/3-way-negotiation/01b_instructions_3_way_negotiation.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/3-way-negotiation/01c_instructions_3_way_negotiation.md
+            showToPositions:
+              - 2
+          - projects/3-way-negotiation/02_payoff_table.md
+          - type: submitButton
+
+      - name: Main Discussion
+        duration: 600
+        desc: Main Discussion Time
+        chatType: video
+        elements: 
+          - type: prompt
+            file: projects/3-way-negotiation/03a_rep_a.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/3-way-negotiation/03b_rep_b.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/3-way-negotiation/03c_rep_c.md
+            showToPositions:
+              - 2
+          - projects/3-way-negotiation/04_instructions_3_way_negotation_in_round.md
+          - projects/3-way-negotiation/02_payoff_table.md
+
+
+      - name: Post-Survey (Submission of Deal Sheet)
+        duration: 60
+        desc: Participants submit the agreement they reached.
+        elements:
+          - projects/3-way-negotiation/05_response_submission.md
+          - projects/3-way-negotiation/06_multipleChoice_agreement_submission.md
+          - projects/3-way-negotiation/06a_openResponse_A_payoff.md
+          - projects/3-way-negotiation/06b_openResponse_B_payoff.md
+          - projects/3-way-negotiation/06c_openResponse_C_payoff.md
+          - type: submitButton
+
+      - name: Subjective Value Index (SVI)
+        duration: 180
+        desc: Measurement of subjective value for negotiation.
+        elements:
+          - projects/3-way-negotiation/07_SVI_overview.md
+          - projects/3-way-negotiation/07_SVI_q01.md
+          - projects/3-way-negotiation/07_SVI_q02.md
+          - projects/3-way-negotiation/07_SVI_q03.md
+          - projects/3-way-negotiation/07_SVI_q04.md
+          - projects/3-way-negotiation/07_SVI_q05.md
+          - projects/3-way-negotiation/07_SVI_q06.md
+          - projects/3-way-negotiation/07_SVI_q07.md
+          - projects/3-way-negotiation/07_SVI_q08.md
+          - projects/3-way-negotiation/07_SVI_q09.md
+          - projects/3-way-negotiation/07_SVI_q10.md
+          - projects/3-way-negotiation/07_SVI_q11.md
+          - projects/3-way-negotiation/07_SVI_q12.md
+          - projects/3-way-negotiation/07_SVI_q13.md
+          - projects/3-way-negotiation/07_SVI_q14.md
+          - projects/3-way-negotiation/07_SVI_q15.md
+          - projects/3-way-negotiation/07_SVI_q16.md
+          - type: submitButton
+
+    exitSurveys:
+      - Demographics

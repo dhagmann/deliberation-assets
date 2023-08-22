@@ -4,8 +4,6 @@ type: noResponse
 notes: Instructons for the 3-way negotiation activity, displayed to Participants assigned to Organization C.
 ---
 
-# Please read the following instructions.
-
 Organizations A, B and C, each have designated a representative to participate in a three-way negotiation.
 
 # You have been selected to represent **ORGANIZATION C**.

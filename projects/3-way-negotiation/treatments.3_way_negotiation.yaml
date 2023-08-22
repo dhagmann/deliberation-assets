@@ -72,7 +72,6 @@ treatments:
           - projects/3-way-negotiation/04_instructions_3_way_negotation_in_round.md
           - projects/3-way-negotiation/02_payoff_table_img.md
 
-
       - name: Post-Survey (Submission of Deal Sheet)
         duration: 60
         desc: Participants submit the agreement they reached.

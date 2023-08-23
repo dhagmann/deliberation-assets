@@ -1,5 +1,3 @@
-introSequences:
-
 treatments:
   - name: Baseline
     desc: Run through the entire negotiation sequence.

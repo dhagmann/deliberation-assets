@@ -55,7 +55,7 @@ treatments:
       - name: Main Discussion
         duration: 600
         desc: Main Discussion Time
-        chatType: video
+        chatType: text
         elements: 
           - type: prompt
             file: projects/3-way-negotiation/03a_rep_a.md

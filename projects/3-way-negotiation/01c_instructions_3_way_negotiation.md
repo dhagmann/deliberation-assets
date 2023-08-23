@@ -1,7 +1,7 @@
 ---
 name: projects/3-way-negotiation/01c_instructions_3_way_negotiation.md
 type: noResponse
-notes: Instructons for the 3-way negotiation activity, displayed to Participants assigned to Organization C.
+notes: Instructions for the 3-way negotiation activity, displayed to Participants assigned to Organization C.
 ---
 
 Organizations A, B and C, each have designated a representative to participate in a three-way negotiation.

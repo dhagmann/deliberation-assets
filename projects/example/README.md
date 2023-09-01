@@ -43,17 +43,52 @@ To run a single-player demo, use a variation on the config:
 }
 ```
 
+# Local Demo
+
 ```json
 {
-  "batchName": "labDemo",
+  "batchName": "demo",
   "useData": "false",
   "treatmentFile": "projects/example/treatments.demo.yaml",
   "dispatchWait": 1,
   "introSequence": "demoIntro",
   "treatments": ["demo_2p"],
-  "cdn": "test",
+  "cdn": "local",
   "platformConsent": "US",
   "consentAddendum": "projects/example/consentAddendum.md",
-  "videoStorageLocation": "deliberation-lab-recordings-test"
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "demo"
+    }
+  ]
+}
+```
+
+# Prod demo
+
+```json
+{
+  "batchName": "demo",
+  "useData": "false",
+  "treatmentFile": "projects/example/treatments.demo.yaml",
+  "dispatchWait": 1,
+  "introSequence": "demoIntro",
+  "treatments": ["demo_2p"],
+  "cdn": "prod",
+  "platformConsent": "US",
+  "consentAddendum": "projects/example/consentAddendum.md",
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "demo"
+    }
+  ]
 }
 ```

@@ -31,7 +31,7 @@ To run a single-player demo, use a variation on the config:
 ```json
 {
   "batchName": "labDemo",
-  "useData": "false",
+  "preregister": "false",
   "treatmentFile": "projects/example/treatments.demo.yaml",
   "dispatchWait": 1,
   "introSequence": "demoIntro",
@@ -48,7 +48,7 @@ To run a single-player demo, use a variation on the config:
 ```json
 {
   "batchName": "demo",
-  "useData": "false",
+  "preregister": "false",
   "treatmentFile": "projects/example/treatments.demo.yaml",
   "dispatchWait": 1,
   "introSequence": "demoIntro",
@@ -73,7 +73,7 @@ To run a single-player demo, use a variation on the config:
 ```json
 {
   "batchName": "demo",
-  "useData": "false",
+  "preregister": "false",
   "treatmentFile": "projects/example/treatments.demo.yaml",
   "dispatchWait": 1,
   "introSequence": "demoIntro",

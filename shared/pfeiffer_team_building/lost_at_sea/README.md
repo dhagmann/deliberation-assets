@@ -11,7 +11,7 @@ gameStages:
   - name: Lost-at-sea Context
     duration: 45
     elements:
-      - context.md
+      - shared/pfeiffer_team_building/lost_at_sea/context.md
       - type: submitButton
 
   - name:

@@ -5,7 +5,7 @@ author: Xinlan Emily Hu
 modified: August 22, 2023
 ---
 
-If two of the three parties reach an agreement, how many parties must accept the deal in order for it to be valid?
+How many parties must accept a deal in order for it to be valid?
 
 ---
 

@@ -4,7 +4,7 @@ type: noResponse
 notes: Answer to the first reading comprehension question
 ---
 
-## Answer: 121.
+## Answer to Q1: 121.
 
 A three-way deal between A, B, and C would result in a sharing a total of 121 points.
 

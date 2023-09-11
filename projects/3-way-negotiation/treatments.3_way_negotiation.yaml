@@ -68,6 +68,9 @@ treatments:
         chatType: text
         elements: 
           - type: prompt
+            file: projects/3-way-negotiation/03_initial_instructions.md
+            hideTime: 30
+          - type: prompt
             file: projects/3-way-negotiation/03a_rep_a.md
             showToPositions:
               - 0

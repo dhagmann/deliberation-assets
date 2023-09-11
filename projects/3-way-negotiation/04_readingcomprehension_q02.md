@@ -5,7 +5,7 @@ author: Xinlan Emily Hu
 modified: August 22, 2023
 ---
 
-How many parties must accept a deal in order for it to be valid?
+#### (Q2) How many parties must accept a deal in order for it to be valid?
 
 ---
 

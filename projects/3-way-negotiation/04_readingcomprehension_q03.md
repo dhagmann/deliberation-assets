@@ -6,7 +6,7 @@ author: Xinlan Emily Hu
 modified: August 22, 2023
 ---
 
-Please examine the Schedule of Benefits. How many MORE points does a deal between A and B generate, compared to a deal between A and C?
+#### (Q3) Please examine the Schedule of Benefits. How many MORE points does a deal between A and B generate, compared to a deal between A and C?
 
 ---
 

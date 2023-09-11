@@ -4,7 +4,7 @@ type: noResponse
 notes: Answer to the third reading comprehension question
 ---
 
-# Answer: 34.
+## Answer: 34.
 
 According to the Schedule of Benefits, a deal between A and B generates 118 points. A deal between A and C generates 84 points. Therefore, 118-84 = 34.
 

@@ -1,6 +1,7 @@
 ---
 name: projects/3-way-negotiation/04_readingcomprehension_q03.md
 type: openResponse
+rows: 1
 author: Xinlan Emily Hu
 modified: August 22, 2023
 ---

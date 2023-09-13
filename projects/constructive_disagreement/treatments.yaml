@@ -17,7 +17,7 @@ treatments:
         type: prompt
         duration: 60
         elements:
-          - projects/constructive_disagreement/intro.md
+          - projects/constructive_disagreement/01_intro.md
           - type: submitButton
             buttonText: Start Exercise
             displayTime: 10
@@ -45,11 +45,12 @@ treatments:
 
       - name: Initial Group Ranking
         duration: 420
+        chatType: video
         elements:
           - projects/constructive_disagreement/03_groupRankingInstructions.md
           - type: separator
           - type: prompt
-            file: shared/pfeiffer_team_building/lost_at_sea/group_ranking.md
+            file: shared/pfeiffer_team_building/lost_at_sea/task.md
             shared: true
             name: initialGroupRanking
           - type: submitButton
@@ -59,19 +60,21 @@ treatments:
       - name: Justify Your Solutions
         duration: 300
         elements:
-          - projects/constructive_disagreement/04_justifyInstructions.md
+          - projects/constructive_disagreement/04_justifyIndividualSolutions.md
           - type: submitButton
-            buttonText: Continue
+            buttonText: Submit
             displayTime: 90
 
       - name: Submit Feedback
         duration: 300
         elements:
           - projects/constructive_disagreement/05_feedbackInstructions.md
+          - type: separator
           - type: prompt
             file: projects/constructive_disagreement/06_feedbackImpressions.md
             name: feedbackImpressions
           - type: separator
+            style: thin
           - type: prompt
             file: projects/constructive_disagreement/07_feedbackImprovements.md
             name: feedbackImprovements
@@ -83,14 +86,40 @@ treatments:
         duration: 300
         elements:
           - projects/constructive_disagreement/08_receiveFeedbackInstructions.md
+          - type: separator
+            style: thin
+
           - type: display
             promptName: feedbackImpressions
+            position: 0
+            showToPositions:
+              - 1
+          - type: display
+            promptName: feedbackImpressions
+            position: 1
+            showToPositions:
+              - 0
+
           - type: separator
+            style: thin
+
           - type: display
             promptName: feedbackImprovements
+            position: 1
+            showToPositions:
+              - 0
+          - type: display
+            promptName: feedbackImprovements
+            position: 0
+            showToPositions:
+              - 1
+
+          - type: separator
+            style: thin
+
           - type: submitButton
             buttonText: Continue
-            displayTime: 120
+            displayTime: 60
 
       - name: Second Group Ranking
         duration: 420
@@ -98,7 +127,7 @@ treatments:
           - projects/constructive_disagreement/09_secondGroupRankingInstructions.md
           - type: separator
           - type: prompt
-            file: shared/pfeiffer_team_building/lost_at_sea/group_ranking.md
+            file: shared/pfeiffer_team_building/lost_at_sea/task.md
             shared: true
             name: secondGroupRanking
           - type: submitButton
@@ -111,7 +140,7 @@ treatments:
           - projects/constructive_disagreement/99_consentClassroomAid.md
           - type: submitButton
             buttonText: Submit
-            displayTime: 30
+            displayTime: 10
 
     exitSurveys:
       - ConstructiveListeningBehaviors

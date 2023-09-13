@@ -1,5 +1,5 @@
 ---
-name: projects/imperial_conflict_styles/consentClassroomAid.md
+name: projects/constructive_disagreement/consentClassroomAid.md
 type: multipleChoice
 ---
 

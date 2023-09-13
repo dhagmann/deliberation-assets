@@ -1,0 +1,122 @@
+introSequences:
+  - name: baseline
+    desc: Basic psychometrics
+    introSteps:
+      - name: Ten Item Personality Inventory
+        elements:
+          - type: survey
+            surveyName: TIPI
+
+treatments:
+  - name: baseline
+    desc: Baseline treatment
+    playerCount: 2
+    assignPositionsBy: random
+    gameStages:
+      - name: Intro
+        type: prompt
+        duration: 60
+        elements:
+          - projects/constructive_disagreement/intro.md
+          - type: submitButton
+            buttonText: Start Exercise
+            displayTime: 10
+
+      - name: Context
+        duration: 120
+        elements:
+          - shared/pfeiffer_team_building/lost_at_sea/context.md
+          - type: submitButton
+            buttonText: Continue
+            displayTime: 15
+
+      - name: Individual Ranking
+        duration: 300
+        elements:
+          - projects/constructive_disagreement/02_individualRankingInstructions.md
+          - type: separator
+          - type: prompt
+            file: shared/pfeiffer_team_building/lost_at_sea/task.md
+            shared: false
+            name: individualRanking
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 90
+
+      - name: Initial Group Ranking
+        duration: 420
+        elements:
+          - projects/constructive_disagreement/03_groupRankingInstructions.md
+          - type: separator
+          - type: prompt
+            file: shared/pfeiffer_team_building/lost_at_sea/group_ranking.md
+            shared: true
+            name: initialGroupRanking
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 120
+
+      - name: Justify Your Solutions
+        duration: 300
+        elements:
+          - projects/constructive_disagreement/04_justifyInstructions.md
+          - type: submitButton
+            buttonText: Continue
+            displayTime: 90
+
+      - name: Submit Feedback
+        duration: 300
+        elements:
+          - projects/constructive_disagreement/05_feedbackInstructions.md
+          - type: prompt
+            file: projects/constructive_disagreement/06_feedbackImpressions.md
+            name: feedbackImpressions
+          - type: separator
+          - type: prompt
+            file: projects/constructive_disagreement/07_feedbackImprovements.md
+            name: feedbackImprovements
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 120
+
+      - name: Read Feedback
+        duration: 300
+        elements:
+          - projects/constructive_disagreement/08_receiveFeedbackInstructions.md
+          - type: display
+            promptName: feedbackImpressions
+          - type: separator
+          - type: display
+            promptName: feedbackImprovements
+          - type: submitButton
+            buttonText: Continue
+            displayTime: 120
+
+      - name: Second Group Ranking
+        duration: 420
+        elements:
+          - projects/constructive_disagreement/09_secondGroupRankingInstructions.md
+          - type: separator
+          - type: prompt
+            file: shared/pfeiffer_team_building/lost_at_sea/group_ranking.md
+            shared: true
+            name: secondGroupRanking
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 120
+
+      - name: Consent Classroom Aid
+        duration: 120
+        elements:
+          - projects/constructive_disagreement/99_consentClassroomAid.md
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 30
+
+    exitSurveys:
+      - ConstructiveListeningBehaviors
+      - DiscussionSelfInsight
+      - AutonomyNeedSatisfaction
+      - RelatednessNeedSatisfaction
+      - ConstructiveListeningBehaviorsSelf
+      - Demographics

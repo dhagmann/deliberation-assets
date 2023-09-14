@@ -31,7 +31,7 @@ Running actual trials with prolific participants:
 ```json
 {
   "batchName": "study_2_20230302_prolific",
-  "useData": false,
+  "preregister": false,
   "treatmentFile": "projects/weinstein_listening/treatments.weinstein.yaml",
   "dispatchWait": 10,
   "treatments": [
@@ -68,7 +68,7 @@ Running actual trials with prolific participants:
 ```json
 {
   "batchName": "20230801_prolific_dem40_rep40",
-  "useData": "true",
+  "preregister": "true",
   "treatmentFile": "projects/weinstein_listening/treatments.weinstein.yaml",
   "dispatchWait": 15,
   "treatments": [

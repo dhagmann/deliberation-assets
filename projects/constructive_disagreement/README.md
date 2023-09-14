@@ -10,7 +10,7 @@
 ```json
 {
   "batchName": "demo",
-  "treatmentFile": "projects/example/treatments.test.yaml",
+  "treatmentFile": "projects/constructive_disagreement/treatments.yaml",
   "launchDate": "",
   "dispatchWait": 1,
   "introSequence": "baseline",
@@ -18,27 +18,13 @@
   "cdn": "local",
   "treatments": ["baseline"],
   "videoStorageLocation": "deliberation-lab-recordings-test",
-  "preregister": true,
+  "preregister": false,
   "dataRepos": [
     {
       "owner": "Watts-Lab",
       "repo": "deliberation-data-test",
       "branch": "main",
       "directory": "cypress_test_exports"
-    },
-    {
-      "owner": "Watts-Lab",
-      "repo": "deliberation-data-test",
-      "branch": "main",
-      "directory": "cypress_test_exports2"
-    }
-  ],
-  "preregRepos": [
-    {
-      "owner": "Watts-Lab",
-      "repo": "deliberation-data-test",
-      "branch": "main",
-      "directory": "preregistration"
     }
   ]
 }

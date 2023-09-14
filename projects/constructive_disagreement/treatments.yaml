@@ -123,6 +123,7 @@ treatments:
 
       - name: Second Group Ranking
         duration: 420
+        chatType: video
         elements:
           - projects/constructive_disagreement/09_secondGroupRankingInstructions.md
           - type: separator

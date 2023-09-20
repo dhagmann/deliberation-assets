@@ -6,7 +6,7 @@ notes: Set-up for all four reading comprehension questions
 
 # Please answer the following four questions.
 
-Before you proceed to the main negotiation, we want to make sure you fully understand the rules. Please answer the following four questions about the instructions you just read.
+Before you proceed to the main negotiation, we want to make sure you fully understand the rules. Please answer the following four questions about the instructions you just read. All four questions need to be correct before the "Submit" button will appear.
 
 To help remind you of the instructions, they are displayed again at the bottom of this page (below the four questions).
 

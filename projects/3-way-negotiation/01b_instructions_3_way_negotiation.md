@@ -4,9 +4,9 @@ type: noResponse
 notes: Instructions for the 3-way negotiation activity, displayed to Participants assigned to Organization B.
 ---
 
-Organizations A, B and C, each have designated a representative to participate in a three-way negotiation.
-
 # You have been selected to represent **ORGANIZATION B**.
+
+Below is one last reminder of the instructions and rules.
 
 The three groups have been told by a higher authority that there are benefits to be had if they work together.  Indeed, if A, B and C can agree to work together they can share benefits totaling 121.  How they want to divide the benefits is up to them, but they will only receive these benefits if all three parties agree upon their exact allocation.  If only two of the parties agree to work together, there are lesser amounts of benefits available (see schedule at the bottom of this page).  
 

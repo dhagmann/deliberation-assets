@@ -1,3 +1,97 @@
+introSequences:
+  - name: 3_way_negotiation_intro
+    introSteps:
+      - name: General Instructions
+        desc: Generic instructions without assignment to organization.
+        elements:
+          - type: prompt
+            file: projects/3-way-negotiation/01_instructions_header.md
+          - type: prompt
+            file: projects/3-way-negotiation/01_instructions_3_way_negotiation_general.md
+          - type: prmompt
+            file: projects/3-way-negotiation/02_payoff_table.md
+          - type: submitButton
+            buttonText: Continue
+      - name: Reading Comprehension Questions
+        desc: Present four reading comprehension questions
+        elements:
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_01setup_general.md
+          - type: prompt
+            promptName: compQ2
+            file: projects/3-way-negotiation/04_readingcomprehension_q01.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_rc_incorrect.md
+            conditions:
+            - promptName: compQ1
+              comparator: notEqual
+              value: 121
+          - type: prompt
+            promptName: compQ2
+            file: projects/3-way-negotiation/04_readingcomprehension_q02.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_rc_incorrect.md
+            conditions:
+            - promptName: compQ1
+              comparator: notEqual
+              value: 2
+          - type: prompt
+            promptName: compQ3
+            file: projects/3-way-negotiation/04_readingcomprehension_q03.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_rc_incorrect.md
+            conditions:
+            - promptName: compQ1
+              comparator: notEqual
+              value: 34
+          - type: prompt
+            promptName: compQ4
+            file: projects/3-way-negotiation/04_readingcomprehension_q04.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_rc_incorrect.md
+            conditions:
+            - promptName: compQ1
+              comparator: notEqual
+              value: Maximize the benefits that MY organization can earn.
+          - type: submitButton
+            buttonText: Submit
+            conditions:
+            - promptName: compQ1
+              comparator: equal
+              value: 121
+            - promptName: compQ2
+              comparator: equal
+              value: 2
+            - promptName: compQ2
+              comparator: equal
+              value: 34
+            - promptName: compQ2
+              comparator: equal
+              value: Maximize the benefits that MY organization can earn.
+          - type: separator
+          - type: prompt
+            file: projects/3-way-negotiation/01_repeated_instructions_header.md
+          - type: prompt
+            file: projects/3-way-negotiation/01_instructions_3_way_negotiation_general.md
+          - type: prompt
+            file: projects/3-way-negotiation/02_payoff_table.md
+
+      - name: Reading Comprehension (Answers)
+        desc: Answers to reading comprehension questions
+        elements:
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_01answer_setup.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q01_answer.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q02_answer.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q03_answer.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q04_answer.md
+          - type: submitButton
+            buttonText: Continue
+
 treatments:
   - name: Baseline
     desc: Run through the entire negotiation sequence.
@@ -9,7 +103,6 @@ treatments:
         duration: 180
         desc: Assign participants a role
         elements:
-          - projects/3-way-negotiation/01_instructions_header.md
           - type: prompt
             file: projects/3-way-negotiation/01a_instructions_3_way_negotiation.md
             showToPositions:
@@ -23,43 +116,6 @@ treatments:
             showToPositions:
               - 2
           - projects/3-way-negotiation/02_payoff_table.md
-          - type: submitButton
-
-      - name: Reading Comprehension Questions
-        duration: 180
-        desc: Present four reading comprehension questions
-        elements:
-          - projects/3-way-negotiation/04_readingcomprehension_01setup_general.md
-          - projects/3-way-negotiation/04_readingcomprehension_q01.md
-          - projects/3-way-negotiation/04_readingcomprehension_q02.md
-          - projects/3-way-negotiation/04_readingcomprehension_q03.md
-          - projects/3-way-negotiation/04_readingcomprehension_q04.md
-          - type: separator
-          - projects/3-way-negotiation/01_repeated_instructions_header.md
-          - type: prompt
-            file: projects/3-way-negotiation/01a_instructions_3_way_negotiation.md
-            showToPositions:
-              - 0
-          - type: prompt
-            file: projects/3-way-negotiation/01b_instructions_3_way_negotiation.md
-            showToPositions:
-              - 1
-          - type: prompt
-            file: projects/3-way-negotiation/01c_instructions_3_way_negotiation.md
-            showToPositions:
-              - 2
-          - projects/3-way-negotiation/02_payoff_table.md
-          - type: submitButton
-
-      - name: Reading Comprehension (Answers)
-        duration: 60
-        desc: Answers to reading comprehension questions
-        elements:
-          - projects/3-way-negotiation/04_readingcomprehension_01answer_setup.md
-          - projects/3-way-negotiation/04_readingcomprehension_q01_answer.md
-          - projects/3-way-negotiation/04_readingcomprehension_q02_answer.md
-          - projects/3-way-negotiation/04_readingcomprehension_q03_answer.md
-          - projects/3-way-negotiation/04_readingcomprehension_q04_answer.md
           - type: submitButton
 
       - name: Main Discussion

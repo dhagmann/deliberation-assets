@@ -75,7 +75,10 @@ treatments:
 
       - name: Discussion
         duration: 600
-        chatType: video
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
         elements:
           - type: prompt
             file: projects/SDC_behavior/urban_unrest_discussion.md
@@ -145,7 +148,10 @@ treatments:
 
       - name: Discussion
         duration: 600
-        chatType: video
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
         elements:
           - type: prompt
             file: projects/SDC_behavior/urban_unrest_discussion.md
@@ -196,7 +202,10 @@ treatments:
 
       - name: Discussion
         duration: 600
-        chatType: video
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
         elements:
           - type: prompt
             file: projects/SDC_behavior/urban_unrest_discussion.md

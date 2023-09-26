@@ -1,0 +1,109 @@
+introSequences:
+
+treatments:
+  - name: baseline
+    desc: Baseline treatment
+    playerCount: 4
+    assignPositionsBy: random
+    gameStages:
+      - name: Instructions
+        type: prompt
+        duration: 180
+        elements:
+          - shared/hidden_profiles/baker_2010/instructions.md
+          - shared/hidden_profiles/baker_2010/job_posting.md
+          - shared/hidden_profiles/baker_2010/desired_qualifications.md
+          - type: submitButton
+            buttonText: Start Exercise
+            displayTime: 10
+
+      - name: Individual Answer
+        duration: 600
+        elements:
+          - shared/hidden_profiles/baker_2010/individual_instructions.md
+          - shared/hidden_profiles/baker_2010/desired_qualifications.md
+          - type: separator
+
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_1.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_2.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_3.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_4.md
+            showToPositions:
+              - 3
+
+          - type: separator
+
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/selection.md
+            shared: false
+            name: individualSelection
+
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 180
+            conditions:
+              - promptName: individualSelection
+                sourceType: prompt
+                comparator: exists
+                value: ""
+
+      - name: Group decision
+        duration: 1800
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+
+        elements:
+          - shared/hidden_profiles/baker_2010/discussion_instructions.md
+          - shared/hidden_profiles/baker_2010/desired_qualifications.md
+          - type: separator
+
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_1.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_2.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_3.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/packet_4.md
+            showToPositions:
+              - 3
+
+          - type: separator
+          - shared/hidden_profiles/baker_2010/reminder.md
+          - shared/hidden_profiles/baker_2010/shared_prompt_notice.md
+
+          - type: prompt
+            file: shared/hidden_profiles/baker_2010/selection.md
+            shared: true
+            name: groupSelection
+
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 300
+            conditions:
+              - promptName: groupSelection
+                sourceType: prompt
+                comparator: exists
+                position: shared
+                value: ""
+
+    exitSurveys:
+      - Demographics

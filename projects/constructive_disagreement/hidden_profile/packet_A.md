@@ -38,7 +38,7 @@ type: noResponse
 - Established influential contacts during time as M.P.
 - Feedback noted a perceived aloofness in Patel's faculty presentations.
 - Six-year absence from higher education.
-- Faculty research productivity at the university in Surrey increased under Patel' deanship.
+- Faculty research productivity at the university in Surrey increased under Patel's deanship.
 - Owns a condo in Port Isaac
 - Actively volunteers for two respected non-profit organizations: one focused on affordable housing and the other on advancing human rights.
 - Has little direct experience with student life issues on campus.

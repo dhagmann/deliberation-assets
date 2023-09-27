@@ -13,6 +13,6 @@ As a member of the 4-person search committee, your priority is to identify a new
 
 Following a meticulous selection process, you have narrowed down the pool of candidates to three individuals. The purpose of this meeting is to decide whom to invite as the next Director of LIEPH.
 
-Below, you will find notes prepared by your executive assistant. As per your customary practice, please review these thoroughly before the final selection committee meeting.
+In the following pages you will find notes prepared by your executive assistant. As per your customary practice, please review these thoroughly and identify your preferred candidate before the final selection committee meeting.
 
 ---

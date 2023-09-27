@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/hidden_profile/packet_A.md
+name: projects/constructive_disagreement/hidden_profile/packet_D.md
 type: noResponse
 ---
 
@@ -17,12 +17,12 @@ type: noResponse
 
 - National reputation for IT research among academics.
 - Recognized for IT expertise by business leaders.
-- Smith's spouse holds a Ph.D. in Spanish and occasionally teaches at the college level.
+- Feedback from faculty in past roles suggests a tendency to discourage new, innovative ideas.
+- Engages in IT consulting work.
 - In an interview, emphasized the importance of collaboration with campus leaders and faculty.
 - Exhibited strong oratory skills during faculty presentations.
-- Stepped down as Dean at the northern university before fundraising for the business school building began.
-- As Provost, teaches one class per year.
-- Smith was not primarily responsible for securing the £15 million donation to the Welsh business college.
+- Likes to garden.
+- Has been observed drinking heavily in public, including at university events.
 
 # Candidate 2: Patel
 
@@ -35,14 +35,12 @@ type: noResponse
 
 ## Additional Insights from the Interview Process:
 
-- Established influential contacts during time as M.P.
 - Feedback noted a perceived aloofness in Patel's faculty presentations.
 - Six-year absence from higher education.
-- Faculty research productivity at the university in Surrey increased under Patel' deanship.
-- Owns a condo in Port Isaac
-- Actively volunteers for two respected non-profit organizations: one focused on affordable housing and the other on advancing human rights.
+- Enjoys golf and tennis.
+- Played a key role in securing a multi-million pound federal grant for a Surrey-based non-profit institution.
+- Is divorced and remarried; has two children.
 - Has little direct experience with student life issues on campus.
-- Maintains a vegetarian diet.
 - As an M.P., was accused of changing positions on issues for political gain.
 
 # Candidate 3: Jones
@@ -58,9 +56,9 @@ type: noResponse
 
 - Pleasant personality in social settings.
 - Regarded by partners as a strategic thinker in the law firm's direction.
-- Colleagues from the law firm note occasional sudden outbursts of temper.
-- Resides in the local area.
+- Law firm sources attribute a higher turnover rate to Jones' somewhat abrasive leadership style.
+- Feedback from fellow trustees suggests tension between the current provost and Jones.
+- Reads mystery novels and biographies.
 - One of the more active members of LIEPH’s Board of Trustees.
 - Well-received as a teacher, based on student enrollment and evaluations.
-- Is married with a grown child.
-- Law firm sources attribute a higher turnover rate to Jones' somewhat abrasive leadership style.
+- Enjoys cooking.

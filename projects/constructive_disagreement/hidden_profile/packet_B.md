@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/hidden_profile/packet_B.md
 type: noResponse
 ---
 
-# Candidate 1: Smith
+# 👤 Candidate 1: Smith
 
 ## Resume Highlights:
 
@@ -24,7 +24,7 @@ type: noResponse
 - Has family connections in London.
 - Smith was not primarily responsible for securing the £15 million donation to the Welsh business college.
 
-# Candidate 2: Patel
+# 👤 Candidate 2: Patel
 
 ## Resume Highlights:
 
@@ -44,7 +44,7 @@ type: noResponse
 - Enjoys golf and tennis.
 - As an M.P., was accused of changing positions on issues for political gain.
 
-# Candidate 3: Jones
+# 👤 Candidate 3: Jones
 
 ## Resume Highlights:
 
@@ -57,7 +57,6 @@ type: noResponse
 
 - Pleasant personality in social settings.
 - Regarded by partners as a strategic thinker in the law firm's direction.
-- Litigation success rate has fallen recently.
 - One of the more active members of LIEPH’s Board of Trustees.
 - Has two dogs and two cats.
 - Well-received as a teacher, based on student enrollment and evaluations.

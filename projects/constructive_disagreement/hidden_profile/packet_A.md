@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/hidden_profile/packet_A.md
 type: noResponse
 ---
 
-# Candidate 1: Smith
+# 👤 Candidate 1: Smith
 
 ## Resume Highlights:
 
@@ -20,11 +20,11 @@ type: noResponse
 - Smith's spouse holds a Ph.D. in Spanish and occasionally teaches at the college level.
 - In an interview, emphasized the importance of collaboration with campus leaders and faculty.
 - Exhibited strong oratory skills during faculty presentations.
-- Stepped down as Dean at the northern university before fundraising for the business school building began.
+- Stepped down as Dean at a northern university before fundraising for the business school building began.
 - As Provost, teaches one class per year.
 - Smith was not primarily responsible for securing the £15 million donation to the Welsh business college.
 
-# Candidate 2: Patel
+# 👤 Candidate 2: Patel
 
 ## Resume Highlights:
 
@@ -45,7 +45,7 @@ type: noResponse
 - Maintains a vegetarian diet.
 - As an M.P., was accused of changing positions on issues for political gain.
 
-# Candidate 3: Jones
+# 👤 Candidate 3: Jones
 
 ## Resume Highlights:
 

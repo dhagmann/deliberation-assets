@@ -54,3 +54,26 @@
   ]
 }
 ```
+
+```json
+{
+  "batchName": "demo",
+  "treatmentFile": "projects/constructive_disagreement/hidden_profile/treatments_baker_2010.yaml",
+  "launchDate": "",
+  "dispatchWait": 1,
+  "cdn": "local",
+  "introSequence": "baseline",
+  "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
+  "treatments": ["baseline"],
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "preregister": false,
+  "dataRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "constructive-disagreement",
+      "branch": "main",
+      "directory": "test"
+    }
+  ]
+}
+```

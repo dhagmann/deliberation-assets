@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/hidden_profile/packet_D.md
 type: noResponse
 ---
 
-# Candidate 1: Smith
+# 👤 Candidate 1: Smith
 
 ## Resume Highlights:
 
@@ -24,7 +24,7 @@ type: noResponse
 - Likes to garden.
 - Has been observed drinking heavily in public, including at university events.
 
-# Candidate 2: Patel
+# 👤 Candidate 2: Patel
 
 ## Resume Highlights:
 
@@ -43,7 +43,7 @@ type: noResponse
 - Has little direct experience with student life issues on campus.
 - As an M.P., was accused of changing positions on issues for political gain.
 
-# Candidate 3: Jones
+# 👤 Candidate 3: Jones
 
 ## Resume Highlights:
 

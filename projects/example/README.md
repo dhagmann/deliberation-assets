@@ -68,6 +68,54 @@ To run a single-player demo, use a variation on the config:
 }
 ```
 
+# Test video recording
+
+```json
+{
+  "batchName": "demo",
+  "preregister": "false",
+  "treatmentFile": "projects/example/treatments.demo.yaml",
+  "dispatchWait": 1,
+  "treatments": ["demo_4p_test_video"],
+  "cdn": "local",
+  "platformConsent": "US",
+  "consentAddendum": "projects/example/consentAddendum.md",
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "demo"
+    }
+  ]
+}
+```
+
+# Test etherpad
+
+```json
+{
+  "batchName": "demo",
+  "preregister": "false",
+  "treatmentFile": "projects/example/treatments.demo.yaml",
+  "dispatchWait": 1,
+  "treatments": ["demo_2p_etherpad"],
+  "cdn": "local",
+  "videoStorageLocation": false,
+  "checkAudio": false,
+  "checkVideo": false,
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "demo"
+    }
+  ]
+}
+```
+
 # Prod demo
 
 ```json

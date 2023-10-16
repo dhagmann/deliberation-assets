@@ -184,3 +184,18 @@ treatments:
             buttonText: Leave Discussion
 
     exitSurveys:
+
+  - name: demo_2p_etherpad
+    desc: 2-player demo for testing etherpad in prod
+    playerCount: 2
+    gameStages:
+      - name: Etherpad test
+        duration: 600
+        elements:
+          - type: prompt
+            file: projects/example/openResponse.md
+            shared: true
+            name: etherpadTest
+          - type: submitButton
+
+    exitSurveys:

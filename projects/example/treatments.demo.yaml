@@ -186,7 +186,7 @@ treatments:
     exitSurveys:
 
   - name: demo_2p_etherpad
-    desc: 2-player demo for testing etherpad in prod
+    desc: 2-player demo for testing etherpad in production
     playerCount: 2
     gameStages:
       - name: Etherpad test

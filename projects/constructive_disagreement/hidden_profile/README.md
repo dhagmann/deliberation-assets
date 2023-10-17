@@ -27,17 +27,17 @@ This makes the exercise something of a hybrid between a pure hidden-profile task
 }
 ```
 
-## MTurk Pretest
+## MTurk Run
 
 ```json
 {
-  "batchName": "turk_pretest",
+  "batchName": "turk_sample",
   "treatmentFile": "projects/constructive_disagreement/hidden_profile/treatments_hp.yaml",
   "launchDate": "29 Sept 2023 05:00:00 EDT",
   "dispatchWait": 30,
   "introSequence": "psychometrics",
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
-  "treatments": ["turkerTest"],
+  "treatments": ["baseline_Turk"],
   "videoStorageLocation": "deliberation-lab-recordings-icbs",
   "awsRegion": "eu-west-2",
   "preregister": true,

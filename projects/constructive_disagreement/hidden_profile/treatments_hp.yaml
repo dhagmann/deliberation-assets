@@ -13,8 +13,8 @@ introSequences:
             surveyName: AwarenessMonitoringGrowth
 
 treatments:
-  - name: baseline
-    desc: Baseline treatment
+  - name: baseline_MBA
+    desc: Baseline treatment for MBA students
     playerCount: 4
     assignPositionsBy: random
     groupComposition:
@@ -287,8 +287,8 @@ treatments:
       - PersuasionAndLearning
       - Demographics
 
-  - name: turkerTest
-    desc: Baseline treatment without extra consent
+  - name: baseline_Turk
+    desc: Baseline treatment for mturkers
     playerCount: 4
     assignPositionsBy: random
     groupComposition:

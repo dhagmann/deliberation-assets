@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/collegefootball_survey.md
+title:  College Football Playoffs 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://collegefootball.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should college football replace the Bowl Championship Series (BCS) with a playoff system?
 
 My opinion is...
 

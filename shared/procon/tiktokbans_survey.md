@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/tiktokbans_survey.md
+title:  TikTok Bans 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/tiktok-bans-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should TikTok be banned?
 
 My opinion is...
 

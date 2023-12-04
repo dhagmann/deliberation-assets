@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/bigthreeauto_survey.md
+title:  Big Three Bailout 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://bigthreeauto.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the big three car manufacturers be bailed out by the US government?
 
 My opinion is...
 

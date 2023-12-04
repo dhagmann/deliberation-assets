@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/vapingecigarettes_survey.md
+title:  Vaping E-Cigarettes 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/is-vaping-with-e-cigarettes-safe/ 
 ---
 
-###  Should abortion be legal?  
+###  Is vaping e-cigarettes safe?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/freecollege_survey.md
+title:  Free College 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/free-college-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should public college be tuition-free?
 
 My opinion is...
 

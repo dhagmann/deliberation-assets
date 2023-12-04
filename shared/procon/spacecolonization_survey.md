@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/spacecolonization_survey.md
+title:  Space Colonization 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/space-colonization-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should humans colonize space?
 
 My opinion is...
 

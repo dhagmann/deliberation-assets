@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/prescriptiondrugs_survey.md
+title:  Prescription Drug Costs 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://prescriptiondrugs.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the US federal government regulate prescription drug prices?
 
 My opinion is...
 

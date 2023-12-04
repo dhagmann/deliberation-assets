@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/borngay_survey.md
+title:  Born Gay 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://borngay.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is sexual orientation determined at birth?
 
 My opinion is...
 

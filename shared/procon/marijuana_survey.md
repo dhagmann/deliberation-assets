@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/marijuana_survey.md
+title:  Recreational Marijuana 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://marijuana.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should recreational marijuana be legal?
 
 My opinion is...
 

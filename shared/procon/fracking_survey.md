@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/fracking_survey.md
+title:  Fracking 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/fracking-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should the United States continue fracking?
 
 My opinion is...
 

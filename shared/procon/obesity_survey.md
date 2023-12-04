@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/obesity_survey.md
+title:  Obesity 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://obesity.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is obesity a disease?
 
 My opinion is...
 

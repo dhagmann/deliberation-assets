@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/euthanasia_survey.md
+title:  Medical Aid in Dying (MAID) 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://euthanasia.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should medical aid in dying (MAID) be legal??
 
 My opinion is...
 

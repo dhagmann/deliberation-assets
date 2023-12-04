@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/votingage_survey.md
+title:  Voting Age 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/lowering-the-voting-age-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should the voting age be lowered to 16?
 
 My opinion is...
 

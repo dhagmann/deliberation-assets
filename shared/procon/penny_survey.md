@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/penny_survey.md
+title:  Penny 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/should-the-penny-stay-in-circulation-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should the penny stay in circulation?
 
 My opinion is...
 

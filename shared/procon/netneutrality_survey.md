@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/netneutrality_survey.md
+title:  Net Neutrality 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/should-net-neutrality-be-restored-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should the US have net neutrality laws?
 
 My opinion is...
 

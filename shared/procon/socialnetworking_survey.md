@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/socialnetworking_survey.md
+title:  Social Media 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://socialnetworking.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is social media good for society?
 
 My opinion is...
 

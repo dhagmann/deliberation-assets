@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/teachertenure_survey.md
+title:  Teacher Tenure 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://teachertenure.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should teachers get tenure?
 
 My opinion is...
 

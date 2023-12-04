@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/cheerleading_survey.md
+title:  Cheerleading 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/cheerleading-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Is cheerleading a sport?
 
 My opinion is...
 

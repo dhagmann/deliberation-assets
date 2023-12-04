@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/sanctuarycities_survey.md
+title:  Sanctuary Cities 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/sanctuary-cities-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should sanctuary cities receive federal funding?
 
 My opinion is...
 

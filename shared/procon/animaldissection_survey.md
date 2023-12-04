@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/animaldissection_survey.md
+title:  Animal Dissection 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/top-3-pros-and-cons-of-animal-dissection/ 
 ---
 
-###  Should abortion be legal?  
+###  Should K-12 students dissect animals in science classrooms?
 
 My opinion is...
 

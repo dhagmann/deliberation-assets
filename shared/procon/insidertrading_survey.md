@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/insidertrading_survey.md
+title:  Congressional Insider Trading 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://insidertrading.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should insider trading by Congress be allowed?
 
 My opinion is...
 

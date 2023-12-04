@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/bannedbooks_survey.md
+title:  Banned Books 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/banned-books-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should parents or other adults be able to ban books from schools and libraries?
 
 My opinion is...
 

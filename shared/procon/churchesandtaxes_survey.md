@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/churchesandtaxes_survey.md
+title:  Churches & Taxes 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://churchesandtaxes.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should churches (including mosques, synagogues, etc.) remain tax-exempt?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/prostitution_survey.md
+title:  Prostitution 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://prostitution.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should prostitution be legal?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/corporalpunishment_survey.md
+title:  Corporal Punishment 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/corporal-punishment-pros-cons-procon-org/ 
 ---
 
-###  Should abortion be legal?  
+###  Should corporal punishment be used in K-12 schools?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/uberlyft_survey.md
+title:  Uber & Lyft 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/ride-hailing-apps-such-as-uber-and-lyft-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Are ride-hailing companies a benefit to society?
 
 My opinion is...
 

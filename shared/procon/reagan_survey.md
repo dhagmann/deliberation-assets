@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/reagan_survey.md
+title:  President Ronald Reagan 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://reagan.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Was Ronald Reagan a good president?
 
 My opinion is...
 

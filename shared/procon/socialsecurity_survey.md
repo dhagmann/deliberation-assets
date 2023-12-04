@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/socialsecurity_survey.md
+title:  Social Security Privatization 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://socialsecurity.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should social security be privatized?
 
 My opinion is...
 

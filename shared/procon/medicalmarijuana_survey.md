@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/medicalmarijuana_survey.md
+title:  Medical Marijuana 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://medicalmarijuana.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should medical marijuana be legal?
 
 My opinion is...
 

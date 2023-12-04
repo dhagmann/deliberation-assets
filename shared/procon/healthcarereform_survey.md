@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/healthcarereform_survey.md
+title:  Obamacare 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://healthcarereform.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is the Patient Protection and Affordable Care Act (Obamacare) good for America?
 
 My opinion is...
 

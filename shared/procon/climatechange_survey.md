@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/climatechange_survey.md
+title:  Climate Change 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://climatechange.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is human activity primarily responsible for global climate change?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/gun-control_survey.md
+title:  Gun Control 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://gun-control.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should more gun control laws be enacted?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/bottledwaterban_survey.md
+title:  Bottled Water Ban 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/should-bottled-water-be-banned-top-4-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should bottled water be banned?
 
 My opinion is...
 

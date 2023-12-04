@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/felonvoting_survey.md
+title:  Felon Voting 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://felonvoting.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should people who have completed felony sentences be allowed to vote?
 
 My opinion is...
 

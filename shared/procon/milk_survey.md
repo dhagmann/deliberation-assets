@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/milk_survey.md
+title:  Milk 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://milk.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should humans consume dairy milk?
 
 My opinion is...
 

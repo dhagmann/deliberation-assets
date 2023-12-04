@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/animal-testing_survey.md
+title:  Animal Testing 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://animal-testing.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should animals be used for scientific or commercial testing?
 
 My opinion is...
 

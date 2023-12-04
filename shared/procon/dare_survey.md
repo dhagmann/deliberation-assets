@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/dare_survey.md
+title:  D.A.R.E. 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://dare.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is the D.A.R.E. program good for America's kids (K-12)?
 
 My opinion is...
 

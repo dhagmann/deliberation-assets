@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/gaymarriage_survey.md
+title:  Gay Marriage 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://gaymarriage.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should gay marriage be legal?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/schoolvouchers_survey.md
+title:  School Vouchers 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/school-vouchers-top-4-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should states have school voucher programs?
 
 My opinion is...
 

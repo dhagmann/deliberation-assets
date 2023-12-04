@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/sportsanddrugs_survey.md
+title:  Drug Use in Sports 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://sportsanddrugs.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should performance-enhancing drugs be accepted in sports?
 
 My opinion is...
 

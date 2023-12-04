@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/college-education_survey.md
+title:  College Education 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://college-education.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is a college education worth it?
 
 My opinion is...
 

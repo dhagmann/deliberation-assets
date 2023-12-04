@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/filibuster_survey.md
+title:  Filibuster 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/filibuster-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should the US Senate keep the filibuster?
 
 My opinion is...
 

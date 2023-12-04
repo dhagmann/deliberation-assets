@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/cbdforpets_survey.md
+title:  CBD for Pets 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/marijuana-for-pets-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Is CBD good for pets?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/minimum-wage_survey.md
+title:  Minimum Wage 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://minimum-wage.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the federal minimum wage be increased?
 
 My opinion is...
 

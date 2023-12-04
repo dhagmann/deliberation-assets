@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/undergod_survey.md
+title:  Under God in the Pledge 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://undergod.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the words “under god” be in the US Pledge of Allegiance?
 
 My opinion is...
 

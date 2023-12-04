@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/americansocialism_survey.md
+title:  American Socialism 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/american-socialism-top-2-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should the US become socialist?
 
 My opinion is...
 

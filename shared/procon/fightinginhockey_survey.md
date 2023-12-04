@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/fightinginhockey_survey.md
+title:  Fighting in Hockey 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/should-fighting-be-allowed-in-hockey-top-3-pros-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should fighting be allowed in hockey?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/homework_survey.md
+title:  Homework 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/homework-pros-cons-procon-org/ 
 ---
 
-###  Should abortion be legal?  
+###  Is homework beneficial?
 
 My opinion is...
 

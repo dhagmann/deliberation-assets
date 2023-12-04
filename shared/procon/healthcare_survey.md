@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/healthcare_survey.md
+title:  Right to Healthcare 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://healthcare.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should all Americans have the right (be entitled) to health care?
 
 My opinion is...
 

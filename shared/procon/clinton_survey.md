@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/clinton_survey.md
+title:  President Bill Clinton 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://clinton.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Was Bill Clinton a good president?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/drones_survey.md
+title:  Drone Strikes 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://drones.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the United States continue its use of drone strikes abroad?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/bingewatching_survey.md
+title:  Binge-Watching 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/binge-watching-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Is binge-watching good for you?
 
 My opinion is...
 

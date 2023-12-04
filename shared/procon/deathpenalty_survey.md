@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/deathpenalty_survey.md
+title:  Death Penalty 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://deathpenalty.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the death penalty be legal?
 
 My opinion is...
 

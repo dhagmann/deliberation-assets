@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/vegetarian_survey.md
+title:  Vegetarianism 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://vegetarian.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should people become vegetarian?
 
 My opinion is...
 

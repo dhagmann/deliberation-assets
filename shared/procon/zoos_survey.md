@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/zoos_survey.md
+title:  Zoos 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/zoos-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should zoos exist?
 
 My opinion is...
 

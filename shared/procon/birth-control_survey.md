@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/birth-control_survey.md
+title:  Over-the-Counter (OTC) Birth Control Pills 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://birth-control.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should birth control pills be available over-the-counter (OTC)?
 
 My opinion is...
 

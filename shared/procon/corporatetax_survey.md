@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/corporatetax_survey.md
+title:  Corporate Tax Rate 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://corporatetax.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the federal corporate income tax rate be raised?
 
 My opinion is...
 

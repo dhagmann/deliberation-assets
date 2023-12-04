@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/defundthepolice_survey.md
+title:  Defund the Police 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/defund-the-police-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should police departments be defunded, if not abolished?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/pitbullbans_survey.md
+title:  Pit Bull Bans 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/pit-bull-bans-top-2-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should breed-specific legislation (“pit bull bans”) be enacted?
 
 My opinion is...
 

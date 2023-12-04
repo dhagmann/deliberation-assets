@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/videogames_survey.md
+title:  Video Games & Violence 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://videogames.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Do violent video games contribute to youth violence?
 
 My opinion is...
 

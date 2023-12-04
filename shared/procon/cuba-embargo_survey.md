@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/cuba-embargo_survey.md
+title:  Cuba Embargo 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://cuba-embargo.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the United States maintain its embargo against Cuba?
 
 My opinion is...
 

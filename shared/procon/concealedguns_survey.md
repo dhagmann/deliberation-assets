@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/concealedguns_survey.md
+title:  Concealed Handguns 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://concealedguns.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should adults have the right to carry a concealed handgun?
 
 My opinion is...
 

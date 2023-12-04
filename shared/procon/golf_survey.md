@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/golf_survey.md
+title:  Golf 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://golf.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Is golf a sport and are golfers athletes?
 
 My opinion is...
 

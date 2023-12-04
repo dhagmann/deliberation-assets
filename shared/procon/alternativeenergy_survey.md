@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/alternativeenergy_survey.md
+title:  Alternative Energy 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://alternativeenergy.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Can alternative energy effectively replace fossil fuels?
 
 My opinion is...
 

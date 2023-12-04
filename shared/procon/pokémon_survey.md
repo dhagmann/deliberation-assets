@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/pokémon_survey.md
+title:  Pokémon 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/pokemon-go-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Is Pokémon Go good for our society?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/tablets-textbooks_survey.md
+title:  Tablets v. Textbooks 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://tablets-textbooks.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should tablets replace textbooks in K-12 schools?
 
 My opinion is...
 

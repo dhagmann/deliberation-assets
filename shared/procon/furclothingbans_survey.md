@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/furclothingbans_survey.md
+title:  Fur Clothing Bans 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/fur-clothing-bans-top-3-pros-and-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should fur clothing be banned?
 
 My opinion is...
 

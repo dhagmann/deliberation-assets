@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/school-uniforms_survey.md
+title:  School Uniforms 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://school-uniforms.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should students have to wear school uniforms?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/votingmachines_survey.md
+title:  Voting Machines 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://votingmachines.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Are electronic voting machines the best method for voting?
 
 My opinion is...
 

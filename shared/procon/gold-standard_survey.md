@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/gold-standard_survey.md
+title:  Gold Standard 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://gold-standard.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the United States return to a gold standard?
 
 My opinion is...
 

@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/drinkingage_survey.md
+title:  Drinking Age 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://drinkingage.procon.org 
 ---
 
-###  Should abortion be legal?  
+###  Should the drinking age be lowered from 21 to a younger age?
 
 My opinion is...
 

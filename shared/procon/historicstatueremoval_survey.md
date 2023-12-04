@@ -1,12 +1,12 @@
 ---
-name: shared/procon/abortion_survey.md
-title:  Abortion 
+name: shared/procon/historicstatueremoval_survey.md
+title:  Historic Statue Removal 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org 
+url: https://procon.org/headlines/historic-statue-removal-top-3-pros-cons/ 
 ---
 
-###  Should abortion be legal?  
+###  Should historic statues be taken down?
 
 My opinion is...
 

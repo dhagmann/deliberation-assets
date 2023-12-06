@@ -1,11 +1,12 @@
 ---
 name: shared/procon/abortion_survey.md
+title:  Abortion 
 type: multipleChoice
 author: reprinted with permission of ProCon.org
-url: https://abortion.procon.org/
+url: https://abortion.procon.org 
 ---
 
-### Should abortion be legal?
+###  Should abortion be legal?  
 
 My opinion is...
 
@@ -18,3 +19,4 @@ My opinion is...
 - Leaning towards No
 - Moderately No
 - Strongly No
+

@@ -13,7 +13,7 @@
 ```json
 {
   "batchName": "WBL_Pilot_1",
-  "useData": "true",
+  "preregister": "true",
   "treatmentFile": "projects/bad_influence/treatments.policing.yaml",
   "dispatchWait": 3,
   "useTreatments": ["no_leader_assigned", "assigned_leader"],

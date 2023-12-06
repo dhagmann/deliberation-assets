@@ -1,0 +1,548 @@
+introSequences:
+  - name: psychometrics
+    desc: Basic psychometrics
+    introSteps:
+      - name: Ten Item Personality Inventory
+        elements:
+          - type: survey
+            surveyName: TIPI
+
+      - name: Self-awareness, Self-monitoring, and Growth Mindset
+        elements:
+          - type: survey
+            surveyName: AwarenessMonitoringGrowth
+
+treatments:
+  - name: baseline_MBA
+    desc: Baseline treatment for MBA students
+    playerCount: 4
+    assignPositionsBy: random
+    groupComposition:
+      - desc: Role A
+        position: 0
+        title: Director of Research
+      - desc: Role B
+        position: 1
+        title: Chief Operating Officer
+      - desc: Role C
+        position: 2
+        title: Director of EDI
+      - desc: Role D
+        position: 3
+        title: Director of Education
+
+    gameStages:
+      - name: Briefing Notes
+        type: prompt
+        duration: 180
+        elements:
+          - projects/constructive_disagreement/hidden_profile/initial_instructions.md
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_A.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_B.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_C.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_D.md
+            showToPositions:
+              - 3
+
+          - type: submitButton
+            buttonText: Start Exercise
+            displayTime: 20
+
+      - name: Job Posting
+        duration: 300
+        elements:
+          - projects/constructive_disagreement/hidden_profile/job_posting.md
+          - type: submitButton
+            buttonText: Continue
+            displayTime: 20
+
+      - name: Individual Answer
+        duration: 600
+        elements:
+          - projects/constructive_disagreement/hidden_profile/individual_instructions.md
+
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleBriefingNotesIndividual
+            file: projects/constructive_disagreement/hidden_profile/toggle_briefing_notes.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_A.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_B.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_C.md
+            showToPositions:
+              - 2
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_D.md
+            showToPositions:
+              - 3
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleJobDescriptionIndividual
+            file: projects/constructive_disagreement/hidden_profile/toggle_job_description.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/job_posting.md
+            conditions:
+              - promptName: toggleJobDescriptionIndividual
+                comparator: equal
+                value: "⬇️ Display the Job Description"
+
+          - type: separator
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_A.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_B.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_C.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_D.md
+            showToPositions:
+              - 3
+
+          - type: separator
+          - projects/constructive_disagreement/hidden_profile/reminder.md
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/selection.md
+            shared: false
+            name: individualSelection
+
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 120
+            conditions:
+              - promptName: individualSelection
+                sourceType: prompt
+                comparator: exists
+                value: ""
+
+      - name: Group decision
+        duration: 1800
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: true
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/almost_over.md
+            displayTime: 1500
+          - type: timer
+            displayTime: 1500
+            warnTimeRemaining: 60
+          - type: audio
+            file: shared/airplane_chime.mp3
+            displayTime: 1500
+          - type: audio
+            file: shared/airplane_chime.mp3
+            displayTime: 1740
+
+          - projects/constructive_disagreement/hidden_profile/discussion_instructions.md
+          - projects/constructive_disagreement/hidden_profile/shared_prompt_notice.md
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/selection.md
+            shared: true
+            name: groupSelection
+
+          - type: submitButton
+            buttonText: Submit and Leave Discussion
+            displayTime: 300
+            conditions:
+              - promptName: groupSelection
+                sourceType: prompt
+                position: shared
+                comparator: exists
+                value: ""
+
+          - type: separator
+          - type: prompt
+            name: toggleBriefingNotesGroup
+            file: projects/constructive_disagreement/hidden_profile/toggle_briefing_notes.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_A.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_B.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_C.md
+            showToPositions:
+              - 2
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_D.md
+            showToPositions:
+              - 3
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleJobDescriptionGroup
+            file: projects/constructive_disagreement/hidden_profile/toggle_job_description.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/job_posting.md
+            conditions:
+              - promptName: toggleJobDescriptionGroup
+                comparator: equal
+                value: "⬇️ Display the Job Description"
+
+          - type: separator
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_A.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_B.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_C.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_D.md
+            showToPositions:
+              - 3
+
+          - type: separator
+          - projects/constructive_disagreement/hidden_profile/reminder.md
+
+      - name: Consent Classroom Aid
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/99_consentClassroomAid.md
+            name: classroomUseConsent
+          - type: submitButton
+            buttonText: Submit
+            conditions:
+              - promptName: classroomUseConsent
+                sourceType: prompt
+                comparator: exists
+                value: ""
+
+    exitSurveys:
+      - ConflictAndViability
+      - PerceptionOfOthers
+      - PersuasionAndLearning
+      - Demographics
+
+  - name: baseline_Turk
+    desc: Baseline treatment for mturkers
+    playerCount: 4
+    assignPositionsBy: random
+    groupComposition:
+      - desc: Role A
+        position: 0
+        title: Director of Research
+      - desc: Role B
+        position: 1
+        title: Chief Operating Officer
+      - desc: Role C
+        position: 2
+        title: Director of EDI
+      - desc: Role D
+        position: 3
+        title: Director of Education
+
+    gameStages:
+      - name: Briefing Notes
+        type: prompt
+        duration: 180
+        elements:
+          - projects/constructive_disagreement/hidden_profile/initial_instructions.md
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_A.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_B.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_C.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_D.md
+            showToPositions:
+              - 3
+
+          - type: submitButton
+            buttonText: Start Exercise
+            displayTime: 20
+
+      - name: Job Posting
+        duration: 300
+        elements:
+          - projects/constructive_disagreement/hidden_profile/job_posting.md
+          - type: submitButton
+            buttonText: Continue
+            displayTime: 20
+
+      - name: Individual Answer
+        duration: 600
+        elements:
+          - projects/constructive_disagreement/hidden_profile/individual_instructions.md
+
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleBriefingNotesIndividual
+            file: projects/constructive_disagreement/hidden_profile/toggle_briefing_notes.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_A.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_B.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_C.md
+            showToPositions:
+              - 2
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_D.md
+            showToPositions:
+              - 3
+            conditions:
+              - promptName: toggleBriefingNotesIndividual
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleJobDescriptionIndividual
+            file: projects/constructive_disagreement/hidden_profile/toggle_job_description.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/job_posting.md
+            conditions:
+              - promptName: toggleJobDescriptionIndividual
+                comparator: equal
+                value: "⬇️ Display the Job Description"
+
+          - type: separator
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_A.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_B.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_C.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_D.md
+            showToPositions:
+              - 3
+
+          - type: separator
+          - projects/constructive_disagreement/hidden_profile/reminder.md
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/selection.md
+            shared: false
+            name: individualSelection
+
+          - type: submitButton
+            buttonText: Submit
+            displayTime: 120
+            conditions:
+              - promptName: individualSelection
+                sourceType: prompt
+                comparator: exists
+                value: ""
+
+      - name: Group decision
+        duration: 1800
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: true
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/almost_over.md
+            displayTime: 1500
+          - type: timer
+            displayTime: 1500
+            warnTimeRemaining: 60
+          - type: audio
+            file: shared/airplane_chime.mp3
+            displayTime: 1500
+          - type: audio
+            file: shared/airplane_chime.mp3
+            displayTime: 1740
+
+          - projects/constructive_disagreement/hidden_profile/discussion_instructions.md
+          - projects/constructive_disagreement/hidden_profile/shared_prompt_notice.md
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/selection.md
+            shared: true
+            name: groupSelection
+
+          - type: submitButton
+            buttonText: Submit and Leave Discussion
+            displayTime: 300
+            conditions:
+              - promptName: groupSelection
+                sourceType: prompt
+                position: shared
+                comparator: exists
+                value: ""
+
+          - type: separator
+          - type: prompt
+            name: toggleBriefingNotesGroup
+            file: projects/constructive_disagreement/hidden_profile/toggle_briefing_notes.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_A.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_B.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_C.md
+            showToPositions:
+              - 2
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/briefing_notes_D.md
+            showToPositions:
+              - 3
+            conditions:
+              - promptName: toggleBriefingNotesGroup
+                comparator: equal
+                value: "⬇️ Display my Briefing Notes"
+
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleJobDescriptionGroup
+            file: projects/constructive_disagreement/hidden_profile/toggle_job_description.md
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/job_posting.md
+            conditions:
+              - promptName: toggleJobDescriptionGroup
+                comparator: equal
+                value: "⬇️ Display the Job Description"
+
+          - type: separator
+
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_A.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_B.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_C.md
+            showToPositions:
+              - 2
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/packet_D.md
+            showToPositions:
+              - 3
+
+          - type: separator
+          - projects/constructive_disagreement/hidden_profile/reminder.md
+
+    exitSurveys:
+      - ConflictAndViability
+      - PerceptionOfOthers
+      - PersuasionAndLearning
+      - Demographics

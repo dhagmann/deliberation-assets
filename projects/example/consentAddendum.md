@@ -1,1 +1,1 @@
-This line is is an **addendum to the standard consent form**, for project specific contact info, etc.
+Today, you are joining a **demonstration** experiment. Data from your experiment will not be used for scientific purposes, but may be used to help **troubleshoot the platform** and **for testing postprocessing algorithms** including video processing algorithms.

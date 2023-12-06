@@ -44,6 +44,8 @@ In the deliberation-empirica admin, specify the cdn as:
 }
 ```
 
+## Defining an experiment
+
 ## Supported Config Options
 
 - **batchName** name to use in filepath of saved data

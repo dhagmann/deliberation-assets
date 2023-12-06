@@ -120,3 +120,82 @@ treatments:
     exitSurveys:
       - DiscussionSelfInsight
       - Demographics
+
+  - name: demo_4p_test_video
+    desc: 4 player for recording a discussion to help test video processing
+    playerCount: 4
+
+    gameStages:
+      - name: Pre-discussion instructions
+        duration: 45
+        elements:
+          - projects/example/thisIsPublic.md
+          - type: submitButton
+
+      - name: Discussion
+        duration: 180
+        discussion:
+          chatType: video
+        elements:
+          - type: prompt
+            file: projects/example/pleaseClap.md
+            displayTime: 0
+            hideTime: 15
+
+          - type: timer
+            displayTime: 0
+            hideTime: 15
+          - type: audio
+            file: shared/counter_bell.mp3
+            displayTime: 15
+            hideTime: 20
+
+          - type: prompt
+            file: projects/example/readAloud.md
+            displayTime: 15
+            hideTime: 45
+
+          - type: timer
+            displayTime: 15
+            hideTime: 45
+          - type: audio
+            file: shared/counter_bell.mp3
+            displayTime: 45
+            hideTime: 50
+
+          - type: prompt
+            file: projects/example/allTalk.md
+            displayTime: 45
+            hideTime: 75
+
+          - type: timer
+            displayTime: 45
+            hideTime: 75
+          - type: audio
+            file: shared/counter_bell.mp3
+            displayTime: 75
+            hideTime: 80
+
+          - type: prompt
+            file: projects/example/argument.md
+            displayTime: 75
+
+          - type: submitButton
+            buttonText: Leave Discussion
+
+    exitSurveys:
+
+  - name: demo_2p_etherpad
+    desc: 2-player demo for testing etherpad in production
+    playerCount: 2
+    gameStages:
+      - name: Etherpad test
+        duration: 600
+        elements:
+          - type: prompt
+            file: projects/example/openResponse.md
+            shared: true
+            name: etherpadTest
+          - type: submitButton
+
+    exitSurveys:

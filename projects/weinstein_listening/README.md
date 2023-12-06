@@ -31,7 +31,7 @@ Running actual trials with prolific participants:
 ```json
 {
   "batchName": "study_2_20230302_prolific",
-  "useData": false,
+  "preregister": false,
   "treatmentFile": "projects/weinstein_listening/treatments.weinstein.yaml",
   "dispatchWait": 10,
   "treatments": [
@@ -68,7 +68,7 @@ Running actual trials with prolific participants:
 ```json
 {
   "batchName": "20230801_prolific_dem40_rep40",
-  "useData": "true",
+  "preregister": "true",
   "treatmentFile": "projects/weinstein_listening/treatments.weinstein.yaml",
   "dispatchWait": 15,
   "treatments": [
@@ -89,6 +89,35 @@ Running actual trials with prolific participants:
       "branch": "main",
       "directory": "scienceData"
     },
+    {
+      "owner": "JamesPHoughton",
+      "repo": "listening-study",
+      "branch": "main",
+      "directory": "data"
+    }
+  ]
+}
+```
+
+# US-based mturk participants
+```json
+{
+  "batchName": "mturk_50",
+  "preregister": "true",
+  "treatmentFile": "projects/weinstein_listening/treatments.weinstein.yaml",
+  "dispatchWait": 30,
+  "treatments": [
+    "weinstein_listener_speaker",
+    "weinstein_speaker_speaker_control",
+    "weinstein_no_training_control"
+  ],
+  "introSequence": "cross_party_match",
+  "platformConsent": "US",
+  "consentAddendum": "projects/weinstein_listening/readingConsentAddendum.md",
+  "launchDate": "19 Oct 2023 15:00:00 EDT",
+  "embargoUntil": "19 Oct 2025 15:00:00 EDT",
+  "videoStorageLocation": "deliberation-lab-recordings-weinstein",
+  "dataRepos": [
     {
       "owner": "JamesPHoughton",
       "repo": "listening-study",

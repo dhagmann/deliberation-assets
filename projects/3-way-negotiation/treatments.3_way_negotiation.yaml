@@ -1,0 +1,163 @@
+introSequences:
+  - name: 3_way_negotiation_intro
+    introSteps:
+      - name: General Instructions
+        desc: Generic instructions without assignment to organization.
+        elements:
+          - type: prompt
+            file: projects/3-way-negotiation/01_instructions_header.md
+          - type: prompt
+            file: projects/3-way-negotiation/01_instructions_3_way_negotiation_general.md
+          - type: prompt
+            file: projects/3-way-negotiation/02_payoff_table.md
+          - type: submitButton
+            buttonText: Continue
+      - name: Reading Comprehension Questions
+        desc: Present four reading comprehension questions
+        elements:
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_01setup_general.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q01.md
+            name: compQ1
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q02.md
+            name: compQ2
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q03.md
+            name: compQ3
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q04.md
+            name: compQ4
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_01answer_reminder.md
+          - type: submitButton
+            buttonText: Submit
+            conditions:
+            - promptName: compQ1
+              comparator: equal
+              value: "121"
+            - promptName: compQ2
+              comparator: equal
+              value: "2"
+            - promptName: compQ3
+              comparator: equal
+              value: "34"
+            - promptName: compQ4
+              comparator: equal
+              value: "Maximize the benefits that MY organization can earn."
+          - type: separator
+          - type: prompt
+            file: projects/3-way-negotiation/01_repeated_instructions_header.md
+          - type: prompt
+            file: projects/3-way-negotiation/01_instructions_3_way_negotiation_general.md
+          - type: prompt
+            file: projects/3-way-negotiation/02_payoff_table.md
+
+      - name: Reading Comprehension (Answers)
+        desc: Answers to reading comprehension questions
+        elements:
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_01answer_setup.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q01_answer.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q02_answer.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q03_answer.md
+          - type: prompt
+            file: projects/3-way-negotiation/04_readingcomprehension_q04_answer.md
+          - type: submitButton
+            buttonText: Continue
+
+treatments:
+  - name: Baseline
+    desc: Run through the entire negotiation sequence.
+    playerCount: 3
+    assignPositionsBy: random
+    groupComposition:
+      - desc: Organization A
+        position: 0
+        title: "Organization A"
+      - desc: Organization B
+        position: 1
+        title: "Organization B"
+      - desc: Organization C
+        position: 2
+        title: "Organization C"
+
+    gameStages:
+      - name: Role Assignment and General Instructions
+        duration: 180
+        desc: Assign participants a role
+        elements:
+          - type: prompt
+            file: projects/3-way-negotiation/01a_instructions_3_way_negotiation.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/3-way-negotiation/01b_instructions_3_way_negotiation.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/3-way-negotiation/01c_instructions_3_way_negotiation.md
+            showToPositions:
+              - 2
+          - projects/3-way-negotiation/02_payoff_table.md
+          - type: submitButton
+
+      - name: Main Discussion
+        duration: 600
+        desc: Main Discussion Time
+        discussion:
+          chatType: text
+          showNickname: false
+          showTitle: true
+        elements: 
+          - type: prompt
+            file: projects/3-way-negotiation/05_response_submission.md
+            displayTime: 300
+          - type: prompt
+            file: projects/3-way-negotiation/06_multipleChoice_agreement_submission.md
+            displayTime: 300
+          - type: prompt
+            file: projects/3-way-negotiation/06a_openResponse_A_payoff.md
+            displayTime: 300
+          - type: prompt
+            file: projects/3-way-negotiation/06b_openResponse_B_payoff.md
+            displayTime: 300
+          - type: prompt
+            file: projects/3-way-negotiation/06c_openResponse_C_payoff.md
+            displayTime: 300
+
+          - type: prompt
+            file: projects/3-way-negotiation/03a_rep_a.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/3-way-negotiation/03b_rep_b.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/3-way-negotiation/03c_rep_c.md
+            showToPositions:
+              - 2
+          - projects/3-way-negotiation/05_instructions_3_way_negotation_in_round.md
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleGroundRules
+            file: projects/3-way-negotiation/05_toggle_instructions.md
+          - type: prompt
+            file: projects/3-way-negotiation/05_instructions_3_way_negotation_in_round_toggle_content.md
+            conditions:
+              - promptName: toggleGroundRules
+                comparator: equal
+                value: "⬇️ Display Ground Rules"
+
+          - projects/3-way-negotiation/02_payoff_table.md
+
+    exitSurveys:
+      - SVI
+      - Demographics
+      

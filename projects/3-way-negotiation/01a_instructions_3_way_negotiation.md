@@ -18,7 +18,7 @@ As a reminder of the Ground Rules, the negotiation will work as follows:
 - **In order to be part of an agreement, each party must submit matching deal sheets. If your final deal sheet does not match what the other parties submit, the deal is rendered invalid and you will get 0 points.**
 - Blank deal sheets, or deal sheets that do not add up to the correct total point value, will also be considered invalid.
 - Any proposal to split 121 points requires the acceptance of all three parties to become an agreement. (*This means ALL THREE of your deal sheets must match!*)
-- Proposals involving two parties only require only the acceptance of the two parties involved. (*This means only TWO of the three deal sheets need to match!*) The party with a non-matching deal sheet will be assumed to excluded from the deal and will receive 0 points.
+- Proposals involving two parties only require only the acceptance of the two parties involved. (*This means only TWO of the three deal sheets need to match!*) The party with a non-matching deal sheet will be assumed to be excluded from the deal and will receive 0 points.
 - You may use the chat to make as many offers as you wish within the 10-minute discussion period. If you reach an agreement before the deadline, new offers can be made by any of the parties and new agreements may be reached, up until this deadline. You can change the submission in your deal sheet as many times as you want before the deadline.
 - When the 10 minutes are over, the values you entered in the deal sheet become final.
 

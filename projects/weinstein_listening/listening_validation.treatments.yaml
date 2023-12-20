@@ -101,13 +101,31 @@ treatments:
           - projects/SDC_behavior/urban_unrest_survey.md
           - type: submitButton
 
-    exitSurveys:
-      - ConstructiveListeningBehaviors
-      - DiscussionSelfInsight
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - ConstructiveListeningBehaviorsSelf
-      - Demographics
+    exitSequence:
+      - name: Constructive Listening
+        elements:
+          - type: survey
+            surveyName: ConstructiveListeningBehaviors
+      - name: Discussion Self Insight
+        elements:
+          - type: survey
+            surveyName: DiscussionSelfInsight
+      - name: Autonomy Need Satisfaction
+        elements:
+          - type: survey
+            surveyName: AutonomyNeedSatisfaction
+      - name: Relatedness Need Satisfaction
+        elements:
+          - type: survey
+            surveyName: RelatednessNeedSatisfaction
+      - name: Constructive Listening Self
+        elements:
+          - type: survey
+            surveyName: ConstructiveListeningBehaviorsSelf
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics
 
   - name: weinstein_speaker_speaker_control
     desc: Both participants get speaking training, one is still assigned as listener
@@ -174,13 +192,31 @@ treatments:
           - projects/SDC_behavior/urban_unrest_survey.md
           - type: submitButton
 
-    exitSurveys:
-      - ConstructiveListeningBehaviors
-      - DiscussionSelfInsight
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - ConstructiveListeningBehaviorsSelf
-      - Demographics
+    exitSequence:
+      - name: Constructive Listening
+        elements:
+          - type: survey
+            surveyName: ConstructiveListeningBehaviors
+      - name: Discussion Self Insight
+        elements:
+          - type: survey
+            surveyName: DiscussionSelfInsight
+      - name: Autonomy Need Satisfaction
+        elements:
+          - type: survey
+            surveyName: AutonomyNeedSatisfaction
+      - name: Relatedness Need Satisfaction
+        elements:
+          - type: survey
+            surveyName: RelatednessNeedSatisfaction
+      - name: Constructive Listening Self
+        elements:
+          - type: survey
+            surveyName: ConstructiveListeningBehaviorsSelf
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics
 
   - name: weinstein_no_training_control
     desc: No training control, one is still assigned as listener
@@ -226,10 +262,28 @@ treatments:
           - projects/SDC_behavior/urban_unrest_survey.md
           - type: submitButton
 
-    exitSurveys:
-      - ConstructiveListeningBehaviors
-      - DiscussionSelfInsight
-      - AutonomyNeedSatisfaction
-      - RelatednessNeedSatisfaction
-      - ConstructiveListeningBehaviorsSelf
-      - Demographics
+    exitSequence:
+      - name: Constructive Listening
+        elements:
+          - type: survey
+            surveyName: ConstructiveListeningBehaviors
+      - name: Discussion Self Insight
+        elements:
+          - type: survey
+            surveyName: DiscussionSelfInsight
+      - name: Autonomy Need Satisfaction
+        elements:
+          - type: survey
+            surveyName: AutonomyNeedSatisfaction
+      - name: Relatedness Need Satisfaction
+        elements:
+          - type: survey
+            surveyName: RelatednessNeedSatisfaction
+      - name: Constructive Listening Self
+        elements:
+          - type: survey
+            surveyName: ConstructiveListeningBehaviorsSelf
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics

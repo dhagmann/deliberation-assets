@@ -12,17 +12,29 @@ In study 2, trialing initially 3 conditions
 ```json
 {
   "batchName": "study2Pretest",
-  "treatmentFile": "projects/weinstein_listening/treatments.weinstein.yaml",
+  "treatmentFile": "projects/weinstein_listening/listening_validation.treatments.yaml",
   "dispatchWait": 10,
+  "preregister": false,
   "treatments": [
     "weinstein_listener_speaker",
     "weinstein_speaker_speaker_control",
     "weinstein_no_training_control"
   ],
+  "videoStorageLocation": "deliberation-lab-recordings-test",
   "introSequence": "cross_party_match",
+  "exitCodeStem": "WSLTST",
+  "cdn": "local",
   "platformConsent": "US",
   "consentAddendum": "projects/weinstein_listening/readingConsentAddendum.md",
-  "launchDate": "1 Mar 2023 21:36:00 EST"
+  "launchDate": "20 Dec 2023 10:52:00 EST",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "demo"
+    }
+  ]
 }
 ```
 
@@ -100,6 +112,7 @@ Running actual trials with prolific participants:
 ```
 
 # US-based mturk participants
+
 ```json
 {
   "batchName": "mturk_50",

@@ -27,3 +27,25 @@ Questions to include:
   ]
 }
 ```
+
+demo on the prod server
+```json
+{
+  "batchName": "demo",
+  "preregister": "false",
+  "treatmentFile": "projects/constructive_disagreement/so_good/so_good.treatments.yaml",
+  "dispatchWait": 1,
+  "introSequence": "baseline",
+  "treatments": ["baseline"],
+  "cdn": "prod",
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "demo"
+    }
+  ]
+}
+```

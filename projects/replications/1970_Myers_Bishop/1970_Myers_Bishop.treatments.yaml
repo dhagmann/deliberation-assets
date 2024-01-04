@@ -1,0 +1,18 @@
+introSequences:
+  - name: baseline
+    desc: Basic psychometrics
+    introSteps:
+      - name: Ten Item Personality Inventory
+        elements:
+          - type: survey
+            surveyName: TIPI
+
+      - name: Racial Attitudes Survey
+        elements:
+          - type: prompt
+            file: 
+
+
+treatments:
+  - name: control
+    desc: Discussion of two-choice dilemma problems

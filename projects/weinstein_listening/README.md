@@ -11,28 +11,28 @@ In study 2, trialing initially 3 conditions
 
 ```json
 {
-  "batchName": "study2Pretest",
+  "batchName": "E1_8_11_test",
   "treatmentFile": "projects/weinstein_listening/listening_validation.treatments.yaml",
-  "dispatchWait": 10,
+  "dispatchWait": 20,
   "preregister": false,
   "treatments": [
     "weinstein_listener_speaker",
     "weinstein_speaker_speaker_control",
     "weinstein_no_training_control"
   ],
-  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "videoStorageLocation": "deliberation-lab-recordings-weinstein",
   "introSequence": "cross_party_match",
   "exitCodeStem": "WSLTST",
-  "cdn": "local",
+  "cdn": "prod",
   "platformConsent": "US",
   "consentAddendum": "projects/weinstein_listening/readingConsentAddendum.md",
-  "launchDate": "20 Dec 2023 10:52:00 EST",
+  "launchDate": "21 Dec 2023 14:00:00 EST",
   "dataRepos": [
     {
-      "owner": "Watts-Lab",
-      "repo": "deliberation-data-test",
+      "owner": "JamesPHoughton",
+      "repo": "listening-study",
       "branch": "main",
-      "directory": "demo"
+      "directory": "data"
     }
   ]
 }

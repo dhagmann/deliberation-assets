@@ -117,7 +117,7 @@ treatments:
             conditions:
               - promptName: handGesturePartner
                 comparator: lengthAtLeast
-                value: 60
+                value: 50
 
       - name: Hand gesture self
         duration: 120
@@ -130,7 +130,7 @@ treatments:
             conditions:
               - promptName: handGestureSelf
                 comparator: lengthAtLeast
-                value: 60
+                value: 50
 
     exitSequence:
       - name: Compare Self

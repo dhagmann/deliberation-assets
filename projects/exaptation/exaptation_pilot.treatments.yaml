@@ -1,0 +1,152 @@
+introSequences:
+
+treatments:
+  - name: demo
+    desc: test whether we can do the naming game using the deliberation lab platform
+    playerCount: 3
+    assignPositionsBy: random
+    gameStages:
+      - name: Intro
+        type: prompt
+        duration: 60
+        elements:
+          - projects/exaptation/instructions.md
+          - type: submitButton
+
+      - name: Labeling
+        duration: 600
+        discussion:
+          chatType: text
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: prompt
+            file: projects/exaptation/labeling_stage_instructions.md
+          - type: separator
+            style: thin
+          - type: prompt
+            file: projects/exaptation/image_1.md
+          - type: prompt
+            file: projects/exaptation/image_2.md
+          - type: prompt
+            file: projects/exaptation/image_3.md
+          - type: prompt
+            file: projects/exaptation/shared_names_text.md
+            name: sharedNames
+            shared: true
+          - type: submitButton
+            buttonText: Proceed to stage 2
+
+      - name: Recall the same images
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/exaptation/recall_stage_instructions.md
+          - type: separator
+            style: thin
+
+          - type: prompt
+            file: projects/exaptation/image_3.md
+            displayTime: 0
+            hideTime: 30
+          - type: prompt
+            name: recall_image_3
+            file: projects/exaptation/name_image.md
+            displayTime: 0
+            hideTime: 30
+          - type: timer
+            displayTime: 0
+            hideTime: 30
+            warnTimeRemaining: 10
+
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            displayTime: 30
+            hideTime: 45
+            conditions:
+              - promptName: name_new_image_4
+                comparator: equal
+                value: matches
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            displayTime: 30
+            hideTime: 45
+            conditions:
+              - promptName: name_new_image_4
+                comparator: notEqual
+                value: matches
+          - type: display
+            promptName: recall_image_3
+            position: 0
+            displayTime: 30
+            hideTime: 45
+          - type: display
+            promptName: recall_image_3
+            position: 1
+            displayTime: 30
+            hideTime: 45
+          - type: display
+            promptName: recall_image_3
+            position: 2
+            displayTime: 30
+            hideTime: 45
+
+      - name: new names
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/exaptation/new_names_instructions.md
+          - type: separator
+            style: thin
+
+          - type: prompt
+            file: projects/exaptation/image_4.md
+            displayTime: 0
+            hideTime: 30
+          - type: prompt
+            name: name_new_image_4
+            file: projects/exaptation/name_image.md
+            displayTime: 0
+            hideTime: 30
+          - type: timer
+            displayTime: 0
+            hideTime: 30
+            warnTimeRemaining: 10
+
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            displayTime: 30
+            hideTime: 45
+            conditions:
+              - promptName: name_new_image_4
+                comparator: equal
+                value: matches
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            displayTime: 30
+            hideTime: 45
+            conditions:
+              - promptName: name_new_image_4
+                comparator: notEqual
+                value: matches
+          - type: display
+            promptName: name_new_image_4
+            position: 0
+            displayTime: 30
+            hideTime: 45
+          - type: display
+            promptName: name_new_image_4
+            position: 1
+            displayTime: 30
+            hideTime: 45
+          - type: display
+            promptName: name_new_image_4
+            position: 2
+            displayTime: 30
+            hideTime: 45
+
+    exitSequence:
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics

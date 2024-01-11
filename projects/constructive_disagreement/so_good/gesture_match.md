@@ -3,16 +3,12 @@ name: projects/constructive_disagreement/so_good/gesture_match.md
 type: multipleChoice
 ---
 
-## How well would you say they match?
-
-Use this standard scale about agreement where "Strongly Agree" means they match very well and "Strongly Disagree" means they are not matching much at all.
+## How well would you say your description matches the one your partner gave?
 
 ---
 
-- Strongly Disagree
-- Disagree
-- Slightly Disagree
-- Neutral
-- Slightly Agree
-- Agree
-- Strongly Agree
+- Does not match at all
+- Matches slightly
+- Matches moderately well
+- Matches very well
+- Perfect match

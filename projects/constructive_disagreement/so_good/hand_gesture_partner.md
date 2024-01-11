@@ -7,7 +7,7 @@ type: openResponse
 
 Please describe the most distinctive hand gesture that **your conversation partner** made during the discussion.
 
-Please submit at least 60 characters
+Please submit at least 50 characters
 
 ---
 

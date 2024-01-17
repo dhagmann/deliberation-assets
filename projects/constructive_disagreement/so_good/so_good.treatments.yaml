@@ -133,6 +133,16 @@ treatments:
                 value: 50
 
     exitSequence:
+      - name: Perception of others
+        elements:
+          - type: survey
+            surveyName: PerceptionOfOthers
+
+      - name: Conflict and Team Viability
+        elements:
+          - type: survey
+            surveyName: ConflictAndViability
+
       - name: Compare Self
         elements:
           - type: prompt
@@ -230,3 +240,8 @@ treatments:
             conditions:
               - promptName: gestureMatchPartner
                 comparator: exists
+
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics

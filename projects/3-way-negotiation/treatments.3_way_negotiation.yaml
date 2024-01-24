@@ -88,7 +88,7 @@ treatments:
 
     gameStages:
       - name: Role Assignment and General Instructions
-        duration: 180
+        duration: 120
         desc: Assign participants a role
         elements:
           - type: prompt
@@ -114,21 +114,6 @@ treatments:
           showNickname: false
           showTitle: true
         elements: 
-          - type: prompt
-            file: projects/3-way-negotiation/05_response_submission.md
-            displayTime: 300
-          - type: prompt
-            file: projects/3-way-negotiation/06_multipleChoice_agreement_submission.md
-            displayTime: 300
-          - type: prompt
-            file: projects/3-way-negotiation/06a_openResponse_A_payoff.md
-            displayTime: 300
-          - type: prompt
-            file: projects/3-way-negotiation/06b_openResponse_B_payoff.md
-            displayTime: 300
-          - type: prompt
-            file: projects/3-way-negotiation/06c_openResponse_C_payoff.md
-            displayTime: 300
 
           - type: prompt
             file: projects/3-way-negotiation/03a_rep_a.md
@@ -142,6 +127,47 @@ treatments:
             file: projects/3-way-negotiation/03c_rep_c.md
             showToPositions:
               - 2
+
+          - type: prompt
+            file: projects/3-way-negotiation/05_response_submission.md
+          - type: separator
+            style: thin
+          - type: prompt
+            file: projects/3-way-negotiation/06_multipleChoice_agreement_submission.md
+            name: dealsheet1
+          - type: prompt
+            file: projects/3-way-negotiation/06_multipleChoice_agreement_submission_inclusion.md
+            name: dealsheet2
+          - type: prompt
+            file: projects/3-way-negotiation/06a_openResponse_A_payoff.md
+            name: dealsheet3
+          - type: prompt
+            file: projects/3-way-negotiation/06b_openResponse_B_payoff.md
+            name: dealsheet4
+          - type: prompt
+            file: projects/3-way-negotiation/06c_openResponse_C_payoff.md
+            name: dealsheet5
+
+          - type: submitButton
+            buttonText: Submit Now and End Negotiation
+            conditions:
+            - promptName: dealsheet1
+              comparator: equal
+              value: "Yes"
+              position: all
+            - promptName: dealsheet2
+              comparator: exists
+              position: all
+            - promptName: dealsheet3
+              comparator: exists
+              position: all
+            - promptName: dealsheet4
+              comparator: exists
+              position: all
+            - promptName: dealsheet5
+              comparator: exists
+              position: all
+
           - projects/3-way-negotiation/05_instructions_3_way_negotation_in_round.md
           - type: separator
             style: thin

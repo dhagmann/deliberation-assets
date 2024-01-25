@@ -3,6 +3,6 @@ name: projects/exaptation/image_4.md
 type: noResponse
 ---
 
-Image 4 goes here
+![Image_4](projects/exaptation/image_4.jpg)
 
 ---

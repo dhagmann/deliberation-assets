@@ -1,7 +1,7 @@
 introSequences:
 
 treatments:
-  - name: demo
+  - name: text_new_names
     desc: test whether we can do the naming game using the deliberation lab platform
     playerCount: 3
     assignPositionsBy: random
@@ -42,8 +42,12 @@ treatments:
         elements:
           - type: prompt
             file: projects/exaptation/recall_stage_instructions.md
+            displayTime: 0
+            hideTime: 30
           - type: separator
             style: thin
+            displayTime: 0
+            hideTime: 30
 
           - type: prompt
             file: projects/exaptation/image_3.md
@@ -91,7 +95,7 @@ treatments:
             displayTime: 30
             hideTime: 45
 
-      - name: new names
+      - name: new names 1
         duration: 60
         elements:
           - type: prompt
@@ -144,6 +148,664 @@ treatments:
             position: 2
             displayTime: 30
             hideTime: 45
+
+    exitSequence:
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics
+
+  - name: new_name_lineup
+    desc: in the new names phase, one person writes a name, others have to guess what image they chose
+    playerCount: 3
+    assignPositionsBy: random
+    gameStages:
+      - name: Intro
+        type: prompt
+        duration: 60
+        elements:
+          - projects/exaptation/instructions.md
+          - type: submitButton
+
+      - name: Labeling
+        duration: 600
+        discussion:
+          chatType: text
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: prompt
+            file: projects/exaptation/initial_image_naming.md
+            name: initialImageNaming
+            shared: true
+          - type: submitButton
+            buttonText: Proceed to stage 2
+
+      - name: Recall 1
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_1
+            file: projects/exaptation/recall_C.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 1
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_1
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_1
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_1
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_1
+            position: 0
+          - type: display
+            promptName: recall_1
+            position: 1
+          - type: display
+            promptName: recall_1
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 2
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_2
+            file: projects/exaptation/recall_B.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 2
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_2
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_2
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_2
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_2
+            position: 0
+          - type: display
+            promptName: recall_2
+            position: 1
+          - type: display
+            promptName: recall_2
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 3
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_3
+            file: projects/exaptation/recall_A.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 3
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_3
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_3
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_3
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_3
+            position: 0
+          - type: display
+            promptName: recall_3
+            position: 1
+          - type: display
+            promptName: recall_3
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 4
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_4
+            file: projects/exaptation/recall_D.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 4
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_4
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_4
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_4
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_4
+            position: 0
+          - type: display
+            promptName: recall_4
+            position: 1
+          - type: display
+            promptName: recall_4
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 5
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_5
+            file: projects/exaptation/recall_F.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 5
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_5
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_5
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_5
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_5
+            position: 0
+          - type: display
+            promptName: recall_5
+            position: 1
+          - type: display
+            promptName: recall_5
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 6
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_6
+            file: projects/exaptation/recall_E.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 6
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_6
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_6
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_6
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_6
+            position: 0
+          - type: display
+            promptName: recall_6
+            position: 1
+          - type: display
+            promptName: recall_6
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Guess instructions
+        duration: 40
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_preinstructions.md
+          - type: submitButton
+            buttonText: Proceed to stage 3
+
+      - name: New Image 1 labeling
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/image_I_naming.md
+            name: image1Label
+            showToPositions: [0]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [1, 2]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 1 guessing
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+            showToPositions: [1, 2]
+          - type: display
+            promptName: image1Label
+            position: 0
+            showToPositions: [1, 2]
+          - type: prompt
+            file: projects/exaptation/guess_G-L.md
+            name: image1Guess
+            showToPositions: [1, 2]
+          - type: prompt
+            file: projects/exaptation/guess_confidence.md
+            name: image1Confidence
+            showToPositions: [1, 2]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [0]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 1 Feedback
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+          - type: display
+            promptName: image1Label
+            position: 0
+
+          - type: prompt
+            file: projects/exaptation/image_I_result.md
+
+          - type: display
+            promptName: image1Guess
+            position: 1
+          - type: display
+            promptName: image1Guess
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: New Image 2 labeling
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/image_G_naming.md
+            name: image2Label
+            showToPositions: [1]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [0, 2]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 2 guessing
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+            showToPositions: [0, 2]
+          - type: display
+            promptName: image2Label
+            position: 1
+            showToPositions: [0, 2]
+          - type: prompt
+            file: projects/exaptation/guess_G-L.md
+            name: image2Guess
+            showToPositions: [0, 2]
+          - type: prompt
+            file: projects/exaptation/guess_confidence.md
+            name: image2Confidence
+            showToPositions: [0, 2]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [1]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 2 Feedback
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+          - type: display
+            promptName: image2Label
+            position: 1
+
+          - type: prompt
+            file: projects/exaptation/image_G_result.md
+
+          - type: display
+            promptName: image2Guess
+            position: 0
+          - type: display
+            promptName: image2Guess
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: New Image 3 labeling
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/image_L_naming.md
+            name: image3Label
+            showToPositions: [2]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [1, 0]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 3 guessing
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+            showToPositions: [1, 0]
+          - type: display
+            promptName: image3Label
+            position: 2
+            showToPositions: [1, 0]
+          - type: prompt
+            file: projects/exaptation/guess_G-L.md
+            name: image3Guess
+            showToPositions: [1, 0]
+          - type: prompt
+            file: projects/exaptation/guess_confidence.md
+            name: image3Confidence
+            showToPositions: [1, 0]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [2]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 3 Feedback
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+          - type: display
+            promptName: image3Label
+            position: 2
+
+          - type: prompt
+            file: projects/exaptation/image_L_result.md
+
+          - type: display
+            promptName: image3Guess
+            position: 1
+          - type: display
+            promptName: image3Guess
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: New Image 4 labeling
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/image_H_naming.md
+            name: image4Label
+            showToPositions: [0]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [1, 2]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 4 guessing
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+            showToPositions: [1, 2]
+          - type: display
+            promptName: image4Label
+            position: 0
+            showToPositions: [1, 2]
+          - type: prompt
+            file: projects/exaptation/guess_G-L.md
+            name: image4Guess
+            showToPositions: [1, 2]
+          - type: prompt
+            file: projects/exaptation/guess_confidence.md
+            name: image4Confidence
+            showToPositions: [1, 2]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [0]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 4 Feedback
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+          - type: display
+            promptName: image4Label
+            position: 0
+
+          - type: prompt
+            file: projects/exaptation/image_H_result.md
+
+          - type: display
+            promptName: image4Guess
+            position: 1
+          - type: display
+            promptName: image4Guess
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: New Image 5 labeling
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/image_K_naming.md
+            name: image5Label
+            showToPositions: [1]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [0, 2]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 5 guessing
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+            showToPositions: [0, 2]
+          - type: display
+            promptName: image5Label
+            position: 1
+            showToPositions: [0, 2]
+          - type: prompt
+            file: projects/exaptation/guess_G-L.md
+            name: image5Guess
+            showToPositions: [0, 2]
+          - type: prompt
+            file: projects/exaptation/guess_confidence.md
+            name: image5Confidence
+            showToPositions: [0, 2]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [1]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 5 Feedback
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+          - type: display
+            promptName: image5Label
+            position: 1
+
+          - type: prompt
+            file: projects/exaptation/image_K_result.md
+
+          - type: display
+            promptName: image5Guess
+            position: 0
+          - type: display
+            promptName: image5Guess
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: New Image 6 labeling
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/image_J_naming.md
+            name: image6Label
+            showToPositions: [2]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [1, 0]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 6 guessing
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+            showToPositions: [1, 0]
+          - type: display
+            promptName: image6Label
+            position: 2
+            showToPositions: [1, 0]
+          - type: prompt
+            file: projects/exaptation/guess_G-L.md
+            name: image6Guess
+            showToPositions: [1, 0]
+          - type: prompt
+            file: projects/exaptation/guess_confidence.md
+            name: image6Confidence
+            showToPositions: [1, 0]
+          - type: prompt
+            file: projects/exaptation/guess_wait.md
+            showToPositions: [2]
+          - type: submitButton
+            buttonText: Submit
+
+      - name: New Image 6 Feedback
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/guess_label.md
+          - type: display
+            promptName: image6Label
+            position: 2
+
+          - type: prompt
+            file: projects/exaptation/image_J_result.md
+
+          - type: display
+            promptName: image6Guess
+            position: 1
+          - type: display
+            promptName: image6Guess
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
 
     exitSequence:
       - name: Demographics

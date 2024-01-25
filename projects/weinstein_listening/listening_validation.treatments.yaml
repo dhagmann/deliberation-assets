@@ -1,9 +1,6 @@
 introSequences:
   - name: cross_party_match
     desc: For pairing cross partisans
-    introPayment:
-      value: 1
-      currencySymbol: $
     introSteps:
       - name: Political Leanings Survey
         elements:

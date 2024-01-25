@@ -100,10 +100,11 @@ To run a single-player demo, use a variation on the config:
   "treatmentFile": "projects/example/treatments.demo.yaml",
   "dispatchWait": 1,
   "treatments": ["demo_4p_test_video"],
-  "cdn": "local",
+  "cdn": "prod",
   "platformConsent": "US",
+  "exitCodeStem": "none",
   "consentAddendum": "projects/example/consentAddendum.md",
-  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "videoStorageLocation": "deliberation-lab-recordings-public",
   "dataRepos": [
     {
       "owner": "Watts-Lab",

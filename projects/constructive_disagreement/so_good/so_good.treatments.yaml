@@ -27,13 +27,18 @@ treatments:
 
     gameStages:
       - name: Intro
-        type: prompt
         duration: 60
         elements:
           - projects/constructive_disagreement/so_good/instructions.md
           - type: submitButton
             buttonText: Start Exercise
             displayTime: 10
+
+      - name: Topic Attitudes
+        duration: 180
+        elements:
+          - type: survey
+            surveyName: TopicAttitudes
 
       - name: Discussion
         duration: 300

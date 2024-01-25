@@ -16,7 +16,7 @@ Questions to include:
   "introSequence": "baseline",
   "treatments": ["baseline"],
   "cdn": "local",
-  "exitCodeStem": "none",
+  "exitCodeStem": "SGDemo",
   "videoStorageLocation": "deliberation-lab-recordings-test",
   "dataRepos": [
     {
@@ -56,20 +56,31 @@ MTurk test
 
 ```json
 {
-  "batchName": "demo",
+  "batchName": "turkPilot",
   "preregister": "false",
   "treatmentFile": "projects/constructive_disagreement/so_good/so_good.treatments.yaml",
-  "dispatchWait": 1,
+  "dispatchWait": 20,
   "introSequence": "baseline",
+  "launchDate": "17 Jan 2024 13:00:00 EST",
   "treatments": ["baseline"],
   "cdn": "prod",
-  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "exitCodeStem": "tP117",
+  "videoStorageLocation": "deliberation-lab-recordings-icbs",
+  "awsRegion": "eu-west-2",
   "dataRepos": [
     {
-      "owner": "Watts-Lab",
-      "repo": "deliberation-data-test",
+      "owner": "JamesPHoughton",
+      "repo": "so-good-study",
       "branch": "main",
-      "directory": "demo"
+      "directory": "data"
+    }
+  ],
+  "preregRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "so-good-study",
+      "branch": "main",
+      "directory": "preregistration"
     }
   ]
 }

@@ -154,19 +154,22 @@ treatments:
             - promptName: dealsheet1
               comparator: equal
               value: "Yes"
-              position: all
             - promptName: dealsheet2
-              comparator: exists
-              position: all
+              position: percentAgreement
+              comparator: equal
+              value: 100
             - promptName: dealsheet3
-              comparator: exists
-              position: all
+              position: percentAgreement
+              comparator: equal
+              value: 100
             - promptName: dealsheet4
-              comparator: exists
-              position: all
+              position: percentAgreement
+              comparator: equal
+              value: 100
             - promptName: dealsheet5
-              comparator: exists
-              position: all
+              position: percentAgreement
+              comparator: equal
+              value: 100
 
           - projects/3-way-negotiation/05_instructions_3_way_negotation_in_round.md
           - type: separator

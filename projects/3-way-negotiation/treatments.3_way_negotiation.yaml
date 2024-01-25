@@ -154,10 +154,7 @@ treatments:
             - promptName: dealsheet1
               comparator: equal
               value: "Yes"
-            - promptName: dealsheet2
-              position: percentAgreement
-              comparator: equal
-              value: 100
+              position: all
             - promptName: dealsheet3
               position: percentAgreement
               comparator: equal
@@ -169,6 +166,47 @@ treatments:
             - promptName: dealsheet5
               position: percentAgreement
               comparator: equal
+              value: 100
+
+          - type: prompt
+            file: projects/3-way-negotiation/05_nonmatching_inputs1.md
+            conditions:
+            - promptName: dealsheet1
+              comparator: exists
+              position: all
+            - promptName: dealsheet1
+              position: percentAgreement
+              comparator: notEqual
+              value: 100
+          - type: prompt
+            file: projects/3-way-negotiation/05_nonmatching_inputs3.md
+            conditions:
+            - promptName: dealsheet3
+              comparator: exists
+              position: all
+            - promptName: dealsheet3
+              position: percentAgreement
+              comparator: notEqual
+              value: 100
+          - type: prompt
+            file: projects/3-way-negotiation/05_nonmatching_inputs4.md
+            conditions:
+            - promptName: dealsheet4
+              comparator: exists
+              position: all
+            - promptName: dealsheet4
+              position: percentAgreement
+              comparator: notEqual
+              value: 100
+          - type: prompt
+            file: projects/3-way-negotiation/05_nonmatching_inputs5.md
+            conditions:
+            - promptName: dealsheet5
+              comparator: exists
+              position: all
+            - promptName: dealsheet5
+              position: percentAgreement
+              comparator: notEqual
               value: 100
 
           - projects/3-way-negotiation/05_instructions_3_way_negotation_in_round.md

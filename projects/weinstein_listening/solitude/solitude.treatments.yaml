@@ -1,0 +1,67 @@
+introSequences:
+  - name: baseline_english
+    desc:
+    introSteps:
+      - name:
+        elements:
+          - type: qualtrics
+            url: https://oii.qualtrics.com/jfe/form/SV_0Gl3k64dPyLuxQW
+
+  - name: baseline_hebrew
+    desc:
+    introSteps:
+      - name:
+        elements:
+          - type: qualtrics
+            url: https://oii.qualtrics.com/jfe/form/SV_0Gl3k64dPyLuxQW
+
+treatments:
+  - name: baseline_english
+    desc:
+    playerCount: 2
+    assignPositionsBy: random
+    gameStages:
+      - name: discussion
+        type: prompt
+        duration: 600
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: prompt
+            file: projects/weinstein_listening/solitude/discussion_instructions.md
+          - type: submitButton
+            buttonText: Leave discussion and continue to surveys
+            displayTime: 540
+
+    exitSequence:
+      - name: postsurveys
+        elements:
+          - type: qualtrics
+            url: https://oii.qualtrics.com/jfe/form/SV_cBkbEPRBZQR09HU
+
+  - name: baseline_hebrew
+    desc:
+    playerCount: 2
+    assignPositionsBy: random
+    gameStages:
+      - name: discussion
+        type: prompt
+        duration: 600
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: prompt
+            file: projects/weinstein_listening/solitude/discussion_instructions_hebrew.md
+          - type: submitButton
+            buttonText: Leave discussion and continue to surveys
+            displayTime: 540
+
+    exitSequence:
+      - name: postsurveys
+        elements:
+          - type: qualtrics
+            url: https://oii.qualtrics.com/jfe/form/SV_cBkbEPRBZQR09HU

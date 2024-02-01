@@ -21,6 +21,50 @@
 }
 ```
 
+```json
+{
+  "batchName": "initial_demo",
+  "treatmentFile": "projects/exaptation/exaptation_lego_pilot.treatments.yaml",
+  "dispatchWait": 1,
+  "treatments": ["four_stage"],
+  "videoStorageLocation": "none",
+  "exitCodeStem": "demo",
+  "preregister": false,
+  "cdn": "local",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "exaptation"
+    }
+  ]
+}
+```
+
+```json
+{
+  "batchName": "initial_demo",
+  "treatmentFile": "projects/exaptation/exaptation_pilot.treatments.yaml",
+  "dispatchWait": 1,
+  "treatments": ["new_name_lineup"],
+  "videoStorageLocation": "none",
+  "exitCodeStem": "demo",
+  "preregister": false,
+  "cdn": "prod",
+  "checkAudio": false,
+  "checkVideo": false,
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "exaptation"
+    }
+  ]
+}
+```
+
 ### Prestudy:
 
 - have people rate the similarity of images

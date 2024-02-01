@@ -1,0 +1,1036 @@
+introSequences:
+
+treatments:
+  - name: four_stage
+    desc: three rounds with lego, one round with tangrams
+    playerCount: 3
+    assignPositionsBy: random
+    gameStages:
+      - name: Intro
+        type: prompt
+        duration: 60
+        elements:
+          - projects/exaptation/instructions.md
+          - type: submitButton
+
+      - name: Labeling Lego A
+        duration: 600
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: image
+            file: projects/exaptation/lego_Panel_A.jpg
+          - type: prompt
+            file: projects/exaptation/naming_8.md
+            name: namingLegoA
+            shared: true
+          - type: submitButton
+            buttonText: Proceed
+
+      - name: Recall Lego A3
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_A3.jpg
+          - type: prompt
+            name: recall_Lego_A3
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego A3
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_A3
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_A3
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_A3
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_A3
+            position: 0
+          - type: display
+            promptName: recall_Lego_A3
+            position: 1
+          - type: display
+            promptName: recall_Lego_A3
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego A5
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_A5.jpg
+          - type: prompt
+            name: recall_Lego_A5
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego A5
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_A5
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_A5
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_A5
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_A5
+            position: 0
+          - type: display
+            promptName: recall_Lego_A5
+            position: 1
+          - type: display
+            promptName: recall_Lego_A5
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego A1
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_A1.jpg
+          - type: prompt
+            name: recall_Lego_A1
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego A1
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_A1
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_A1
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_A1
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_A1
+            position: 0
+          - type: display
+            promptName: recall_Lego_A1
+            position: 1
+          - type: display
+            promptName: recall_Lego_A1
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego A6
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_A6.jpg
+          - type: prompt
+            name: recall_Lego_A6
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego A6
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_A6
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_A6
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_A6
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_A6
+            position: 0
+          - type: display
+            promptName: recall_Lego_A6
+            position: 1
+          - type: display
+            promptName: recall_Lego_A6
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego A2
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_A2.jpg
+          - type: prompt
+            name: recall_Lego_A2
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego A2
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_A2
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_A2
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_A2
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_A2
+            position: 0
+          - type: display
+            promptName: recall_Lego_A2
+            position: 1
+          - type: display
+            promptName: recall_Lego_A2
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Labeling Lego B
+        duration: 600
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: image
+            file: projects/exaptation/lego_Panel_B.jpg
+          - type: prompt
+            file: projects/exaptation/naming_8.md
+            name: namingLegoB
+            shared: true
+          - type: submitButton
+            buttonText: Proceed
+
+      - name: Recall Lego B8
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_B8.jpg
+          - type: prompt
+            name: recall_Lego_B8
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego B8
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_B8
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_B8
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_B8
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_B8
+            position: 0
+          - type: display
+            promptName: recall_Lego_B8
+            position: 1
+          - type: display
+            promptName: recall_Lego_B8
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego B3
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_B3.jpg
+          - type: prompt
+            name: recall_Lego_B3
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego A5
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_B3
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_B3
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_B3
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_B3
+            position: 0
+          - type: display
+            promptName: recall_Lego_B3
+            position: 1
+          - type: display
+            promptName: recall_Lego_B3
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego B1
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_B1.jpg
+          - type: prompt
+            name: recall_Lego_B1
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego B1
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_B1
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_B1
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_B1
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_B1
+            position: 0
+          - type: display
+            promptName: recall_Lego_B1
+            position: 1
+          - type: display
+            promptName: recall_Lego_B1
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego B6
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_B6.jpg
+          - type: prompt
+            name: recall_Lego_B6
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego B6
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_B6
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_B6
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_B6
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_B6
+            position: 0
+          - type: display
+            promptName: recall_Lego_B6
+            position: 1
+          - type: display
+            promptName: recall_Lego_B6
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego B4
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_B4.jpg
+          - type: prompt
+            name: recall_Lego_B4
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego B4
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_B4
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_B4
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_B4
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_B4
+            position: 0
+          - type: display
+            promptName: recall_Lego_B4
+            position: 1
+          - type: display
+            promptName: recall_Lego_B4
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Labeling Lego C
+        duration: 600
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: image
+            file: projects/exaptation/lego_Panel_C.jpg
+          - type: prompt
+            file: projects/exaptation/naming_8.md
+            name: namingLegoC
+            shared: true
+          - type: submitButton
+            buttonText: Proceed
+
+      - name: Recall Lego C5
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_C5.jpg
+          - type: prompt
+            name: recall_Lego_C5
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego C5
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_C5
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_C5
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_C5
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_C5
+            position: 0
+          - type: display
+            promptName: recall_Lego_C5
+            position: 1
+          - type: display
+            promptName: recall_Lego_C5
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego C6
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_C6.jpg
+          - type: prompt
+            name: recall_Lego_C6
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego C6
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_C6
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_C6
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_C6
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_C6
+            position: 0
+          - type: display
+            promptName: recall_Lego_C6
+            position: 1
+          - type: display
+            promptName: recall_Lego_C6
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego C7
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_C7.jpg
+          - type: prompt
+            name: recall_Lego_C7
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego C7
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_C7
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_C7
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_C7
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_C7
+            position: 0
+          - type: display
+            promptName: recall_Lego_C7
+            position: 1
+          - type: display
+            promptName: recall_Lego_C7
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego C2
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_C2.jpg
+          - type: prompt
+            name: recall_Lego_
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego C2
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_C2
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_C2
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_C2
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_C2
+            position: 0
+          - type: display
+            promptName: recall_Lego_C2
+            position: 1
+          - type: display
+            promptName: recall_Lego_C2
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall Lego C1
+        duration: 30
+        elements:
+          - type: image
+            file: projects/exaptation/Lego_C1.jpg
+          - type: prompt
+            name: recall_Lego_C1
+            file: projects/exaptation/recall.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback Lego C1
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_Lego_C1
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_Lego_C1
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_Lego_C1
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_Lego_C1
+            position: 0
+          - type: display
+            promptName: recall_Lego_C1
+            position: 1
+          - type: display
+            promptName: recall_Lego_C1
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Labeling Tangrams
+        duration: 600
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: prompt
+            file: projects/exaptation/initial_image_naming.md
+            name: initialImageNaming
+            shared: true
+          - type: submitButton
+            buttonText: Proceed to stage 2
+
+      - name: Recall 1
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_1
+            file: projects/exaptation/recall_C.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 1
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_1
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_1
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_1
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_1
+            position: 0
+          - type: display
+            promptName: recall_1
+            position: 1
+          - type: display
+            promptName: recall_1
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 2
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_2
+            file: projects/exaptation/recall_B.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 2
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_2
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_2
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_2
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_2
+            position: 0
+          - type: display
+            promptName: recall_2
+            position: 1
+          - type: display
+            promptName: recall_2
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 3
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_3
+            file: projects/exaptation/recall_A.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 3
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_3
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_3
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_3
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_3
+            position: 0
+          - type: display
+            promptName: recall_3
+            position: 1
+          - type: display
+            promptName: recall_3
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 4
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_4
+            file: projects/exaptation/recall_D.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 4
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_4
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_4
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_4
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_4
+            position: 0
+          - type: display
+            promptName: recall_4
+            position: 1
+          - type: display
+            promptName: recall_4
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 5
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_5
+            file: projects/exaptation/recall_F.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 5
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_5
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_5
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_5
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_5
+            position: 0
+          - type: display
+            promptName: recall_5
+            position: 1
+          - type: display
+            promptName: recall_5
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Recall 6
+        duration: 30
+        elements:
+          - type: prompt
+            name: recall_6
+            file: projects/exaptation/recall_E.md
+          - type: submitButton
+            buttonText: Submit
+
+      - name: Feedback 6
+        duration: 20
+        elements:
+          - type: prompt
+            file: projects/exaptation/labels_match.md
+            conditions:
+              - promptName: recall_6
+                position: percentAgreement
+                comparator: equal
+                value: 100
+              - promptName: recall_6
+                position: all
+                comparator: lengthAtLeast
+                value: 2
+          - type: prompt
+            file: projects/exaptation/labels_not_match.md
+            conditions:
+              - promptName: recall_6
+                position: percentAgreement
+                comparator: isBelow
+                value: 100
+
+          - type: display
+            promptName: recall_6
+            position: 0
+          - type: display
+            promptName: recall_6
+            position: 1
+          - type: display
+            promptName: recall_6
+            position: 2
+
+          - type: submitButton
+            buttonText: Continue
+
+    exitSequence:
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics

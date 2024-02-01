@@ -21,7 +21,7 @@ treatments:
           showTitle: false
         elements:
           - type: image
-            file: projects/exaptation/lego_Panel_A.jpg
+            file: projects/exaptation/Lego_Panel_A.jpg
           - type: prompt
             file: projects/exaptation/naming_8.md
             name: namingLegoA
@@ -267,7 +267,7 @@ treatments:
           showTitle: false
         elements:
           - type: image
-            file: projects/exaptation/lego_Panel_B.jpg
+            file: projects/exaptation/Lego_Panel_B.jpg
           - type: prompt
             file: projects/exaptation/naming_8.md
             name: namingLegoB
@@ -513,7 +513,7 @@ treatments:
           showTitle: false
         elements:
           - type: image
-            file: projects/exaptation/lego_Panel_C.jpg
+            file: projects/exaptation/Lego_Panel_C.jpg
           - type: prompt
             file: projects/exaptation/naming_8.md
             name: namingLegoC

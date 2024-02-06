@@ -8,7 +8,7 @@ notes: Instructions for the 3-way negotiation activity, displayed to Participant
 
 In the next stage, you will be placed in a chat with the other participants. You should use this chat to discuss how you and the other organizations plan to split the points, and you will have **10 minutes** to reach an agreement.
 
-Your goal in these negotiations is to ensure that *Organization C* gets as much of the benefits as possible in the time allotted.
+Your goal in these negotiations is to ensure that *Organization C* gets as much of the benefits as possible in the time allotted. Remember that each point you earn represents a lottery ticket towards a **$10 bonus**.
 
 Below are a few key reminders:
 

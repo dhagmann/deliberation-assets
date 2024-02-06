@@ -6,7 +6,9 @@ notes: Instructions for the 3-way negotiation activity
 
 In this activity, you will represent one of Organizations A, B, or C in a three-way negotiation.
 
-Your goal is to decide how to split a pool of points, gaining as many points for your organization as possible. Depending on how the three of you choose to work together, different amounts of points are available in the pool.
+Your goal is to decide how to split a pool of points, gaining as many points for your organization as possible. Each point you earn represents a lottery ticket towards a **$10 bonus**.
+
+Depending on how the three of you choose to work together, different amounts of points are available in the pool.
 
 - **If all three of you agree to a deal, 121 total points are possible.** 
 - **If only two out of three parties join the deal, lesser amounts of points are available.** (Please see the Schedule of Benefits at the bottom of this page.)

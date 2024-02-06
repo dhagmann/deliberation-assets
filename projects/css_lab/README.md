@@ -56,11 +56,12 @@ Start with a baseline, no interventions, describe:
 {
   "batchName": "demo",
   "preregister": "false",
-  "treatmentFile": "projects/css_lab/treatments.yaml",
+  "treatmentFile": "projects/css_lab/exploration.treatments.yaml",
   "dispatchWait": 1,
   "introSequence": "base_sequence",
   "treatments": ["baseline"],
   "cdn": "local",
+  "exitCodeStem": "local",
   "platformConsent": "US",
   "videoStorageLocation": "deliberation-lab-recordings-test",
   "dataRepos": [

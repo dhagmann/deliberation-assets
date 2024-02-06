@@ -3,7 +3,7 @@ name: projects/weinstein_listening/solitude/discussion_instructions.md
 type: noResponse
 ---
 
-For the next 10 minutes, please speak with your partner about the experience you just wrote about.
+You were asked to reflect on an experience in which you felt guilty, regretful, or ashamed. Please discuss this now with your conversation partner.
 
 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯

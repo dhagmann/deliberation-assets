@@ -1,0 +1,17 @@
+---
+name: projects/replications/1970_Myers_Bishop/Q4.md
+type: multipleChoice
+note: Taken from ANES
+---
+
+### Should the government in Washington see to it that black people get fair treatment in jobs or is this not the federal government's business?
+
+---
+
+- 1 (Strongly favor the government ensuring that black people get fair treatment in jobs)
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7 (It is not the government's business to ensure that black people get fair treatment in jobs)

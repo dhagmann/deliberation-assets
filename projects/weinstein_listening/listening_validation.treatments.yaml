@@ -14,7 +14,6 @@ treatments:
     assignPositionsBy: random
     gameStages:
       - name: Intro
-        type: prompt
         duration: 45
         elements:
           - projects/weinstein_listening/intro_videos.md

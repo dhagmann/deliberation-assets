@@ -24,6 +24,28 @@ Todo:
 }
 ```
 
+```json
+{
+  "batchName": "study_RA1",
+  "treatmentFile": "projects/weinstein_listening/solitude/solitude.treatments.yaml",
+  "dispatchWait": 1,
+  "preregister": false,
+  "treatments": ["baseline_english"],
+  "videoStorageLocation": "none",
+  "introSequence": "baseline_english",
+  "exitCodeStem": "none",
+  "cdn": "prod",
+  "dataRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "listening-study",
+      "branch": "main",
+      "directory": "solitude_data"
+    }
+  ]
+}
+```
+
 Hebrew
 
 ```json

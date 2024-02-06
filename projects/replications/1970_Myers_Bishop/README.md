@@ -13,12 +13,12 @@ In the original study, questions about racial attitudes were designed to capture
 
 #### Reported in Myers and Bishop 1970
 
-- "Some people recently have been saying that 'white racism' is basically responsible for conditions in which Negroes live in American cities. Others Disagree. How do you feel?"
-- "Other items were concerned with such matters as federal versus local control of school desegregation"
-- "property rights vs open housing"
-- "two-way school bussing to achieve integration"
-- "boycotting of a discriminatory business
-- "patience vs activism as an effective black strategy"
+> "Some people recently have been saying that 'white racism' is basically responsible for conditions in which Negroes live in American cities. Others Disagree. How do you feel?"
+> "Other items were concerned with such matters as federal versus local control of school desegregation"
+> "property rights vs open housing"
+> "two-way school bussing to achieve integration"
+> "boycotting of a discriminatory business
+> "patience vs activism as an effective black strategy"
 
 #### New items
 
@@ -39,3 +39,27 @@ At one point, the authors refer to another study they are working on, which is m
 # Resources
 
 - https://www.pewresearch.org/social-trends/wp-content/uploads/sites/3/2023/06/ST_2023.06.14_BLM-Support_Topline.pdf
+
+```json
+{
+  "batchName": "demo",
+  "treatmentFile": "projects/replications/1970_Myers_Bishop/1970_Myers_Bishop.treatments.yaml",
+  "dispatchWait": 1,
+  "treatments": ["control"],
+  "videoStorageLocation": "none",
+  "exitCodeStem": "demo",
+  "introSequence": "baseline",
+  "preregister": false,
+  "cdn": "local",
+  "checkAudio": false,
+  "checkVideo": false,
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "exaptation"
+    }
+  ]
+}
+```

@@ -33,7 +33,6 @@ treatments:
             file: projects/weinstein_listening/solitude/discussion_instructions.md
           - type: submitButton
             buttonText: Leave discussion and continue to surveys
-            displayTime: 540
 
     exitSequence:
       - name: postsurveys
@@ -58,7 +57,6 @@ treatments:
             file: projects/weinstein_listening/solitude/discussion_instructions_hebrew.md
           - type: submitButton
             buttonText: Leave discussion and continue to surveys
-            displayTime: 540
 
     exitSequence:
       - name: postsurveys

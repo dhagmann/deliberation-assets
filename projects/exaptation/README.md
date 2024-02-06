@@ -45,6 +45,27 @@
 ```json
 {
   "batchName": "initial_demo",
+  "treatmentFile": "projects/exaptation/exaptation_lego_pilot.treatments.yaml",
+  "dispatchWait": 1,
+  "treatments": ["four_stage"],
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "exitCodeStem": "demo",
+  "preregister": false,
+  "cdn": "prod",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "exaptation"
+    }
+  ]
+}
+```
+
+```json
+{
+  "batchName": "initial_demo",
   "treatmentFile": "projects/exaptation/exaptation_pilot.treatments.yaml",
   "dispatchWait": 1,
   "treatments": ["new_name_lineup"],

@@ -167,6 +167,15 @@ treatments:
               position: percentAgreement
               comparator: equal
               value: 100
+            - promptName: dealsheet3
+              comparator: exists
+              position: all
+            - promptName: dealsheet4
+              comparator: exists
+              position: all
+            - promptName: dealsheet5
+              comparator: exists
+              position: all
 
           - type: prompt
             file: projects/3-way-negotiation/05_nonmatching_inputs1.md

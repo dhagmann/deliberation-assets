@@ -20,9 +20,19 @@ Todo:
       "branch": "main",
       "directory": "demo"
     }
+  ],
+  "preregRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "listening-study",
+      "branch": "main",
+      "directory": "data"
+    }
   ]
 }
 ```
+
+## Prod config
 
 ```json
 {
@@ -36,6 +46,14 @@ Todo:
   "exitCodeStem": "none",
   "cdn": "prod",
   "dataRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "listening-study",
+      "branch": "main",
+      "directory": "solitude_data"
+    }
+  ],
+  "preregRepos": [
     {
       "owner": "JamesPHoughton",
       "repo": "listening-study",

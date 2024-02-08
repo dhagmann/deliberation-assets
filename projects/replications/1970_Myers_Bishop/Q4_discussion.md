@@ -1,5 +1,5 @@
 ---
-name: projects/replications/1970_Myers_Bishop/Q4.md
+name: projects/replications/1970_Myers_Bishop/Q4_discussion.md
 type: multipleChoice
 note: Taken from ANES
 ---
@@ -8,7 +8,7 @@ note: Taken from ANES
 
 ---
 
-- 1 (Strongly favor the government ensuring that black people get fair treatment in jobs)
+- 1 (Strongly favor the government ensuring that black people can get fair treatment in jobs)
 - 2
 - 3
 - 4

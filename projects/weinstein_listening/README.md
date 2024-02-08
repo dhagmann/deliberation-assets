@@ -34,6 +34,14 @@ In study 2, trialing initially 3 conditions
       "branch": "main",
       "directory": "data"
     }
+  ],
+  "preregRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "listening-study",
+      "branch": "main",
+      "directory": "data"
+    }
   ]
 }
 ```

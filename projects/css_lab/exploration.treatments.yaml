@@ -40,10 +40,6 @@ introSequences:
         elements:
           - type: survey
             surveyName: Demographics
-      - name: Self-awareness, Self-monitoring, and Growth Mindset
-        elements:
-          - type: survey
-            surveyName: AwarenessMonitoringGrowth
 
 treatments:
   - name: baseline
@@ -86,39 +82,28 @@ treatments:
             buttonText: Begin Discussion
 
       - name: Discussion
-        duration: 1500
+        duration: 660
         discussion:
           chatType: video
           showNickname: true
           showTitle: false
         elements:
-          - type: timer
-            hideTime: 600
-            warnTimeRemaining: 180
           - type: prompt
-            file: projects/css_lab/discussion_open_conversation.md
+            file: projects/css_lab/discussion_instructions.md
             hideTime: 600
-          - type: audio
-            file: shared/airplane_chime.mp3
-            displayTime: 600
+          - type: prompt
+            file: shared/procon/dcandpuertoricostatehood_topic.md
+            hideTime: 600
 
           - type: prompt
             file: projects/css_lab/discussion_wrapup.md
-            displayTime: 1200
-          - type: timer
             displayTime: 600
-            warnTimeRemaining: 180
-          - type: prompt
-            file: projects/css_lab/discussion_shared_response.md
-            displayTime: 600
-
-          - type: separator
-          - projects/css_lab/discussion_topic_header.md
-          - shared/procon/dcandpuertoricostatehood_topic.md
-
           - type: submitButton
             buttonText: Submit response and end discussion
-            displayTime: 1200
+            displayTime: 600
+          - type: audio
+            file: shared/airplane_chime.mp3
+            displayTime: 600
 
     exitSequence:
       - name: Attitude Change
@@ -128,36 +113,6 @@ treatments:
           - type: prompt
             file: shared/procon/dcandpuertoricostatehood_survey.md
           - type: submitButton
-
-      - name: Buy-in
-        elements:
-          - type: prompt
-            file: projects/css_lab/buy_in_instructions.md
-          - type: prompt
-            file: shared/procon/dcandpuertoricostatehood_topic.md
-          - type: display
-            promptName: sharedResponse
-            position: shared
-          - type: prompt
-            name: buyInRating
-            file: projects/css_lab/buy_in_rating.md
-          - type: prompt
-            name: buyInShare
-            file: projects/css_lab/buy_in_share.md
-            conditions:
-              - promptName: buyInRating
-                comparator: exists
-          - type: prompt
-            name: buyInAttribution
-            file: projects/css_lab/buy_in_attribution.md
-            conditions:
-              - promptName: buyInShare
-                comparator: equal
-                value: "Yes"
-          - type: submitButton
-            conditions:
-              - promptName: buyInShare
-                comparator: exists
 
       - name: Willingness to Return
         elements:
@@ -194,7 +149,7 @@ treatments:
             file: projects/css_lab/arguments_opposed.md
           - type: submitButton
 
-  - name: shortDemo
+  - name: shortDemo - with written statement
     desc: no frills or treatments, just the basics
     playerCount: 2
     groupComposition:

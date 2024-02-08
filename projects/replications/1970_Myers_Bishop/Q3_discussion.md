@@ -1,5 +1,5 @@
 ---
-name: projects/replications/1970_Myers_Bishop/Q3.md
+name: projects/replications/1970_Myers_Bishop/Q3_discussion.md
 type: multipleChoice
 note: Taken from ANES
 ---

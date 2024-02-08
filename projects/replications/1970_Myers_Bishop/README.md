@@ -36,13 +36,19 @@ The authors of the original study do not report the discussion materials for the
 
 At one point, the authors refer to another study they are working on, which is most likely "Myers, David G., and Sidney J. Arenson. 1972. “Enhancement of Dominant Risk Tendencies in Group Discussion.” Psychological Reports 30 (2): 615–23.", although they don't give a full citation. In this second paper, they say that the choice questions used came from Kogan and Wallach 1964. We may never know what this is, because it isn't online.
 
+### 5.
+
+We have updated language to use preferred terminology according to https://news.gallup.com/poll/353000/no-preferred-racial-term-among-black-hispanic-adults.aspx
+
 # Resources
 
 - https://www.pewresearch.org/social-trends/wp-content/uploads/sites/3/2023/06/ST_2023.06.14_BLM-Support_Topline.pdf
 
+# Configs
+
 ```json
 {
-  "batchName": "demo",
+  "batchName": "MyersBishop1970Demo",
   "treatmentFile": "projects/replications/1970_Myers_Bishop/1970_Myers_Bishop.treatments.yaml",
   "dispatchWait": 1,
   "treatments": ["control"],
@@ -51,14 +57,12 @@ At one point, the authors refer to another study they are working on, which is m
   "introSequence": "baseline",
   "preregister": false,
   "cdn": "local",
-  "checkAudio": false,
-  "checkVideo": false,
   "dataRepos": [
     {
       "owner": "Watts-Lab",
       "repo": "deliberation-data-test",
       "branch": "main",
-      "directory": "exaptation"
+      "directory": "replications"
     }
   ]
 }

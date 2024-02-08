@@ -5,6 +5,6 @@ type: noResponse
 
 # The discussion is ending soon
 
-Please finish your response. When you are done, click the button below to proceed.
+Please finish your conversation. When you are done, click the button below to proceed.
 
 ---

@@ -13,7 +13,8 @@ This makes the exercise something of a hybrid between a pure hidden-profile task
   "introSequence": "psychometrics",
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
   "cdn": "local",
-  "treatments": ["baseline"],
+  "exitCodeStem": "local",
+  "treatments": ["baseline_MBA"],
   "videoStorageLocation": "deliberation-lab-recordings-test",
   "preregister": false,
   "dataRepos": [

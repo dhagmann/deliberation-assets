@@ -7,6 +7,16 @@ introSequences:
           - type: survey
             surveyName: TIPI
 
+      - name: Cultural Conflict Norms
+        elements:
+          - type: survey
+            surveyName: CulturalConflictNorms
+
+      - name: Receptiveness
+        elements:
+          - type: survey
+            surveyName: Receptiveness4
+
       - name: Self-awareness, Self-monitoring, and Growth Mindset
         elements:
           - type: survey
@@ -267,8 +277,8 @@ treatments:
           - type: separator
           - projects/constructive_disagreement/hidden_profile/reminder.md
 
+    exitSequence:
       - name: Consent Classroom Aid
-        duration: 120
         elements:
           - type: prompt
             file: projects/constructive_disagreement/99_consentClassroomAid.md
@@ -281,11 +291,131 @@ treatments:
                 comparator: exists
                 value: ""
 
-    exitSurveys:
-      - ConflictAndViability
-      - PerceptionOfOthers
-      - PersuasionAndLearning
-      - Demographics
+      - name: Feelings about pro director of research
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_research.md
+          - type: prompt
+            name: research_liked
+            file: projects/constructive_disagreement/hidden_profile/post_liked.md
+            hideFromPositions: [0]
+          - type: prompt
+            name: research_enjoyed
+            file: projects/constructive_disagreement/hidden_profile/post_enjoyed.md
+            hideFromPositions: [0]
+          - type: prompt
+            name: research_reasoned
+            file: projects/constructive_disagreement/hidden_profile/post_reasoned.md
+            hideFromPositions: [0]
+          - type: prompt
+            name: research_competent
+            file: projects/constructive_disagreement/hidden_profile/post_competent.md
+            hideFromPositions: [0]
+          - type: prompt
+            name: research_tension
+            file: projects/constructive_disagreement/hidden_profile/post_tension.md
+            hideFromPositions: [0]
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_you.md
+            showToPositions: [0]
+          - type: submitButton
+
+      - name: Feelings about chief operating officer
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_coo.md
+          - type: prompt
+            name: coo_liked
+            file: projects/constructive_disagreement/hidden_profile/post_liked.md
+            hideFromPositions: [1]
+          - type: prompt
+            name: coo_enjoyed
+            file: projects/constructive_disagreement/hidden_profile/post_enjoyed.md
+            hideFromPositions: [1]
+          - type: prompt
+            name: coo_reasoned
+            file: projects/constructive_disagreement/hidden_profile/post_reasoned.md
+            hideFromPositions: [1]
+          - type: prompt
+            name: coo_competent
+            file: projects/constructive_disagreement/hidden_profile/post_competent.md
+            hideFromPositions: [1]
+          - type: prompt
+            name: coo_tension
+            file: projects/constructive_disagreement/hidden_profile/post_tension.md
+            hideFromPositions: [1]
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_you.md
+            showToPositions: [1]
+          - type: submitButton
+
+      - name: Feelings about director of EDI
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_edi.md
+          - type: prompt
+            name: edi_liked
+            file: projects/constructive_disagreement/hidden_profile/post_liked.md
+            hideFromPositions: [2]
+          - type: prompt
+            name: edi_enjoyed
+            file: projects/constructive_disagreement/hidden_profile/post_enjoyed.md
+            hideFromPositions: [2]
+          - type: prompt
+            name: edi_reasoned
+            file: projects/constructive_disagreement/hidden_profile/post_reasoned.md
+            hideFromPositions: [2]
+          - type: prompt
+            name: edi_competent
+            file: projects/constructive_disagreement/hidden_profile/post_competent.md
+            hideFromPositions: [2]
+          - type: prompt
+            name: edi_tension
+            file: projects/constructive_disagreement/hidden_profile/post_tension.md
+            hideFromPositions: [2]
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_you.md
+            showToPositions: [2]
+          - type: submitButton
+
+      - name: Feelings about director of education
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_education.md
+          - type: prompt
+            name: education_liked
+            file: projects/constructive_disagreement/hidden_profile/post_liked.md
+            hideFromPositions: [3]
+          - type: prompt
+            name: education_enjoyed
+            file: projects/constructive_disagreement/hidden_profile/post_enjoyed.md
+            hideFromPositions: [3]
+          - type: prompt
+            name: education_reasoned
+            file: projects/constructive_disagreement/hidden_profile/post_reasoned.md
+            hideFromPositions: [3]
+          - type: prompt
+            name: education_competent
+            file: projects/constructive_disagreement/hidden_profile/post_competent.md
+            hideFromPositions: [3]
+          - type: prompt
+            name: education_tension
+            file: projects/constructive_disagreement/hidden_profile/post_tension.md
+            hideFromPositions: [3]
+          - type: prompt
+            file: projects/constructive_disagreement/hidden_profile/post_you.md
+            showToPositions: [3]
+          - type: submitButton
+
+      - name: Conflict and Viability
+        elements:
+          - type: survey
+            surveyName: ConflictAndViability
+
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics
 
   - name: baseline_Turk
     desc: Baseline treatment for mturkers

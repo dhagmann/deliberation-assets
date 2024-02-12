@@ -5,7 +5,6 @@ type: noResponse
 
 `Affect survey goes here`
 
-Need to write survey in such a way that it is specific to responses to that question.
-For example, how would you feel if someone
+Need to write survey in such a way that it is specific to the discussion we just had, possibly the trait ratings about the other group members as a whole, or individually.
 
 ---

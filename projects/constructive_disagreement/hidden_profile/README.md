@@ -13,7 +13,7 @@ This makes the exercise something of a hybrid between a pure hidden-profile task
   "introSequence": "psychometrics",
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
   "cdn": "local",
-  "exitCodeStem": "local",
+  "exitCodeStem": "none",
   "treatments": ["baseline_MBA"],
   "videoStorageLocation": "deliberation-lab-recordings-test",
   "preregister": false,
@@ -65,15 +65,39 @@ This makes the exercise something of a hybrid between a pure hidden-profile task
 
 ```json
 {
+  "batchName": "monday_demo",
+  "treatmentFile": "projects/constructive_disagreement/hidden_profile/treatments_hp.yaml",
+  "dispatchWait": 1,
+  "introSequence": "psychometrics",
+  "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
+  "treatments": ["baseline_MBA"],
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "awsRegion": "eu-west-2",
+  "exitCodeStem": "none",
+  "cdn": "prod",
+  "preregister": false,
+  "dataRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "constructive-disagreement",
+      "branch": "main",
+      "directory": "test"
+    }
+  ]
+}
+```
+
+```json
+{
   "batchName": "student_exercise",
   "treatmentFile": "projects/constructive_disagreement/hidden_profile/treatments_hp.yaml",
-  "launchDate": "29 Sept 2023 08:05:00 EDT",
   "dispatchWait": 30,
   "introSequence": "psychometrics",
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
-  "treatments": ["baseline"],
+  "treatments": ["baseline_MBA"],
   "videoStorageLocation": "deliberation-lab-recordings-icbs",
   "awsRegion": "eu-west-2",
+  "exitCodeStem": "none",
   "preregister": true,
   "dataRepos": [
     {

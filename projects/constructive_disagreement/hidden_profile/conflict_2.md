@@ -1,9 +1,9 @@
 ---
-name: projects/constructive_disagreement/hidden_profile/post_competent.md
+name: projects/constructive_disagreement/hidden_profile/conflict_2.md
 type: multipleChoice
 ---
 
-# I felt they were a competent person.
+# We had conflicting ideas about how to decide on a candidate.
 
 ---
 

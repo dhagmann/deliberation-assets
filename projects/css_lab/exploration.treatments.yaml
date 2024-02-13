@@ -58,7 +58,7 @@ treatments:
         position: 0
         conditions:
           - sourceType: prompt
-            promptName: { topic }
+            promptName: focalTopic
             comparator: greaterThan
             value: 3
       - name: against

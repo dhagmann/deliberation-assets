@@ -1,9 +1,9 @@
 ---
-name: projects/constructive_disagreement/hidden_profile/post_competent.md
+name: projects/constructive_disagreement/hidden_profile/conflict_10.md
 type: multipleChoice
 ---
 
-# I felt they were a competent person.
+# As a group, I felt we had similar goals.
 
 ---
 

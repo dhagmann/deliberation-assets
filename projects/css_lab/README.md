@@ -74,3 +74,26 @@ Start with a baseline, no interventions, describe:
   ]
 }
 ```
+
+```json
+{
+  "batchName": "demo",
+  "preregister": "false",
+  "treatmentFile": "projects/css_lab/exploration.treatments.yaml",
+  "dispatchWait": 1,
+  "introSequence": "base_sequence",
+  "treatments": ["baseline"],
+  "cdn": "prod",
+  "exitCodeStem": "local",
+  "platformConsent": "US",
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "demo"
+    }
+  ]
+}
+```

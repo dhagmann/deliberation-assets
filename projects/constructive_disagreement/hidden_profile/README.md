@@ -89,9 +89,9 @@ This makes the exercise something of a hybrid between a pure hidden-profile task
 
 ```json
 {
-  "batchName": "student_exercise",
+  "batchName": "GlobalMBA",
   "treatmentFile": "projects/constructive_disagreement/hidden_profile/treatments_hp.yaml",
-  "dispatchWait": 30,
+  "dispatchWait": 10,
   "introSequence": "psychometrics",
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
   "treatments": ["baseline_MBA"],

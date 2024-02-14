@@ -51,10 +51,8 @@ treatments:
         elements:
           - type: prompt
             file: projects/replications/1970_Myers_Bishop/intro_discussion.md
-            displayTime: 0
             hideTime: 60
           - type: timer
-            displayTime: 0
             hideTime: 60
 
           - type: prompt
@@ -62,7 +60,7 @@ treatments:
             displayTime: 60
             hideTime: 180
           - type: timer
-            displayTime: 0
+            displayTime: 60
             hideTime: 180
           - type: audio
             file: shared/counter_bell.mp3

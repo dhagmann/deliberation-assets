@@ -4,7 +4,7 @@ type: multipleChoice
 desc: decision leadership and persuasion
 ---
 
-# The outcome was influenced more by other people’s suggestions than by mine.
+# Other people did not change my views on the topic.
 
 ---
 

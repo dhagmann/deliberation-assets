@@ -62,18 +62,16 @@ treatments:
 
           - type: submitButton
             buttonText: Start Exercise
-            displayTime: 20
 
       - name: Job Posting
-        duration: 300
+        duration: 180
         elements:
           - projects/constructive_disagreement/hidden_profile/job_posting.md
           - type: submitButton
             buttonText: Continue
-            displayTime: 20
 
       - name: Individual Answer
-        duration: 600
+        duration: 300
         elements:
           - projects/constructive_disagreement/hidden_profile/individual_instructions.md
 
@@ -156,12 +154,6 @@ treatments:
 
           - type: submitButton
             buttonText: Submit
-            displayTime: 120
-            conditions:
-              - promptName: individualSelection
-                sourceType: prompt
-                comparator: exists
-                value: ""
 
       - name: Group decision
         duration: 1800

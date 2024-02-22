@@ -1,9 +1,9 @@
 ```json
 {
   "batchName": "initial_demo",
-  "treatmentFile": "projects/exaptation/exaptation_pilot.treatments.yaml",
+  "treatmentFile": "projects/exaptation/exaptation_pilot_3.treatments.yaml",
   "dispatchWait": 1,
-  "treatments": ["new_name_lineup"],
+  "treatments": ["schema"],
   "videoStorageLocation": "none",
   "exitCodeStem": "demo",
   "preregister": false,

@@ -4,10 +4,10 @@ type: openResponse
 rows: 1
 ---
 
-# Label Recall
+# Stage 2: Recall
 
-Please enter the name your group chose for this image below. Please use all lowercase letters.
+Please enter the label your group chose for this image, using all lowercase letters.
 
 ---
 
-> enter name here
+> enter label here

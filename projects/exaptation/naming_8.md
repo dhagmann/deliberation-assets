@@ -4,9 +4,9 @@ type: openResponse
 rows: 8
 ---
 
-# Image labeling
+# Stage 1: Discussion and labeling
 
-As a group, come up with names for each of these images, and enter them in the shared text box below. Make sure names are short, memorable and distinct from one another.
+As a group, come up with labels for each of these images, and enter them in the shared text box below. Make sure names are memorable, short, and distinct from one another.
 
 Please use all lowercase letters.
 

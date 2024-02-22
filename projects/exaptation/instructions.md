@@ -3,8 +3,26 @@ name: projects/exaptation/instructions.md
 type: noResponse
 ---
 
-In the following discussion, you will be shown a set of images, and your task is to come up with a name for the image that your group will use to identify each image in the next round.
+# The game you are about to play has two stages:
 
-It is important that the names be memorable, and distinct from one another, so that you can maximize your ability to earn points by matching labels to images in the next round.
+## Stage 1: Discussion and labeling
+
+In the first stage, your group will be shown a set of eight images, such as the ones blurred out below.
+
+You will have 10 minutes to come up with labels for each image, and enter them in the shared document that follows.
+
+![labeling_demo](projects/exaptation/instructions_demo_labeling.jpg)
+
+You will need to remember each label exactly, and so labels should be memorable, short, and distinct from one another.
+
+## Stage 2: Recall
+
+After your discussion, we will show you images one at a time, and ask you to type the label your group decided on for that image.
+
+![recall_demo](projects/exaptation/instructions_demo_recall.jpg)
+
+If everyone's enters the same label for the image, you will earn 10 points. If your labels do not match exactly, you earn no points.
+
+### Your group may play more than one round of the labeling and recall game, with a new set of images to label and remember each time.
 
 ---

@@ -33,6 +33,14 @@ introSequences:
             buttonText: Continue
 
 treatments:
+  - name: unmatched_sorry
+    desc: A page for an individual who is not able to be matched with a partner.
+    playerCount: 1
+    gameStages:
+      - name: Sorry Page
+        elements:
+          - projects/constructive_disagreement/super_sabbatical/unmatched_sorry_message.md
+
   - name: negotiation
     desc: Two-party negotiation between the Star Scientist and the Provost.
     playerCount: 2
@@ -54,11 +62,14 @@ treatments:
 
     gameStages:
       - name: Role-Specific Instructions
-        duration: 180
+        duration: 30
         elements:
-          - projects/constructive_disagreement/super_sabbatical/role_specific_instructions_preamble.md
+        - projects/constructive_disagreement/super_sabbatical/role_specific_instructions_preamble.md
           - type: submitButton
             buttonText: Continue
+      - name: Role-Specific Instructions
+        duration: 180
+        elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical/role_star_scientist.md
             showToPositions:
@@ -82,13 +93,15 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical/dealsheet_agreement_submission.md
           - type: prompt
             name: dealDetails
-            shared: true
             file: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_description.md
           - type: submitButton
             buttonText: Submit Deal Sheet and Leave Negotiation
             conditions:
             - promptName: agreementReached
               comparator: equal
+              position: all
+            - promptName: dealDetails
+              comparator: exists
               position: all
 
           - type: separator

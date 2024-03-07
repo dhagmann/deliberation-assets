@@ -99,14 +99,7 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_description.md
           - type: submitButton
             buttonText: Submit Deal Sheet and Leave Negotiation
-            conditions:
-            - promptName: agreementReached
-              comparator: equal
-              position: all
-            - promptName: dealDetails
-              comparator: exists
-              position: all
-
+            
           - type: separator
             style: thin
           - type: prompt

@@ -1,0 +1,135 @@
+introSequences:
+  - name: baseline
+    desc: Basic psychometrics
+    introSteps:
+      - name: Ten Item Personality Inventory
+        elements:
+          - type: survey
+            surveyName: TIPI
+      - name: Self-awareness, Self-monitoring, and Growth Mindset
+        elements:
+          - type: survey
+            surveyName: AwarenessMonitoringGrowth
+      - name: General Information Preamble
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/general_information_preamble.md
+          - type: submitButton
+            buttonText: Continue
+      - name: General Information
+        duration: 180
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/general_information.md
+          - type: submitButton
+            buttonText: Continue
+      - name: Role Selection
+        elements:
+          - type: prompt
+            name: roleSelection
+            file: projects/constructive_disagreement/super_sabbatical/roleSelection.md
+          - type: submitButton
+            buttonText: Continue
+
+treatments:
+  - name: unmatched_sorry
+    desc: A page for an individual who is not able to be matched with a partner.
+    playerCount: 1
+    gameStages:
+      - name: Sorry Page
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/unmatched_sorry_message.md
+
+  - name: negotiation
+    desc: Two-party negotiation between the Star Scientist and the Provost.
+    playerCount: 2
+    groupComposition:
+      - desc: Star Scientist
+        position: 0
+        title: "Star Scientist"
+        conditions:
+          - promptName: roleSelection
+            comparator: equal
+            value: Star Scientist
+      - desc: Provost
+        position: 1
+        title: "Provost"
+        conditions:
+          - promptName: roleSelection
+            comparator: equal
+            value: Provost
+
+    gameStages:
+      - name: Role-Specific Instructions Preamble
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_specific_instructions_preamble.md
+          - type: submitButton
+            buttonText: Continue
+      - name: Role-Specific Instructions
+        duration: 180
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_star_scientist.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_provost.md
+            showToPositions:
+              - 1
+          - type: submitButton
+            buttonText: Start Exercise
+      - name: Discussion
+        duration: 600
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: true
+        elements:
+          - projects/constructive_disagreement/super_sabbatical/dealsheet_header.md
+          - type: prompt
+            name: agreementReached
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_agreement_submission.md
+          - type: prompt
+            name: dealDetails
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_description.md
+          - type: submitButton
+            buttonText: Submit Deal Sheet and Leave Negotiation
+            
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleGeneralInformation
+            file: projects/constructive_disagreement/super_sabbatical/toggle_general_information.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/general_information.md
+            conditions:
+              - promptName: toggleGeneralInformation
+                comparator: equal
+                value: "⬇️ Display General Information"
+          - type: prompt
+            name: toggleRoleInstructions
+            file: projects/constructive_disagreement/super_sabbatical/toggle_role_information.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_star_scientist.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleRoleInstructions
+                comparator: equal
+                value: "⬇️ Display Role Information"
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_provost.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleRoleInstructions
+                comparator: equal
+                value: "⬇️ Display Role Information"
+    exitSurveys:
+    - SVI
+    - Demographics

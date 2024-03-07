@@ -38,8 +38,10 @@ treatments:
     playerCount: 1
     gameStages:
       - name: Sorry Page
+        duration: 120
         elements:
-          - projects/constructive_disagreement/super_sabbatical/unmatched_sorry_message.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/unmatched_sorry_message.md
 
   - name: negotiation
     desc: Two-party negotiation between the Star Scientist and the Provost.
@@ -61,10 +63,11 @@ treatments:
             value: Provost
 
     gameStages:
-      - name: Role-Specific Instructions
+      - name: Role-Specific Instructions Preamble
         duration: 30
         elements:
-        - projects/constructive_disagreement/super_sabbatical/role_specific_instructions_preamble.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_specific_instructions_preamble.md
           - type: submitButton
             buttonText: Continue
       - name: Role-Specific Instructions

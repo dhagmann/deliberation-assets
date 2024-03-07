@@ -27,20 +27,12 @@ introSequences:
       - name: Role Selection
         elements:
           - type: prompt
+            name: roleSelection
             file: projects/constructive_disagreement/super_sabbatical/roleSelection.md
           - type: submitButton
             buttonText: Continue
 
 treatments:
-  - name: unmatched_sorry
-    desc: A page for an individual who is not able to be matched with a partner.
-    playerCount: 1
-    gameStages:
-      - name: Sorry Page
-        duration: 180
-        elements:
-          - projects/constructive_disagreement/super_sabbatical/unmatched_sorry_message.md
-
   - name: negotiation
     desc: Two-party negotiation between the Star Scientist and the Provost.
     playerCount: 2

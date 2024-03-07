@@ -5,8 +5,8 @@ type: noResponse
 
 # Your Deal Sheet
 
-When you reach an agreement with your partner, please fill out the box below. You will be able to jointly edit the text box, but you must separately press 'Yes' to a deal in order to submit.
+Please use the form below to record the final agreement in your negotiation. You and your partner can edit the text box at the same time, but you must separately indicate whether you reached a deal or not. 
 
-Once you submit and leave, you cannot return to the negotiation.
+While you can update your deal as many times as you need until the end of the discussion period, once you press the "Submit" button, your deal cannot be changed.
 
 ---

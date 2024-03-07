@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/dealsheeet_agreement_submission.md
+name: projects/constructive_disagreement/super_sabbatical/dealsheet_agreement_submission.md
 type: multipleChoice
 author: Emily Hu
 ---

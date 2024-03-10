@@ -110,7 +110,7 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical/dealsheet_price.md
           - type: prompt
             name: specialTerms
-            file: projects/constructive_disagreement/super_sabbatical/dealsheet_special_terms.md
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_special_terms.md
           - type: prompt
             name: dealTrip
             file: projects/constructive_disagreement/super_sabbatical/dealsheet_trip.md
@@ -151,6 +151,7 @@ treatments:
               - promptName: toggleRoleInstructions
                 comparator: equal
                 value: "⬇️ Display Role Information"
+    
     exitSequence:
       - name: Member Impressions
         elements:
@@ -158,7 +159,7 @@ treatments:
           - projects/constructive_disagreement/super_sabbatical/post_liked.md
           - projects/constructive_disagreement/super_sabbatical/post_competent.md
           - projects/constructive_disagreement/super_sabbatical/post_tension.md
-        - type: submitButton
+          - type: submitButton
             buttonText: Continue
       - name: DV Questions
         elements:
@@ -172,7 +173,7 @@ treatments:
           - projects/constructive_disagreement/super_sabbatical/viability_2.md
           - projects/constructive_disagreement/super_sabbatical/decision_leadership_1.md
           - projects/constructive_disagreement/super_sabbatical/decision_leadership_2.md
-        - type: submitButton
+          - type: submitButton
             buttonText: Continue
 
     exitSurveys:

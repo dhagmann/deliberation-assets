@@ -155,27 +155,42 @@ treatments:
     exitSequence:
       - name: Member Impressions
         elements:
-          - projects/constructive_disagreement/super_sabbatical/post_preamble.md
-          - projects/constructive_disagreement/super_sabbatical/post_liked.md
-          - projects/constructive_disagreement/super_sabbatical/post_competent.md
-          - projects/constructive_disagreement/super_sabbatical/post_tension.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_preamble.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_liked.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_competent.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_tension.md
           - type: submitButton
             buttonText: Continue
       - name: DV Questions
         elements:
-          - projects/constructive_disagreement/super_sabbatical/conflict_preamble.md
-          - projects/constructive_disagreement/super_sabbatical/goal_similarity.md
-          - projects/constructive_disagreement/super_sabbatical/conflict_1.md
-          - projects/constructive_disagreement/super_sabbatical/conflict_2.md
-          - projects/constructive_disagreement/super_sabbatical/conflict_3.md
-          - projects/constructive_disagreement/super_sabbatical/conflict_4.md
-          - projects/constructive_disagreement/super_sabbatical/viability_1.md
-          - projects/constructive_disagreement/super_sabbatical/viability_2.md
-          - projects/constructive_disagreement/super_sabbatical/decision_leadership_1.md
-          - projects/constructive_disagreement/super_sabbatical/decision_leadership_2.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_preamble.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/goal_similarity.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_2.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_3.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_4.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/viability_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/viability_2.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/decision_leadership_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/decision_leadership_2.md
           - type: submitButton
             buttonText: Continue
 
-    exitSurveys:
-    - SVI
-    - Demographics
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics

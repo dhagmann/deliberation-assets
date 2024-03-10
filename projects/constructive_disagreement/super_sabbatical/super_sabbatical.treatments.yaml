@@ -10,20 +10,10 @@ introSequences:
         elements:
           - type: survey
             surveyName: AwarenessMonitoringGrowth
-      - name: General Information Preamble
-        duration: 30
+      - name: Cultural Conflict Norms
         elements:
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/general_information_preamble.md
-          - type: submitButton
-            buttonText: Continue
-      - name: General Information
-        duration: 180
-        elements:
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/general_information.md
-          - type: submitButton
-            buttonText: Continue
+          - type: survey
+            surveyName: CulturalConflictNorms
       - name: Role Selection
         elements:
           - type: prompt
@@ -31,18 +21,14 @@ introSequences:
             file: projects/constructive_disagreement/super_sabbatical/roleSelection.md
           - type: submitButton
             buttonText: Continue
-
-treatments:
-  - name: unmatched_sorry
-    desc: A page for an individual who is not able to be matched with a partner.
-    playerCount: 1
-    gameStages:
-      - name: Sorry Page
-        duration: 120
+      - name: Continue Page Before Class
         elements:
           - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/unmatched_sorry_message.md
+            file: projects/constructive_disagreement/super_sabbatical/press_only_during_class.md
+          - type: submitButton
+            buttonText: Start Exercise - I am in class and ready to go!
 
+treatments:
   - name: negotiation
     desc: Two-party negotiation between the Star Scientist and the Provost.
     playerCount: 2
@@ -63,6 +49,20 @@ treatments:
             value: Provost
 
     gameStages:
+      - name: General Information Preamble
+        duration: 30
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/general_information_preamble.md
+          - type: submitButton
+            buttonText: Continue
+      - name: General Information
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/general_information.md
+          - type: submitButton
+            buttonText: Continue
       - name: Role-Specific Instructions Preamble
         duration: 30
         elements:
@@ -71,7 +71,7 @@ treatments:
           - type: submitButton
             buttonText: Continue
       - name: Role-Specific Instructions
-        duration: 180
+        duration: 120
         elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical/role_star_scientist.md
@@ -82,9 +82,20 @@ treatments:
             showToPositions:
               - 1
           - type: submitButton
-            buttonText: Start Exercise
+            buttonText: Continue
+      - name: Pre-Negotiation Planning
+        duration: 300
+        elements:
+          - projects/constructive_disagreement/super_sabbatical/pre_nego_preamble.md
+          - projects/constructive_disagreement/super_sabbatical/pre_nego_reservation_price.md
+          - projects/constructive_disagreement/super_sabbatical/pre_nego_opening_bid.md
+          - projects/constructive_disagreement/super_sabbatical/pre_nego_target_price.md
+          - projects/constructive_disagreement/super_sabbatical/pre_nego_batna.md
+          - projects/constructive_disagreement/super_sabbatical/pre_nego_planned_strategy.md
+          - type: submitButton
+            buttonText: Submit and Start Exercise
       - name: Discussion
-        duration: 600
+        duration: 3600
         discussion:
           chatType: video
           showNickname: true
@@ -95,11 +106,21 @@ treatments:
             name: agreementReached
             file: projects/constructive_disagreement/super_sabbatical/dealsheet_agreement_submission.md
           - type: prompt
-            name: dealDetails
-            file: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_description.md
+            name: dealPrice
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_price.md
+          - type: prompt
+            name: specialTerms
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_special_terms.md
+          - type: prompt
+            name: dealTrip
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_trip.md
+          - type: prompt
+            name: dealReturnFund
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_return_fund.md
           - type: submitButton
+            displayTime: 600
             buttonText: Submit Deal Sheet and Leave Negotiation
-            
+
           - type: separator
             style: thin
           - type: prompt
@@ -130,6 +151,46 @@ treatments:
               - promptName: toggleRoleInstructions
                 comparator: equal
                 value: "⬇️ Display Role Information"
-    exitSurveys:
-    - SVI
-    - Demographics
+    
+    exitSequence:
+      - name: Member Impressions
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_preamble.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_liked.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_competent.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_tension.md
+          - type: submitButton
+            buttonText: Continue
+      - name: DV Questions
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_preamble.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/goal_similarity.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_2.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_3.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_4.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/viability_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/viability_2.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/decision_leadership_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/decision_leadership_2.md
+          - type: submitButton
+            buttonText: Continue
+
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics

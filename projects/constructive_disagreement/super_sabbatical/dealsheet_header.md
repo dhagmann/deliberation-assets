@@ -7,6 +7,6 @@ type: noResponse
 
 Please use the form below to record the final agreement in your negotiation. You and your partner must separately enter your deals.
 
-While you can update your deal as many times as you need until the end of the discussion period, once you press the "Submit" button, your deal cannot be changed.
+After 10 minutes, a "Submit" button will appear, which will allow you to finalize your deal and end the negotiation. While you can update your deal as many times as you need until the end of the discussion period, once you press the "Submit" button, your deal cannot be changed.
 
 ---

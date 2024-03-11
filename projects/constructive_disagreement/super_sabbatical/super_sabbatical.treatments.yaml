@@ -32,7 +32,7 @@ introSequences:
             buttonText: Continue - I am in class and ready to go!
             conditions:
             - promptName: classConfirmation
-              comparator: equals
+              comparator: includes
               value: I confirm that I am now in class
       - name: Start Exercise In Class
         elements:
@@ -132,32 +132,9 @@ treatments:
           - type: prompt
             name: strategyPlan
             file: projects/constructive_disagreement/super_sabbatical/pre_nego_planned_strategy.md
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: reservationPrice
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: openingBid
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: targetPrice
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: BATNA
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: strategyPlan
-                comparator: doesNotExist
+
           - type: submitButton
+            name: submitNegotiationPlan
             buttonText: Submit and Start Exercise
             conditions:
               - promptName: reservationPrice
@@ -194,34 +171,9 @@ treatments:
           - type: prompt
             name: dealReturnFund
             file: projects/constructive_disagreement/super_sabbatical/dealsheet_return_fund.md
-          
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: agreementReached
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: dealPrice
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: specialTerms
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: dealTrip
-                comparator: doesNotExist
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/reminder_fill_out_questions.md
-            conditions:
-              - promptName: dealReturnFund
-                comparator: doesNotExist
 
           - type: submitButton
+            name: submitDealSheet
             displayTime: 10
             buttonText: Submit Deal Sheet and Leave Negotiation
             conditions:

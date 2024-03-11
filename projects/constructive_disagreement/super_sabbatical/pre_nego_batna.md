@@ -5,7 +5,7 @@ rows: 1
 author: Emily Hu
 ---
 
-Please enter your BATNA.
+Please enter your BATNA.\*
 
 ---
 

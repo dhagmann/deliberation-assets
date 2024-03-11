@@ -5,7 +5,7 @@ rows: 1
 author: Emily Hu
 ---
 
-Please enter your target price.
+Please enter your target price.\*
 
 ---
 

@@ -5,5 +5,5 @@ type: multipleChoice
 
 ---
 
-- ⬇️ Display Role Pep Talk
-- ⬆️ Hide Role Pep Talk
+- ⬇️ Display Role Message/Reminders
+- ⬆️ Hide Role Message/Reminders

@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/super_sabbatical/role_provost_pep_talk.
 type: noResponse
 ---
 
-# A "Pep Talk" for the Provost.
+# A Message for the Provost.
 
 At most universities, the Provost is the senior leader in charge of all things related to faculty, research, and teaching. Recruiting and retaining star faculty is a very important element of the job, but so is maintaining a health culture for the entire community. 
 

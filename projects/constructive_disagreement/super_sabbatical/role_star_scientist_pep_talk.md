@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/super_sabbatical/role_star_scientist_pe
 type: noResponse
 ---
 
-# A "Pep Talk" for the Star Scientist.
+# A Message for the Star Scientist.
 
 After a very long period of overwork, the physical and emotional toll is such that, on your doctor’s orders, you need a long break. Your goal is to get 21 months away ... 12 months of time off to decompress by sailing in the Pacific and 9 months in the Institute. 
 

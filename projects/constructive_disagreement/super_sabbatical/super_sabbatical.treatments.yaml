@@ -174,7 +174,7 @@ treatments:
 
           - type: submitButton
             name: submitDealSheet
-            displayTime: 10
+            displayTime: 600
             buttonText: Submit Deal Sheet and Leave Negotiation
             conditions:
               - promptName: agreementReached

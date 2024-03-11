@@ -5,7 +5,7 @@ rows: 1
 author: Emily Hu
 ---
 
-Please enter the agreed upon TOTAL price.
+Please enter the agreed upon TOTAL price.\*
 
 ---
 

@@ -5,7 +5,7 @@ rows: 5
 author: Emily Hu
 ---
 
-Please write any additional comments you have on your strategy for this negotiation.
+Please write any additional comments you have on your strategy for this negotiation.\*
 
 ---
 

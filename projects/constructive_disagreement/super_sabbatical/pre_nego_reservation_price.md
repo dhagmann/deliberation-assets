@@ -5,7 +5,7 @@ rows: 1
 author: Emily Hu
 ---
 
-Please enter your reservation price.
+Please enter your reservation price.\*
 
 ---
 

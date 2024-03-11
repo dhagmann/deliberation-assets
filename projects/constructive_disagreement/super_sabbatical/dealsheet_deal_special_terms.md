@@ -5,7 +5,7 @@ rows: 3
 author: Emily Hu
 ---
 
-Please describe any special terms in your deal.
+Please describe any special terms in your deal.\*
 
 ---
 

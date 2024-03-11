@@ -25,19 +25,21 @@ introSequences:
         elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical/log_out.md
-      - name: Start Exercise In Class
-        elements:
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical/press_only_during_class.md
           - type: prompt
             name: classConfirmation
             file: projects/constructive_disagreement/super_sabbatical/in_class_confirmation.md
           - type: submitButton
-            buttonText: Start Exercise - I am in class and ready to go!
+            buttonText: Continue - I am in class and ready to go!
             conditions:
             - promptName: classConfirmation
               comparator: equals
               value: I confirm that I am now in class.
+      - name: Start Exercise In Class
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/press_only_during_class.md
+          - type: submitButton
+            buttonText: Start Exercise
 
 treatments:
   - name: negotiation
@@ -69,6 +71,7 @@ treatments:
             buttonText: Continue
       - name: Pep Talk and Information Review
         duration: 180
+        elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical/role_star_scientist_pep_talk.md
             showToPositions:
@@ -77,8 +80,6 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical/role_provost_pep_talk.md
             showToPositions:
               - 1
-          - type: separator
-            style: thin
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical/information_seen_this_before_header.md
           - type: prompt

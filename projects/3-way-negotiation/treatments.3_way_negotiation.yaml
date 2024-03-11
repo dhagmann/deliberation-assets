@@ -35,16 +35,16 @@ introSequences:
             buttonText: Submit
             conditions:
             - promptName: compQ1
-              comparator: equal
+              comparator: equals
               value: "121"
             - promptName: compQ2
-              comparator: equal
+              comparator: equals
               value: "2"
             - promptName: compQ3
-              comparator: equal
+              comparator: equals
               value: "34"
             - promptName: compQ4
-              comparator: equal
+              comparator: equals
               value: "Maximize the benefits that MY organization can earn."
           - type: separator
           - type: prompt
@@ -152,20 +152,20 @@ treatments:
             buttonText: Submit Now and End Negotiation
             conditions:
             - promptName: dealsheet1
-              comparator: equal
+              comparator: equals
               value: "Yes"
               position: all
             - promptName: dealsheet3
               position: percentAgreement
-              comparator: equal
+              comparator: equals
               value: 100
             - promptName: dealsheet4
               position: percentAgreement
-              comparator: equal
+              comparator: equals
               value: 100
             - promptName: dealsheet5
               position: percentAgreement
-              comparator: equal
+              comparator: equals
               value: 100
             - promptName: dealsheet3
               comparator: exists
@@ -228,7 +228,7 @@ treatments:
             file: projects/3-way-negotiation/05_instructions_3_way_negotation_in_round_toggle_content.md
             conditions:
               - promptName: toggleGroundRules
-                comparator: equal
+                comparator: equals
                 value: "⬇️ Display Ground Rules"
 
           - projects/3-way-negotiation/02_payoff_table.md

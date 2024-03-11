@@ -38,14 +38,14 @@ treatments:
         title: "Star Scientist"
         conditions:
           - promptName: roleSelection
-            comparator: equal
+            comparator: equals
             value: Star Scientist
       - desc: Provost
         position: 1
         title: "Provost"
         conditions:
           - promptName: roleSelection
-            comparator: equal
+            comparator: equals
             value: Provost
 
     gameStages:
@@ -130,7 +130,7 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical/general_information.md
             conditions:
               - promptName: toggleGeneralInformation
-                comparator: equal
+                comparator: equals
                 value: "⬇️ Display General Information"
           - type: prompt
             name: toggleRoleInstructions
@@ -141,7 +141,7 @@ treatments:
               - 0
             conditions:
               - promptName: toggleRoleInstructions
-                comparator: equal
+                comparator: equals
                 value: "⬇️ Display Role Information"
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical/role_provost.md
@@ -149,7 +149,7 @@ treatments:
               - 1
             conditions:
               - promptName: toggleRoleInstructions
-                comparator: equal
+                comparator: equals
                 value: "⬇️ Display Role Information"
     
     exitSequence:

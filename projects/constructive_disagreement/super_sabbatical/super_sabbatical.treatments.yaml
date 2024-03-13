@@ -1,7 +1,14 @@
 introSequences:
   - name: baseline
-    desc: Basic psychometrics
+    desc: Basic psychometrics and role collection
     introSteps:
+      - name: Full Name
+        elements:
+          - type: prompt
+            name: fullName
+            file: projects/constructive_disagreement/super_sabbatical/full_name.md
+          - type: submitButton
+            buttonText: Continue
       - name: Ten Item Personality Inventory
         elements:
           - type: survey

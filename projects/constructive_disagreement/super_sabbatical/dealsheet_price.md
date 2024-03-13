@@ -9,4 +9,4 @@ Please enter the agreed upon TOTAL price.\*
 
 ---
 
-> Enter a number, e.g., 100,000
+> Enter a number, e.g., 100,000.

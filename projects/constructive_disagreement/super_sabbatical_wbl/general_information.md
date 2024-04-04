@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/general_information.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
 type: noResponse
 ---
 

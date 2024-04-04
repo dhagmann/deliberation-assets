@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/in_class_confirmation.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/in_class_confirmation.md
 type: openResponse
 rows: 1
 author: Emily Hu

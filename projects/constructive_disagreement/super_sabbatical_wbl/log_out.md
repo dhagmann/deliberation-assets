@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/log_out.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/log_out.md
 type: noResponse
 ---
 

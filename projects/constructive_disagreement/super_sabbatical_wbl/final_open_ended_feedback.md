@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/final_open_ended_feedback.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/final_open_ended_feedback.md
 type: openResponse
 rows: 5
 author: Emily Hu

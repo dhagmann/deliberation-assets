@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/roleSelection.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/roleSelection.md
 type: multipleChoice
 ---
 

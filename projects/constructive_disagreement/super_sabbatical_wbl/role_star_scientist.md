@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/role_star_scientist.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/role_star_scientist.md
 type: noResponse
 ---
 

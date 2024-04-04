@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/role_provost.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/role_provost.md
 type: noResponse
 ---
 

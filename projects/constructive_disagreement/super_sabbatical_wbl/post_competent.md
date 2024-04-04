@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/post_competent.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/post_competent.md
 type: multipleChoice
 ---
 

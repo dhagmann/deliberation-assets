@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/goal_similarity.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/goal_similarity.md
 type: multipleChoice
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/information_review_preamble.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/information_review_preamble.md
 type: noResponse
 ---
 

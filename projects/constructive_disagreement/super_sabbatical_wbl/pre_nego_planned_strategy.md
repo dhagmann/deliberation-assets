@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/pre_nego_planned_strategy.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_planned_strategy.md
 type: openResponse
 rows: 5
 author: Emily Hu

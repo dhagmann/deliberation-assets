@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/decision_leadership_1.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/decision_leadership_1.md
 type: multipleChoice
 ---
 

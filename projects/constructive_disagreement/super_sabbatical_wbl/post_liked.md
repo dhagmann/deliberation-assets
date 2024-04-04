@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/post_liked.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/post_liked.md
 type: multipleChoice
 ---
 

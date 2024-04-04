@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_special_terms.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_deal_special_terms.md
 type: openResponse
 rows: 3
 author: Emily Hu

@@ -1,5 +1,5 @@
 ---
-name: projects/constructive_disagreement/super_sabbatical/conflict_2.md
+name: projects/constructive_disagreement/super_sabbatical_wbl/conflict_2.md
 type: multipleChoice
 ---
 

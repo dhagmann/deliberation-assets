@@ -111,8 +111,10 @@
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
   "treatmentFile": "projects/constructive_disagreement/super_sabbatical_wbl/super_sabbatical_wbl.treatments.yaml",
   "dispatchWait": 10,
-  "exitCodeStem" : "WBL_SuperSabbatical_nLwxWmcACl",
-  "treatments": ["negotiation"],
+  "exitCodeStem": "WBL_SuperSabbatical_nLwxWmcACl",
+  "treatments": [
+    "negotiation"
+  ],
   "cdn": "local",
   "videoStorageLocation": "deliberation-lab-recordings-test",
   "dataRepos": [

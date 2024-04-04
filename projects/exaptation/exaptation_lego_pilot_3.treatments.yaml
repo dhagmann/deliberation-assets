@@ -8,7 +8,7 @@ treatments:
     gameStages:
       - name: Intro
         type: prompt
-        duration: 60
+        duration: 90
         elements:
           - projects/exaptation/instructions.md
           - type: submitButton
@@ -356,9 +356,6 @@ treatments:
           - type: display
             promptName: recall_2_3
             position: 1
-          - type: display
-            promptName: recall_2_3
-            position: 2
 
           - type: submitButton
             buttonText: Continue

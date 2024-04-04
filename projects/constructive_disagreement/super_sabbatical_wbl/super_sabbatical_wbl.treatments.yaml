@@ -1,0 +1,258 @@
+introSequences:
+  - name: baseline
+    desc: Basic psychometrics and role collection
+    introSteps:
+      - name: Introsurvey Preamble
+        elements:
+          - type: prompt
+            name: fullName
+            file: projects/constructive_disagreement/super_sabbatical/introsurvey_preamble.md
+          - type: submitButton
+            buttonText: Continue
+      - name: Ten Item Personality Inventory
+        elements:
+          - type: survey
+            surveyName: TIPI
+      - name: Self-awareness, Self-monitoring, and Growth Mindset
+        elements:
+          - type: survey
+            surveyName: AwarenessMonitoringGrowth
+      - name: Cultural Conflict Norms
+        elements:
+          - type: survey
+            surveyName: CulturalConflictNorms
+      - name: Complete Introductory Surveys
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/introsurvey_done.md
+          - type: submitButton
+            buttonText: Continue
+treatments:
+  - name: negotiation
+    desc: Two-party negotiation between the Star Scientist and the Provost.
+    playerCount: 2
+    groupComposition:
+      - desc: Star Scientist
+        position: 0
+        title: "Star Scientist"
+      - desc: Provost
+        position: 1
+        title: "Provost"
+
+    gameStages:
+      - name: Role Reading Preamble
+        duration: 10
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_specific_instructions_preamble_scientist.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_specific_instructions_preamble_provost.md
+            showToPositions:
+              - 1
+          - type: submitButton
+            buttonText: Continue
+      - name: Main Reading Time
+        duration: 1080
+        elements:
+           - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_star_scientist.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_provost.md
+            showToPositions:
+              - 1
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/general_information.md
+          - type: submitButton
+            buttonText: Continue
+      - name: Key Things To Remember
+        duration: 120
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_star_scientist_pep_talk.md
+            showToPositions:
+              - 0
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_provost_pep_talk.md
+            showToPositions:
+              - 1
+      - name: Pre-Negotiation Planning
+        duration: 180
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/pre_nego_preamble.md
+          - type: prompt
+            name: reservationPrice
+            file: projects/constructive_disagreement/super_sabbatical/pre_nego_reservation_price.md
+          - type: prompt
+            name: openingBid
+            file: projects/constructive_disagreement/super_sabbatical/pre_nego_opening_bid.md
+          - type: prompt
+            name: targetPrice
+            file: projects/constructive_disagreement/super_sabbatical/pre_nego_target_price.md
+          - type: prompt
+            name: BATNA
+            file: projects/constructive_disagreement/super_sabbatical/pre_nego_batna.md
+          - type: prompt
+            name: strategyPlan
+            file: projects/constructive_disagreement/super_sabbatical/pre_nego_planned_strategy.md
+
+          - type: submitButton
+            name: submitNegotiationPlan
+            buttonText: Submit and Start Exercise
+            conditions:
+              - promptName: reservationPrice
+                comparator: exists
+              - promptName: openingBid
+                comparator: exists
+              - promptName: targetPrice
+                comparator: exists
+              - promptName: BATNA
+                comparator: exists
+              - promptName: strategyPlan
+                comparator: exists
+
+      - name: Discussion
+        duration: 1800
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: true
+        elements:
+          - projects/constructive_disagreement/super_sabbatical/dealsheet_header.md
+          - type: prompt
+            name: agreementReached
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_agreement_submission.md
+          - type: prompt
+            name: dealPrice
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_price.md
+          - type: prompt
+            name: specialTerms
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_deal_special_terms.md
+          - type: prompt
+            name: dealTrip
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_trip.md
+          - type: prompt
+            name: dealReturnFund
+            file: projects/constructive_disagreement/super_sabbatical/dealsheet_return_fund.md
+
+          - type: submitButton
+            name: submitDealSheet
+            displayTime: 600
+            buttonText: Submit Deal Sheet and Leave Negotiation
+            conditions:
+              - promptName: agreementReached
+                comparator: exists
+              - promptName: dealPrice
+                comparator: exists
+              - promptName: specialTerms
+                comparator: exists
+              - promptName: dealTrip
+                comparator: exists
+              - promptName: dealReturnFund
+                comparator: exists
+
+          - type: separator
+            style: thin
+          - type: prompt
+            name: toggleRoleInstructions
+            file: projects/constructive_disagreement/super_sabbatical/toggle_role_information.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_star_scientist.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleRoleInstructions
+                comparator: equals
+                value: "⬇️ Display Role Information"
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_provost.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleRoleInstructions
+                comparator: equals
+                value: "⬇️ Display Role Information"
+          - type: prompt
+            name: toggleGeneralInformation
+            file: projects/constructive_disagreement/super_sabbatical/toggle_general_information.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/general_information.md
+            conditions:
+              - promptName: toggleGeneralInformation
+                comparator: equals
+                value: "⬇️ Display General Information"
+          - type: prompt
+            name: toggleRolePepTalk
+            file: projects/constructive_disagreement/super_sabbatical/toggle_role_pep_talk.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_star_scientist_pep_talk.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleRolePepTalk
+                comparator: equals
+                value: "⬇️ Display Key Things to Remember"
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/role_provost_pep_talk.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleRolePepTalk
+                comparator: equals
+                value: "⬇️ Display Key Things to Remember"
+    
+    exitSequence:
+      - name: Member Impressions
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_preamble.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_liked.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_competent.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/post_tension.md
+          - type: submitButton
+            buttonText: Continue
+      - name: DV Questions
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_preamble.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/goal_similarity.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_2.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_3.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/conflict_4.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/viability_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/viability_2.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/decision_leadership_1.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical/decision_leadership_2.md
+          - type: submitButton
+            buttonText: Continue
+      - name: Open-Ended Feedback
+        elements:
+          - type: prompt
+            name: openEndedNegotiationFeedback
+            file: projects/constructive_disagreement/super_sabbatical/final_open_ended_feedback.md
+          - type: submitButton
+            buttonText: Continue
+            conditions:
+              - promptName: openEndedNegotiationFeedback
+                comparator: exists
+
+      - name: Demographics
+        elements:
+          - type: survey
+            surveyName: Demographics

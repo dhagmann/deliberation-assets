@@ -61,12 +61,37 @@
   "treatmentFile": "projects/constructive_disagreement/hidden_profile/treatments_baker_2010.yaml",
   "launchDate": "",
   "dispatchWait": 1,
+  "exitCodeStem" : "none",
   "cdn": "local",
   "introSequence": "baseline",
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
   "treatments": ["baseline"],
   "videoStorageLocation": "deliberation-lab-recordings-test",
   "preregister": false,
+  "dataRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "constructive-disagreement",
+      "branch": "main",
+      "directory": "test"
+    }
+  ]
+}
+```
+
+# Demo config for super sabbatical
+```json
+{
+  "batchName": "super_sabbatical",
+  "introSequence": "baseline",
+  "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
+  "treatmentFile": "projects/constructive_disagreement/super_sabbatical/super_sabbatical.treatments.yaml",
+  "dispatchWait": 10,
+  "exitCodeStem" : "none",
+  "treatments": ["negotiation"],
+    "payoffs": [1],
+  "cdn": "local",
+  "videoStorageLocation": "deliberation-lab-recordings-test",
   "dataRepos": [
     {
       "owner": "JamesPHoughton",

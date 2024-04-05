@@ -87,17 +87,8 @@ treatments:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_preamble.md
           - type: prompt
-            name: reservationPrice
-            file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_reservation_price.md
-          - type: prompt
-            name: openingBid
-            file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_opening_bid.md
-          - type: prompt
             name: targetPrice
             file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_target_price.md
-          - type: prompt
-            name: BATNA
-            file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_batna.md
           - type: prompt
             name: strategyPlan
             file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_planned_strategy.md
@@ -106,13 +97,7 @@ treatments:
             name: submitNegotiationPlan
             buttonText: Submit and Start Exercise
             conditions:
-              - promptName: reservationPrice
-                comparator: exists
-              - promptName: openingBid
-                comparator: exists
               - promptName: targetPrice
-                comparator: exists
-              - promptName: BATNA
                 comparator: exists
               - promptName: strategyPlan
                 comparator: exists

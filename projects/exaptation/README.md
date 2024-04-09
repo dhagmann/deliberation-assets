@@ -1,15 +1,34 @@
 ```json
 {
   "batchName": "initial_demo",
-  "treatmentFile": "projects/exaptation/exaptation_lego_pilot_3.treatments.yaml",
+  "treatmentFile": "projects/exaptation/exaptation_lego_pilot_4.treatments.yaml",
   "dispatchWait": 1,
   "treatments": ["schema"],
   "videoStorageLocation": "none",
   "exitCodeStem": "demo",
   "preregister": false,
   "cdn": "local",
-  "checkAudio": false,
-  "checkVideo": false,
+  "dataRepos": [
+    {
+      "owner": "Watts-Lab",
+      "repo": "deliberation-data-test",
+      "branch": "main",
+      "directory": "exaptation"
+    }
+  ]
+}
+```
+
+```json
+{
+  "batchName": "initial_demo",
+  "treatmentFile": "projects/exaptation/exaptation_lego_pilot_4.treatments.yaml",
+  "dispatchWait": 1,
+  "treatments": ["schema"],
+  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "exitCodeStem": "demo",
+  "preregister": false,
+  "cdn": "prod",
   "dataRepos": [
     {
       "owner": "Watts-Lab",
@@ -111,25 +130,23 @@
 
 - ask people how well they thought they did before we reveal the result, and see if the discusion makes them think they did better
 
-
-
 {
-  "batchName": "initial_demo",
-  "treatmentFile": "projects/exaptation/exaptation_lego_pilot_3.treatments.yaml",
-  "dispatchWait": 1,
-  "treatments": [
-    "schema"
-  ],
-  "videoStorageLocation": "deliberation-lab-recordings-test",
-  "exitCodeStem": "demo",
-  "preregister": false,
-  "cdn": "prod",
-  "dataRepos": [
-    {
-      "owner": "Watts-Lab",
-      "repo": "deliberation-data-test",
-      "branch": "main",
-      "directory": "exaptation"
-    }
-  ]
+"batchName": "initial_demo",
+"treatmentFile": "projects/exaptation/exaptation_lego_pilot_3.treatments.yaml",
+"dispatchWait": 1,
+"treatments": [
+"schema"
+],
+"videoStorageLocation": "deliberation-lab-recordings-test",
+"exitCodeStem": "demo",
+"preregister": false,
+"cdn": "prod",
+"dataRepos": [
+{
+"owner": "Watts-Lab",
+"repo": "deliberation-data-test",
+"branch": "main",
+"directory": "exaptation"
+}
+]
 }

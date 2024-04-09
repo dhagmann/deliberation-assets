@@ -7,7 +7,7 @@ type: multipleChoice
 
 ---
 
-- To retain a star faculty member  
+- To retain a star faculty member
 - To support the development of valuable intellectual property
-- To enhance revenue for the university  
+- To enhance revenue for the university
 - To attract new faculty members

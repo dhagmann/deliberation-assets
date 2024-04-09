@@ -88,52 +88,52 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_preamble.md
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scientist_1.md
-            name: scientistReadingComp1
+            name: ReadingComp1
             showToPositions:
               - 0
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scientist_2.md
-            name: scientistReadingComp2
+            name: ReadingComp2
             showToPositions:
               - 0
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scientist_3.md
-            name: scientistReadingComp3
+            name: ReadingComp3
             showToPositions:
               - 0
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scientist_4.md
-            name: scientistReadingComp4
+            name: ReadingComp4
             showToPositions:
               - 0
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scientist_5.md
-            name: scientistReadingComp5
+            name: ReadingComp5
             showToPositions:
               - 0
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provost_1.md
-            name: provostReadingComp1
+            name: ReadingComp1
             showToPositions:
               - 1
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provost_2.md
-            name: provostReadingComp2
+            name: ReadingComp2
             showToPositions:
               - 1
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provost_3.md
-            name: provostReadingComp3
+            name: ReadingComp3
             showToPositions:
               - 1
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provost_4.md
-            name: provostReadingComp4
+            name: ReadingComp4
             showToPositions:
               - 1
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provost_5.md
-            name: provostReadingComp5
+            name: ReadingComp5
             showToPositions:
               - 1
 
@@ -141,41 +141,39 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_presubmit.md
             
           - type: submitButton
-            name: submitReadingComprehensionScientist
-            butttonText: Continue
+            buttonText: Continue
             conditions:
-              - promptName: scientistReadingComp1
+              - promptName: ReadingComp1
                 comparator: equals
                 value: "Burnout from working long hours"
-              - promptName: scientistReadingComp2
+              - promptName: ReadingComp2
                 comparator: equals
                 value: "To finance the purchase of a boat"
-              - promptName: scientistReadingComp3
+              - promptName: ReadingComp3
                 comparator: equals
                 value: "To restart life after the sabbatical"
-              - promptName: scientistReadingComp4
+              - promptName: ReadingComp4
                 comparator: equals
                 value: "Jeopardizing your entire plan"
-              - promptName: scientistReadingComp5
+              - promptName: ReadingComp5
                 comparator: equals
                 value: "Faster and surer option"
           - type: submitButton
-            name: submitReadingComprehensionProvost
-            butttonText: Continue
+            buttonText: Continue
             conditions:
-              - promptName: provostReadingComp1
+              - promptName: ReadingComp1
                 comparator: equals
                 value: "All of the above"
-              - promptName: provostReadingComp2
+              - promptName: ReadingComp2
                 comparator: equals
                 value: "Avoiding a mercenary culture"
-              - promptName: provostReadingComp3
+              - promptName: ReadingComp3
                 comparator: equals
                 value: "To retain a star faculty member"
-              - promptName: provostReadingComp4
+              - promptName: ReadingComp4
                 comparator: equals
-                value: "£275,000"
-              - promptName: provostReadingComp5
+                value: "275,000"
+              - promptName: ReadingComp5
                 comparator: equals
                 value: "Motivating the faculty member to return from sabbatical for productive research"
 

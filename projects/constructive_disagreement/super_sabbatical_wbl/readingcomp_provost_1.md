@@ -7,7 +7,7 @@ type: multipleChoice
 
 ---
 
-- Overseeing faculty hiring and promotion  
-- Safeguarding academic integrity  
+- Overseeing faculty hiring and promotion
+- Safeguarding academic integrity
 - Approving all sabbatical requests
 - All of the above

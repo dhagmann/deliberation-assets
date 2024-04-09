@@ -5,14 +5,9 @@ type: multipleChoice
 
 ## Why did you decide to sell your flat?
 
-- **A**: To pay off debts
-- **B**: To invest in a new venture
-- **C**: To finance the purchase of a boat
-- **D**: To cover living costs during the sabbatical
-
 ---
 
-- A
-- B
-- C
-- D
+- To pay off debts
+- To invest in a new venture
+- To finance the purchase of a boat
+- To cover living costs during the sabbatical

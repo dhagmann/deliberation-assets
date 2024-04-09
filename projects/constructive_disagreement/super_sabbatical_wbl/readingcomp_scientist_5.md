@@ -5,14 +5,9 @@ type: multipleChoice
 
 ## Why would you prefer negotiating with the Provost rather than private investor groups?
 
-- **A**: Potential for higher total payment
-- **B**: Faster and surer option
-- **C**: Greater upfront payment
-- **D**: Likelihood of securing a deal within a year or less
-
 ---
 
-- A
-- B
-- C
-- D
+- Faster and surer option
+- Potential for higher total payment
+- Greater upfront payment
+- Likelihood of securing a deal within a year or less

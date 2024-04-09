@@ -139,25 +139,44 @@ treatments:
 
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_presubmit.md
+     
+          - type: submitButton
+            buttonText: Continue
+            conditions:
+              - promptName: ReadingComp1
+                comparator: equals
+                value: "Burnout from working long hours"
+              - promptName: ReadingComp2
+                comparator: equals
+                value: "To finance the purchase of a boat"
+              - promptName: ReadingComp3
+                comparator: equals
+                value: "To restart life after the sabbatical"
+              - promptName: ReadingComp4
+                comparator: equals
+                value: "Jeopardizing your entire plan"
+              - promptName: ReadingComp5
+                comparator: equals
+                value: "Faster and surer option"
 
           - type: submitButton
             buttonText: Continue
             conditions:
               - promptName: ReadingComp1
                 comparator: equals
-                value: "D"
+                value: "All of the above"
               - promptName: ReadingComp2
                 comparator: equals
-                value: "C"
+                value: "Avoiding a mercenary culture"
               - promptName: ReadingComp3
                 comparator: equals
-                value: "A"
+                value: "To retain a star faculty member"
               - promptName: ReadingComp4
                 comparator: equals
-                value: "C"
+                value: "275,000"
               - promptName: ReadingComp5
                 comparator: equals
-                value: "B"
+                value: "Motivating the faculty member to return from sabbatical for productive research"
 
           - type: separator
             style: thin

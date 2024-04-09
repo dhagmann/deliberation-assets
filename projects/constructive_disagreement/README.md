@@ -111,7 +111,7 @@
   "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
   "treatmentFile": "projects/constructive_disagreement/super_sabbatical_wbl/super_sabbatical_wbl.treatments.yaml",
   "dispatchWait": 10,
-  "exitCodeStem": "WBL_SuperSabbatical_nLwxWmcACl",
+  "exitCodeStem": "none",
   "treatments": [
     "negotiation"
   ],

@@ -5,7 +5,7 @@ type: noResponse
 
 # Your assigned role is the Provost.
 
-Below, we provide you with information about your role, as well as general information about the context of this negotiation. You will also be able to reference this information again during the main negotiation.
+Although you will be to reference this information later, **please consider jotting down notes as you read.**
 
 ## Role Information
 

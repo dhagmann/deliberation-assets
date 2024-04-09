@@ -139,7 +139,7 @@ treatments:
 
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_presubmit.md
-            
+     
           - type: submitButton
             buttonText: Continue
             conditions:
@@ -158,6 +158,7 @@ treatments:
               - promptName: ReadingComp5
                 comparator: equals
                 value: "Faster and surer option"
+
           - type: submitButton
             buttonText: Continue
             conditions:
@@ -173,9 +174,6 @@ treatments:
               - promptName: ReadingComp4
                 comparator: equals
                 value: "275,000"
-              - promptName: ReadingComp5
-                comparator: equals
-                value: "Motivating the faculty member to return from sabbatical for productive research"
 
           - type: separator
             style: thin

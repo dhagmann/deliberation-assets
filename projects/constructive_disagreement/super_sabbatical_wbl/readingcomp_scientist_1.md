@@ -5,9 +5,14 @@ type: multipleChoice
 
 ## What is your MAIN reason for taking an extended sabbatical?
 
+- **A**: Raising capital for a new venture
+- **B**: Desire to sail around the world
+- **C**: More time to focus on research
+- **D**: Burnout from working long hours
+
 ---
 
-- Burnout from working long hours
-- Raising capital for a new venture
-- Desire to sail around the world
-- More time to focus on research
+- A
+- B
+- C
+- D

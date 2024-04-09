@@ -5,17 +5,17 @@ type: noResponse
 
 # The game you are about to play has two stages:
 
-## Stage 1: Discussion and labeling
+## Stage 1: Discussion and labeling (Video Call)
 
 In the first stage, your group will be shown a set of eight images, such as the ones blurred out below.
 
-You will have 10 minutes to come up with labels for each image, and enter them in the shared document that follows.
+You will have 10 minutes to come up with unique labels for each image, and enter them in the shared document that follows.
 
 ![labeling_demo](projects/exaptation/instructions_demo_labeling.jpg)
 
-You will need to remember each label exactly, and so labels should be memorable, short, and distinct from one another.
+You will need to remember each label exactly, and so labels should be memorable, short, and _distinct_ from one another.
 
-## Stage 2: Recall
+## Stage 2: Recall (On your own)
 
 After your discussion, we will show you images one at a time, and ask you to type the label your group decided on for that image.
 

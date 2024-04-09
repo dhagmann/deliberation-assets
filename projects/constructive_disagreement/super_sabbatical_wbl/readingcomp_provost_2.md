@@ -5,9 +5,14 @@ type: multipleChoice
 
 ## What is your MAIN concern when negotiating patent portfolios with faculty?
 
+- **A**: Losing faculty to industry
+- **B**: Reducing teaching quality and student experience
+- **C**: Avoiding a mercenary culture
+- **D**: Reducing research output
+
 ---
 
-- Losing faculty to industry
-- Avoiding a mercenary culture
-- Reducing teaching quality and student experience
-- Reducing research output
+- A
+- B
+- C
+- D

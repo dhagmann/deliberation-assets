@@ -9,6 +9,6 @@ author: Emily Hu
 
 In this study, you will be participating in an online negotiation. Before we begin, we would like to ask a few questions to learn more about you. Please answer each question as honestly as possible. A description of the scale is provided at the top of each page.
 
-There are three pages of survey questions in total. There is no time limit for this portion of the study, but please try your best to move forward efficiently, as this will minimize the time that you fellow participants will wait to get matched with a partner.
+There are three pages of survey questions in total. There is no time limit for this portion of the study, but please try your best to move forward efficiently, as this will minimize the time that your fellow participants will wait to get matched with a partner.
 
 ---

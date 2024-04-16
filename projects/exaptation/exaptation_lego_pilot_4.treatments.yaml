@@ -214,7 +214,7 @@ treatments:
           - type: submitButton
             buttonText: Continue
 
-      - name: 2
+      - name: Labeling 2
         duration: 600
         discussion:
           chatType: video
@@ -976,7 +976,7 @@ treatments:
         duration: 30
         elements:
           - type: image
-            file: projects/exaptation/Tangram_A5.jpg
+            file: projects/exaptation/Tangram_A7.jpg
           - type: prompt
             name: recall_5_4
             file: projects/exaptation/recall.md
@@ -988,7 +988,7 @@ treatments:
         duration: 20
         elements:
           - type: image
-            file: projects/exaptation/Tangram_A5.jpg
+            file: projects/exaptation/Tangram_A7.jpg
           - type: prompt
             file: projects/exaptation/labels_match.md
             conditions:
@@ -1237,7 +1237,7 @@ treatments:
           - type: submitButton
             buttonText: Continue
 
-      - name: 2
+      - name: Labeling 2
         duration: 600
         discussion:
           chatType: video
@@ -1245,7 +1245,7 @@ treatments:
           showTitle: false
         elements:
           - type: image
-            file: projects/exaptation/Lego_Panel_SB.jpg
+            file: projects/exaptation/Lego_Panel_NB.jpg
           - type: prompt
             file: projects/exaptation/naming_8.md
             name: labeling_2
@@ -1258,7 +1258,7 @@ treatments:
         duration: 30
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB2.jpg
+            file: projects/exaptation/Lego_NB2.jpg
           - type: prompt
             name: recall_2_1
             file: projects/exaptation/recall.md
@@ -1270,7 +1270,7 @@ treatments:
         duration: 20
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB2.jpg
+            file: projects/exaptation/Lego_NB2.jpg
           - type: prompt
             file: projects/exaptation/labels_match.md
             conditions:
@@ -1304,7 +1304,7 @@ treatments:
         duration: 30
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB6.jpg
+            file: projects/exaptation/Lego_NB6.jpg
           - type: prompt
             name: recall_2_2
             file: projects/exaptation/recall.md
@@ -1316,7 +1316,7 @@ treatments:
         duration: 20
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB6.jpg
+            file: projects/exaptation/Lego_NB6.jpg
           - type: prompt
             file: projects/exaptation/labels_match.md
             conditions:
@@ -1350,7 +1350,7 @@ treatments:
         duration: 30
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB7.jpg
+            file: projects/exaptation/Lego_NB7.jpg
           - type: prompt
             name: recall_2_3
             file: projects/exaptation/recall.md
@@ -1362,7 +1362,7 @@ treatments:
         duration: 20
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB7.jpg
+            file: projects/exaptation/Lego_NB7.jpg
           - type: prompt
             file: projects/exaptation/labels_match.md
             conditions:
@@ -1396,7 +1396,7 @@ treatments:
         duration: 30
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB8.jpg
+            file: projects/exaptation/Lego_NB8.jpg
           - type: prompt
             name: recall_2_4
             file: projects/exaptation/recall.md
@@ -1408,7 +1408,7 @@ treatments:
         duration: 20
         elements:
           - type: image
-            file: projects/exaptation/Lego_SB8.jpg
+            file: projects/exaptation/Lego_NB8.jpg
           - type: prompt
             file: projects/exaptation/labels_match.md
             conditions:
@@ -1999,7 +1999,7 @@ treatments:
         duration: 30
         elements:
           - type: image
-            file: projects/exaptation/Tangram_A5.jpg
+            file: projects/exaptation/Tangram_A7.jpg
           - type: prompt
             name: recall_5_4
             file: projects/exaptation/recall.md
@@ -2011,7 +2011,7 @@ treatments:
         duration: 20
         elements:
           - type: image
-            file: projects/exaptation/Tangram_A5.jpg
+            file: projects/exaptation/Tangram_A7.jpg
           - type: prompt
             file: projects/exaptation/labels_match.md
             conditions:

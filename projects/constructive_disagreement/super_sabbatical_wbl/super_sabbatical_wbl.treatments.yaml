@@ -5,7 +5,7 @@ introSequences:
       - name: Introsurvey Preamble
         elements:
           - type: prompt
-            name: fullName
+            name: preamble
             file: projects/constructive_disagreement/super_sabbatical_wbl/introsurvey_preamble.md
           - type: submitButton
             buttonText: Continue
@@ -139,7 +139,7 @@ treatments:
 
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_presubmit.md
-     
+
           - type: submitButton
             buttonText: Continue
             conditions:
@@ -308,7 +308,7 @@ treatments:
               - promptName: toggleRolePepTalk
                 comparator: equals
                 value: "⬇️ Display Key Things to Remember"
-    
+
     exitSequence:
       - name: Member Impressions
         elements:

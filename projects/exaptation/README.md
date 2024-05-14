@@ -25,7 +25,7 @@
   "treatmentFile": "projects/exaptation/exaptation_lego_pilot_4.treatments.yaml",
   "dispatchWait": 1,
   "treatments": ["schema"],
-  "videoStorageLocation": "deliberation-lab-recordings-test",
+  "videoStorageLocation": "none",
   "exitCodeStem": "demo",
   "preregister": false,
   "cdn": "prod",
@@ -35,6 +35,36 @@
       "repo": "deliberation-data-test",
       "branch": "main",
       "directory": "exaptation"
+    }
+  ]
+}
+```
+
+```json
+{
+  "batchName": "turkPilot",
+  "treatmentFile": "projects/exaptation/exaptation_lego_pilot_4.treatments.yaml",
+  "dispatchWait": 1,
+  "treatments": ["schema", "nonschema"],
+  "videoStorageLocation": "deliberation-lab-recordings-exaptation",
+  "exitCodeStem": "plt0409",
+  "preregister": false,
+  "cdn": "prod",
+  "launchDate": "09 Apr 2024 13:00:00 EDT",
+  "dataRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "exaptation",
+      "branch": "main",
+      "directory": "pilot"
+    }
+  ],
+  "preregRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "exaptation",
+      "branch": "main",
+      "directory": "pilot"
     }
   ]
 }

@@ -13,7 +13,7 @@ In recent decades, the lines between academic and practical research have blurre
 
 To improve faculty retention, universities are now offering creative incentives, such as helping faculty submit patents and build valuable IP portfolios even within academia. In addition, universities are also allowing faculty to sell the patents that result from their research --- obtaining both a financial profit and a better chance to apply their work in a broad commercial setting.
 
-Critics argue that these commercialization efforts can detract from basic research. As more researchers seek to make their work profitable rather than scientifically interesting, top scholars may seek out elite research centers — creating a backlash in which the best academics flock to “think tanks” and “institutes” to avoid having to work in an increasingly corporatized university culture.
+Critics argue that these commercialization efforts can detract from basic research. As more researchers seek to make their work profitable rather than scientifically interesting, top scholars may seek out elite research centers --- creating a backlash in which the best academics flock to “think tanks” and “institutes” to avoid having to work in an increasingly corporatized university culture.
 
 To balance these considerations, your university allows faculty to sell patent interests while retaining the right of first refusal, ensuring that high-value portfolios are maintained. An investment-minded IP Committee evaluates these transactions to secure the best prices.
 

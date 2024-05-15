@@ -13,7 +13,7 @@ In recent decades, the lines between academic and practical research have blurre
 
 In addition to the opportunities researchers face in industry, a number of nonprofit research centers offer ideal environments for focused thinking and vibrant interactions with motivated colleagues. Even better, these centers require no teaching, no burdensome committee work, and no pressure to commercialize research.
 
-In light of excellent outside options outside of the university, competition for talent has become more intense, and it has become harder for universities to retain top researchers.
+In light of excellent options outside of the university, competition for talent has become more intense, and it has become harder for universities to retain top researchers.
 
 To improve faculty retention, universities are now offering creative incentives, such as helping faculty submit patents and build valuable IP portfolios within academia. In addition, universities are also allowing faculty to sell the patents that result from their research --- obtaining both a financial profit and a better chance to apply their work in a broad commercial setting.
 

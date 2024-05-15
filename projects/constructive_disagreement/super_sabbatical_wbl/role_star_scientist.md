@@ -23,9 +23,9 @@ You therefore wish to take a **21-month sabbatical** (12 months sailing, and 9 m
 
 In sum, you need **$355,000** to fund your trip, or you will jeopardize your entire plan.
 
-Your only way to raise this money is by selling your share of the patent portfolio. You prefer selling to your university for a quick deal. Private investors offer options, but with less upfront payment and longer timelines.
+Your only way to raise this money is by selling your share of the patent portfolio. You strongly prefer selling to your university for a quick deal. While private investors offer several options, they all have less upfront payment and much longer timelines. Some deals require a year or more of delay. However, you have heard through the grapevine that a colleague was recently able to sell their patent portfolio to a private company for nearly $400,000, even though his patents are considered less valuable than yours.
 
-Your first choice is a deal with the Provost, who handles all intellectual property deals, as this is the fastest and surest way to start your adventure.
+Overall, your first choice is a deal with the Provost, who handles all intellectual property deals. This is the fastest and surest way to start your adventure.
 
 Now to negotiate...
 

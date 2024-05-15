@@ -17,7 +17,9 @@ You now face a negotiation involving a faculty member who is a rising star in th
 
 On the other hand, you recognize the importance of retaining this faculty member, who has been invited to the prestigious Institute for Advanced Studies. They are extremely highly regarded in the global academic community, and there is a very real risk that you could lose this person to another university or research center after they return from their sabbatical. Having the right deal would help you bring your star home after the Institute visit and motivate them to continue their productive work.
 
-The IP Committee has authorized up to **$275,000** for the buy-out. While the university’s partners have already secured a serious buyer for the patent, making the overall risk low, the committee is very clear that you cannot, under any circumstances, exceed this limit.
+The IP Committee has authorized up to **$275,000** for the buy-out, which you should interpret as the total valuation of the portfolio. This means that 100\% of the portfolio is worth $275K; any partial share of the patent pool needs to be scaled relative to the total valuation.
+
+While the university’s partners have already secured a serious buyer for the patent, making the overall risk low, the committee is very clear that _you cannot, under any circumstances, exceed the $275K limit_.
 
 The faculty member's sabbatical request is well-earned and should be approved, and they are entitled to **6 months** paid time, with the possibility of longer unpaid leave.
 

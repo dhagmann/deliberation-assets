@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scient
 type: multipleChoice
 ---
 
-## What is the primary purpose of the £95,000 return fund?
+## What is the primary purpose of the $95,000 return fund?
 
 ---
 

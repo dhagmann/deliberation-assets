@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scient
 type: multipleChoice
 ---
 
-## Why did you decide to sell your flat?
+## Why did you decide to sell your condo?
 
 ---
 

@@ -13,7 +13,7 @@ You are the Provost of your university, a top-tier institution with a world-reno
 
 These duties require a delicate balancing act. On the one hand, you need to make offers that attract the best and brightest minds; on the other, you must also safeguard the academic integrity of the university’s faculty and teaching staff by avoiding deals that create a mercenary culture. This tension is heightened in negotiations with star faculty who have built up large and potentially valuable patent portfolios. Therefore, you take the role of lead negotiator in the case of potential departures or new hires that present such tensions.
 
-Beyond the watchdog aspect of being Provost, however, the role also includes supporting and encouraging faculty to do work that has an impact not only on their academic fields and literatures, but also on society more broadly. For faculty in science and technology, a practical strategy for doing this is to encourage and reward development of valuable intellectual property (IP). Among other strategies, one important way of doing this is to support faculty in developing and realising financial rewards from the sale or licensing of patents.
+Beyond the watchdog aspect of being Provost, however, the role also includes supporting and encouraging faculty to do work that has an impact not only on their academic fields and literatures, but also on society more broadly. For faculty in science and technology, a practical strategy for doing this is to encourage and reward development of valuable intellectual property (IP). Among other strategies, one important way of doing this is to support faculty in developing and realizing financial rewards from the sale or licensing of patents.
 
 Recently, the university initiated a 10-year plan to ramp up its level of patenting and licensing activity. A special IP Committee of the Trustees has been convened to oversee this push, and a select group of alumni and donors have created a seed fund to support development of partnerships that will go beyond the historical technology transfer office models of the past. The idea is to understand which fields industry leaders see as commercially promising and then direct scarce resources to support patenting efforts for faculty in those areas.
 
@@ -25,9 +25,9 @@ On the retention front, this faculty member has just been invited to spend an ac
 
 Having weighed all of this and taken it to your IP Committee and a few select donors, you have their support to do a deal to retain this star, but there are limits.
 
-In particular, the IP Committee has authorised you to pay up to £275,000 for the faculty member’s interest in patents.
+In particular, the IP Committee has authorized you to pay up to **$275,000** for the faculty member’s interest in patents.
 
-As it turns out, one of the university’s new partners in patenting and licensing has found a serious buyer for these patents, so the risk is low and the upside is promising. Like you, however, the IP Committee is concerned about the precedent set by such deals, so they made it clear that they would not support a deal above £275,000.
+As it turns out, one of the university’s new partners in patenting and licensing has found a serious buyer for these patents, so the risk is low and the upside is promising. Like you, however, the IP Committee is concerned about the precedent set by such deals, so they made it clear that **they would not support a deal above $275,000.**
 
 On approving the sabbatical, the faculty member has more than earned it, and keeping precedent all but demands that you approve it.
 

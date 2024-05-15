@@ -5,12 +5,12 @@ type: noResponse
 
 # Key Things to Remember: Star Scientist.
 
-After a very long period of overwork, the physical and emotional toll is such that, on your doctor’s orders, you need a long break. Your goal is to get 21 months away ... 12 months of time off to decompress by sailing in the Pacific and 9 months in the Institute. 
+After a very long period of overwork, the physical and emotional toll is such that, on your doctor’s orders, you need a long break. Your goal is to get 21 months away: 12 months of time off to decompress and sail in the Pacific, and 9 months of creative freedom to pursue new ideas in the Institute.
 
-As you read the Star Scientist’s predicament, you may be shaking your head in disapproval at the rash decisions the Star Scientist made to commit to the boat and the trip before having got all the required funds together. This makes your conversation with the Provost very important. 
+You need at least **$355,000** in order to make this dream possible, **and you have already sold your condo and taken on significant financial commitments**. Your conversation with the Provost is the only way for you to complete the deal you have committed to and to begin your leave as soon as possible.
 
-As you come to that conversation, however, do your best to step into the star scientist role. Be assertive, and know that you will be snatched up quickly if things do not work out with the Provost. 
+This makes your conversation with the Provost crucial. As you enter this conversation, remember that you are a high-profile scientist --- a *rising star*. You will be snatched up quickly if things do not work out with the Provost. In light of these facts, be as assertive as you can.
 
-The only catch is, the Provost is the only way for you to complete the deal you have committed to and start your leave soon, which is important to your well-being. 
+This conversation is the best chance for you to get the $355K and secure both your financial and your physical well-being.
 
 ---

@@ -11,7 +11,7 @@ You have now completed the introductory surveys. To help you understand the cont
 
 In recent decades, the lines between academic and practical research have blurred. Interdisciplinary fields such as biotechnology, nanotechnology, data science, and machine learning have forged new connections between business and academia and created new demands for applied work.
 
-In addition to the opportunities researchers face in industry, a number of nonprofit research centers offer ideal environments for focussed thinking and vibrant interactions with motivated colleagues. Even better, these centers require no teaching, no burdensome committee work, and no pressure to commercialize research.
+In addition to the opportunities researchers face in industry, a number of nonprofit research centers offer ideal environments for focused thinking and vibrant interactions with motivated colleagues. Even better, these centers require no teaching, no burdensome committee work, and no pressure to commercialize research.
 
 In light of excellent outside options outside of the university, competition for talent has become more intense, and it has become harder for universities to retain top researchers.
 

@@ -180,7 +180,7 @@ treatments:
                 value: "275,000"
               - promptName: ReadingComp5
                 comparator: equals
-                value: "Motivating the faculty member to return from sabbatical for productive research"
+                value: "Motivating the faculty member to return to the university after their sabbatical, rather than taking an opportunity elsewhere"
 
           - type: separator
             style: thin

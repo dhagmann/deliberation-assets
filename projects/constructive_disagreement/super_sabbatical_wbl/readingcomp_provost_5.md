@@ -8,6 +8,6 @@ type: multipleChoice
 ---
 
 - Inspiring the faculty member to retire
-- Motivating the faculty member to return from sabbatical for productive research
+- Motivating the faculty member to return to the university after their sabbatical, rather than taking an opportunity elsewhere
 - Encouraging the faculty member to pursue commercial activities
-- Discouraging the faculty member from seeking opportunities elsewhere
+- Discouraging the faculty member from selling their IP portfolio to outside investors

@@ -47,7 +47,7 @@ treatments:
 
     gameStages:
       - name: Role Reading Preamble
-        duration: 10
+        duration: 30
         elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/role_specific_instructions_preamble_scientist.md

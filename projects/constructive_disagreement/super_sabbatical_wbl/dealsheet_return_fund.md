@@ -4,7 +4,7 @@ type: multipleChoice
 author: Emily Hu
 ---
 
-Will there be a return fund?\*
+**Will there be a return fund?**\*
 
 ---
 

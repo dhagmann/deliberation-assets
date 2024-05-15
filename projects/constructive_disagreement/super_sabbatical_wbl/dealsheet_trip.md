@@ -4,7 +4,7 @@ type: multipleChoice
 author: Emily Hu
 ---
 
-Will the trip take place?\*
+**Will the trip take place?**\*
 
 ---
 

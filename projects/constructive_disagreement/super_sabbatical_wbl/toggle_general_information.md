@@ -5,5 +5,5 @@ type: multipleChoice
 
 ---
 
-- ⬇️ Display General Information
-- ⬆️ Hide General Information
+- ⬇️ Display General Information (Optional Reading)
+- ⬆️ Hide General Information (Optional Reading)

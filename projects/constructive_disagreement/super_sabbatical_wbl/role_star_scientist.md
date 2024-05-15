@@ -21,7 +21,7 @@ You therefore wish to take a **21-month sabbatical** (12 months sailing, and 9 m
 - **$25,000** for maintenance, totalling $260,000.
 - **$95,000** for a "return fund," so that you can restart your academic life. Given your “rising star” status, several universities have offered you competing positions after your sabbatical. For the sake of your health and to achieve the goals you’ve set for the next chapter of your career, you want to make the right decision.
 
-In sum, you need a **$355,000** to fund your trip, or you will jeopardize your entire plan.
+In sum, you need **$355,000** to fund your trip, or you will jeopardize your entire plan.
 
 Your only way to raise this money is by selling your share of the patent portfolio. You prefer selling to your university for a quick deal. Private investors offer options, but with less upfront payment and longer timelines.
 

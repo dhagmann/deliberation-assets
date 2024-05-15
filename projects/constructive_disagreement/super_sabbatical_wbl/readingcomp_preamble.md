@@ -9,4 +9,6 @@ Please answer the following five questions below about your role. This is your o
 
 **The "Continue" button on this page will not appear until all five questions are correct.**
 
-*All reading materials you have seen so far are reproduced at the bottom of this page for your reference.*
+_All reading materials you have seen so far are reproduced at the bottom of this page for your reference._
+
+---

@@ -21,6 +21,12 @@ introSequences:
         elements:
           - type: survey
             surveyName: CulturalConflictNorms
+      - name: General Information (Optional Reading)
+        elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
+          - type: submitButton
+            buttonText: Continue
       - name: Complete Introductory Surveys
         elements:
           - type: prompt
@@ -54,7 +60,7 @@ treatments:
           - type: submitButton
             buttonText: Continue
       - name: Main Reading Time
-        duration: 900
+        duration: 420
         elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/role_star_scientist.md
@@ -64,8 +70,6 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical_wbl/role_provost.md
             showToPositions:
               - 1
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
           - type: submitButton
             buttonText: Continue
       - name: Key Things To Remember
@@ -189,8 +193,6 @@ treatments:
             showToPositions:
               - 1
           - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
-          - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/role_star_scientist_pep_talk.md
             showToPositions:
               - 0
@@ -198,6 +200,8 @@ treatments:
             file: projects/constructive_disagreement/super_sabbatical_wbl/role_provost_pep_talk.md
             showToPositions:
               - 1
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
       - name: Pre-Negotiation Planning
         duration: 180
         elements:
@@ -281,15 +285,6 @@ treatments:
                 comparator: equals
                 value: "⬇️ Display Role Information"
           - type: prompt
-            name: toggleGeneralInformation
-            file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_general_information.md
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
-            conditions:
-              - promptName: toggleGeneralInformation
-                comparator: equals
-                value: "⬇️ Display General Information"
-          - type: prompt
             name: toggleRolePepTalk
             file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_role_pep_talk.md
           - type: prompt
@@ -308,6 +303,15 @@ treatments:
               - promptName: toggleRolePepTalk
                 comparator: equals
                 value: "⬇️ Display Key Things to Remember"
+          - type: prompt
+            name: toggleGeneralInformation
+            file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_general_information.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
+            conditions:
+              - promptName: toggleGeneralInformation
+                comparator: equals
+                value: "⬇️ Display General Information (Optional Reading)"
 
     exitSequence:
       - name: Member Impressions

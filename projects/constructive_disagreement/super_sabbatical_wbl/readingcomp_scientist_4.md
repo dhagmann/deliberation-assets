@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scient
 type: multipleChoice
 ---
 
-## What potential consequence do you face if you fail to raise at least £355,000?
+## What potential consequence do you face if you fail to raise at least $355,000?
 
 ---
 

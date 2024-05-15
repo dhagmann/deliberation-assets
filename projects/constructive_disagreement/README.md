@@ -106,17 +106,29 @@
 # Demo config for super sabbatical (WBL)
 ```json
 {
-  "batchName": "super_sabbatical_wbl",
-  "introSequence": "baseline",
-  "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
+  "batchName": "demo",
+  "cdn": "prod",
   "treatmentFile": "projects/constructive_disagreement/super_sabbatical_wbl/super_sabbatical_wbl.treatments.yaml",
+  "customIdInstructions": "shared/id_instructions/WBL.md",
+  "platformConsent": "US",
+  "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
+  "checkAudio": true,
+  "checkVideo": true,
+  "introSequence": "baseline",
+  "treatments": ["negotiation"],
+  "payoffs": "equal",
+  "knockdowns": "none",
   "dispatchWait": 10,
-  "exitCodeStem": "none",
-  "treatments": [
-    "negotiation"
+  "launchDate": "immediate",
+  "centralPrereg": false,
+  "preregRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "constructive-disagreement",
+      "branch": "main",
+      "directory": "test"
+    }
   ],
-  "cdn": "local",
-  "videoStorageLocation": "deliberation-lab-recordings-test",
   "dataRepos": [
     {
       "owner": "JamesPHoughton",
@@ -124,6 +136,11 @@
       "branch": "main",
       "directory": "test"
     }
-  ]
+  ],
+  "videoStorage": {
+    "bucket": "deliberation-lab-recordings-constructive-disagreement-us-east-1",
+    "region": "us-east-1"
+  },
+  "exitCodes": "none"
 }
 ```

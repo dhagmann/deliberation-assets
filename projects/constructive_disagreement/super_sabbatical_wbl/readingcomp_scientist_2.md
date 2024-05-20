@@ -10,4 +10,4 @@ type: multipleChoice
 - Paying $25,000 in maintenance expenses
 - Losing $20,000 down payment and needing to secure a new home
 - Having to get a job at another university
-- Having to sell your IP portfolio to a private investor
+- The boat losing its Certificate of Seaworthiness

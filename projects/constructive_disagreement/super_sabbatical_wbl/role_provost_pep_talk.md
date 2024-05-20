@@ -5,14 +5,12 @@ type: noResponse
 
 # Key Things to Remember: Provost.
 
-At most universities, the Provost is the senior leader in charge of all things related to faculty, research, and teaching. Recruiting and retaining star faculty is a very important element of the job, but so is maintaining a health culture for the entire community.
+- In this negotiation, you must balance two competing objectives: (1) retaining a stellar faculty member, whose departure would threaten the department's prestige and may cost you your job; and (2) following the rules of the university, which are are necessary for maintaining the broader precedents and culture of the institution.
 
-To that end, you must not agree to any provision of a deal that would create an unsustainable precedent. Specifically, there are two things you cannot agree; either one will get you removed from your post.
+- The rules state that the maximum you can pay for 100% of the faculty member's patent pool is **$275,000**. All partial purchases should scale to this maximum; for a 40% share, for example, you cannot pay more than **$110K** ($275K \* 0.4).
 
-First, you cannot pay for more than **6 months** of sabbatical, though you can approve longer leave times. Departments routinely approve up to a year, and in rare cases the Provost allows longer leaves --- normally only to members of staff who are clearly stars in some way.
+- You also cannot pay for more than **6 months** of sabbatical (typically at a salary of $10,000 per month), though you can approve longer leave times (up to 24 months). Giving world-class scholars the freedom and flexibility to work at their best is very important to you and your institution.
 
-Second, you may not exceed the maximum authorized payment and / or valuation for the scientist’s IP. The maximum you can pay for their share of the lab patent pool is **$275K**, but because this is about managing risk, you should use that as the maximum valuation you can pay for any amount of their holdings. So for 40% of their share, you cannot pay more than **$110K** ($275K \* 0.4).
-
-Subject to avoiding these problems, you can offer a variety of other inducements to get your star back and in good condition, and that is your best outcome. If you cannot reach an agreement in which they return rested and happy to be back, not having them back will be a disappointment but still better than having them return feeling either still too tired to work or just not happy to be back.
+- **Feel free to get creative:** outside of the hard rules, you can offer a variety of other inducements to get your star scientist back to the university and ready to continue their productive work.
 
 ---

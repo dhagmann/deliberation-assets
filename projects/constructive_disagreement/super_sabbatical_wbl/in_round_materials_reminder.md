@@ -5,6 +5,6 @@ type: noResponse
 
 # Reading Materials Reminder
 
-If you need a reminder of the reading materials, please use the radio buttons below to review information about this negotiation.
+If you need a reminder of the reading materials, you can use the radio buttons below to display and hide them.
 
 ---

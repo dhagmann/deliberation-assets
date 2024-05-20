@@ -73,7 +73,7 @@ treatments:
           - type: submitButton
             buttonText: Continue
       - name: Key Things To Remember
-        duration: 120
+        duration: 90
         elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/role_star_scientist_pep_talk.md
@@ -222,7 +222,63 @@ treatments:
                 comparator: exists
               - promptName: strategyPlan
                 comparator: exists
+          - projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_next_page.md
+            conditions:
+                - promptName: targetPrice
+                  comparator: exists
+                - promptName: strategyPlan
+                  comparator: exists
 
+          - type: separator
+            style: thin
+          - projects/constructive_disagreement/super_sabbatical_wbl/in_round_materials_reminder.md
+          - type: prompt
+            name: toggleRoleInstructions
+            file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_role_information.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/role_star_scientist.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleRoleInstructions
+                comparator: equals
+                value: "⬇️ Display Role Information"
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/role_provost.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleRoleInstructions
+                comparator: equals
+                value: "⬇️ Display Role Information"
+          - type: prompt
+            name: toggleRolePepTalk
+            file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_role_pep_talk.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/role_star_scientist_pep_talk.md
+            showToPositions:
+              - 0
+            conditions:
+              - promptName: toggleRolePepTalk
+                comparator: equals
+                value: "⬇️ Display Key Things to Remember"
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/role_provost_pep_talk.md
+            showToPositions:
+              - 1
+            conditions:
+              - promptName: toggleRolePepTalk
+                comparator: equals
+                value: "⬇️ Display Key Things to Remember"
+          - type: prompt
+            name: toggleGeneralInformation
+            file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_general_information.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
+            conditions:
+              - promptName: toggleGeneralInformation
+                comparator: equals
+                value: "⬇️ Display General Information (Optional Reading)"
       - name: Discussion
         duration: 1800
         discussion:
@@ -230,6 +286,21 @@ treatments:
           showNickname: true
           showTitle: true
         elements:
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/in_round_5min_warning.md
+            displayTime: 1500
+            hideTime: 1740
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/in_round_1min_warning.md
+            displayTime: 1740
+          - type: audio
+            file: shared/counter_bell.mp3
+            displayTime: 1500
+            hideTime: 1505
+          - type: audio
+            file: shared/counter_bell.mp3
+            displayTime: 1740
+            hideTime: 1745
           - type: prompt
             name: inNegotiationNotes
             file: projects/constructive_disagreement/super_sabbatical_wbl/in_nego_notes.md

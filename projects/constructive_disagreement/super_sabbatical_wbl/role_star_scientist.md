@@ -32,6 +32,4 @@ Before you start your negotiation, here is a summary of the boundaries of your n
 - Additionally, you do NOT want to lose the 20% down payment on your boat. Since you have already sold your condo, you will need to secure a new place to live if you do not go on the trip.
 - To be able to accept the position at the Institute of Advanced Studies, you **must reach an agreement with the provost**, as private companies would be too risky and slow.
 
-Now to negotiate...
-
 ---

@@ -203,7 +203,7 @@ treatments:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/general_information.md
       - name: Pre-Negotiation Planning
-        duration: 180
+        duration: 300
         elements:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_preamble.md
@@ -230,41 +230,32 @@ treatments:
           showNickname: true
           showTitle: true
         elements:
-          - projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_header.md
           - type: prompt
-            name: agreementReached
-            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_agreement_submission.md
+            name: inNegotiationNotes
+            file: projects/constructive_disagreement/super_sabbatical_wbl/in_nego_notes.md
+          - projects/constructive_disagreement/super_sabbatical_wbl/in_round_plan_header.md
+          - type: display
+            promptName: strategyPlan
+            position: 0
+            showToPositions: [0]
+          - type: display
+            promptName: strategyPlan
+            position: 1
+            showToPositions: [1]
+          - type: separator
+            style: thin
           - type: prompt
-            name: dealPrice
-            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_price.md
-          - type: prompt
-            name: specialTerms
-            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_deal_special_terms.md
-          - type: prompt
-            name: dealTrip
-            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_trip.md
-          - type: prompt
-            name: dealReturnFund
-            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_return_fund.md
-
+            file: projects/constructive_disagreement/super_sabbatical_wbl/in_round_leave_early.md
+            displayTime: 600
           - type: submitButton
             name: submitDealSheet
             displayTime: 600
-            buttonText: Submit Deal Sheet and Leave Negotiation
+            buttonText: Leave Negotiation Early
             conditions:
-              - promptName: agreementReached
-                comparator: exists
-              - promptName: dealPrice
-                comparator: exists
-              - promptName: specialTerms
-                comparator: exists
-              - promptName: dealTrip
-                comparator: exists
-              - promptName: dealReturnFund
-                comparator: exists
-
-          - type: separator
-            style: thin
+              - promptName: inNegotiationNotes
+                comparator: lengthAtLeast
+                value: 10
+          - projects/constructive_disagreement/super_sabbatical_wbl/in_round_materials_reminder.md
           - type: prompt
             name: toggleRoleInstructions
             file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_role_information.md
@@ -314,6 +305,49 @@ treatments:
                 value: "⬇️ Display General Information (Optional Reading)"
 
     exitSequence:
+      - name: Deal Sheet
+        elements:
+          - projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_header.md
+          - type: display
+            promptName: inNegotiationNotes
+            position: 0
+            showToPositions: [0]
+          - type: display
+            promptName: inNegotiationNotes
+            position: 1
+            showToPositions: [1]
+
+          - type: prompt
+            name: agreementReached
+            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_agreement_submission.md
+          - type: prompt
+            name: dealPrice
+            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_price.md
+          - type: prompt
+            name: specialTerms
+            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_deal_special_terms.md
+          - type: prompt
+            name: dealTrip
+            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_trip.md
+          - type: prompt
+            name: dealReturnFund
+            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_return_fund.md
+
+          - type: submitButton
+            name: submitDealSheet
+            buttonText: Submit
+            conditions:
+              - promptName: agreementReached
+                comparator: exists
+              - promptName: dealPrice
+                comparator: exists
+              - promptName: specialTerms
+                comparator: exists
+              - promptName: dealTrip
+                comparator: exists
+              - promptName: dealReturnFund
+                comparator: exists
+
       - name: General Discussion Survey
         elements:
           - type: prompt

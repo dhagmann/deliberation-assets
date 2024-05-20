@@ -15,7 +15,7 @@ A key strategy that you have identified for retaining top talent, is to support 
 
 You now face a negotiation involving a faculty member who is a rising star in their field and is requesting a sabbatical and buy-out of their patent interests. On the one hand, you are concerned about setting a poor precedent in this case: you don’t want the university to become “corporatized,” creating a mercenary culture among faculty. This is a university, not a business, and having too many faculty seek profit rather than scientific advancement poses an ethical issue that would be disastrous for the university’s reputation and future.
 
-On the other hand, you recognize the importance of retaining this faculty member, who has been invited to the prestigious Institute for Advanced Studies. They are extremely highly regarded in the global academic community, and there is a very real risk that you could lose this person to another university or research center after they return from their sabbatical. Having the right deal would help you bring your star home after the Institute visit and motivate them to continue their productive work.
+On the other hand, you recognize the importance of retaining this faculty member, who has served in their post for 10 years and has recently been invited to the prestigious Institute for Advanced Studies. They are extremely highly regarded in the global academic community, and there is a very real risk that you could lose this person to another university or research center after they return from their sabbatical. Having the right deal would help you bring your star home after the Institute visit and motivate them to continue their productive work.
 
 The IP Committee has authorized up to **$275,000** for the buy-out, which you should interpret as the total valuation of the portfolio. This means that 100\% of the portfolio is worth $275K; any partial share of the patent pool needs to be scaled relative to the total valuation.
 
@@ -30,7 +30,7 @@ Before you start your negotiation, here is a summary of the boundaries of your n
 - You can buy less than all of the portfolio, but it needs to be scaled to the total valuation; for example, your **max for 50% would be $137,500**.
 - Failure to heed these rules will lead to losing your job.  
 - You **must retain** the star scientist or risk losing your own job.
-- You cannot authorize more than **6 months of paid sabbatical**. You can, however, offer longer sabbaticals up to 24 months away.
+- You cannot authorize more than **6 months of paid sabbatical**. You can, however, offer longer sabbaticals of up to 24 months away.
 
 Now to negotiate...
 

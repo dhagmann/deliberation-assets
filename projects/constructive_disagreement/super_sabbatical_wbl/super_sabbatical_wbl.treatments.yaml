@@ -222,7 +222,8 @@ treatments:
                 comparator: exists
               - promptName: strategyPlan
                 comparator: exists
-          - projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_next_page.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/pre_nego_next_page.md
             conditions:
                 - promptName: targetPrice
                   comparator: exists

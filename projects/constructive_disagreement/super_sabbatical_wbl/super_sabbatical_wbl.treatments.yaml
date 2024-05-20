@@ -307,7 +307,8 @@ treatments:
     exitSequence:
       - name: Deal Sheet
         elements:
-          - projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_header.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/dealsheet_header.md
           - type: display
             promptName: inNegotiationNotes
             position: 0

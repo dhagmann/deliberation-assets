@@ -3,11 +3,11 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scient
 type: multipleChoice
 ---
 
-## Why would you prefer negotiating with the Provost rather than private investor groups?
+## Which of the following is NOT a reason that you prefer negotiating with the Provost rather than private investor groups?
 
 ---
 
-- Faster and surer option
+- Faster timeline
 - Potential for higher total payment
 - Greater upfront payment
-- Likelihood of securing a deal within a year or less
+- Lower risk that the deal will fall through

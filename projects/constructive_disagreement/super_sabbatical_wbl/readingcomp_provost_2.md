@@ -3,11 +3,11 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provos
 type: multipleChoice
 ---
 
-## What is your MAIN concern when negotiating patent portfolios with faculty?
+## Which of the following is NOT one of your concerns when negotiating patent portfolios with faculty?
 
 ---
 
 - Losing faculty to industry
-- Reducing teaching quality and student experience
-- Avoiding a mercenary culture
+- Losing your own job
 - Reducing research output
+- Creating a mercenary culture

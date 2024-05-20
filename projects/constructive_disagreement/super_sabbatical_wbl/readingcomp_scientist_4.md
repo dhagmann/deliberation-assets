@@ -9,5 +9,5 @@ type: multipleChoice
 
 - Losing your job
 - Selling your boat
-- Jeopardizing your entire plan
+- Canceling your plans for a sabbatical
 - Having to extend your sabbatical

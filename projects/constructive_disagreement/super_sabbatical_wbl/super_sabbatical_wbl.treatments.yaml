@@ -152,16 +152,16 @@ treatments:
                 value: "Burnout from working long hours"
               - promptName: ReadingComp2
                 comparator: equals
-                value: "To finance the purchase of a boat"
+                value: "Losing $20,000 down payment and needing to secure a new home"
               - promptName: ReadingComp3
                 comparator: equals
                 value: "To restart life after the sabbatical"
               - promptName: ReadingComp4
                 comparator: equals
-                value: "Jeopardizing your entire plan"
+                value: "Canceling your plans for a sabbatical"
               - promptName: ReadingComp5
                 comparator: equals
-                value: "Faster and surer option"
+                value: "Potential for higher total payment"
 
           - type: submitButton
             buttonText: Continue
@@ -171,10 +171,10 @@ treatments:
                 value: "All of the above"
               - promptName: ReadingComp2
                 comparator: equals
-                value: "Avoiding a mercenary culture"
+                value: "Reducing research output"
               - promptName: ReadingComp3
                 comparator: equals
-                value: "To retain a star faculty member"
+                value: "$10,000 / month for 6 months"
               - promptName: ReadingComp4
                 comparator: equals
                 value: "275,000"

@@ -316,9 +316,6 @@ treatments:
             showToPositions: [1]
           - type: separator
             style: thin
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/in_round_leave_early.md
-            displayTime: 600
           - type: submitButton
             name: submitDealSheet
             displayTime: 600
@@ -327,7 +324,15 @@ treatments:
               - promptName: inNegotiationNotes
                 comparator: lengthAtLeast
                 value: 10
-          - projects/constructive_disagreement/super_sabbatical_wbl/in_round_materials_reminder.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/in_round_leave_early.md
+            displayTime: 600
+            conditions:
+              - promptName: inNegotiationNotes
+                comparator: lengthAtLeast
+                value: 10
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/in_round_materials_reminder.md
           - type: prompt
             name: toggleRoleInstructions
             file: projects/constructive_disagreement/super_sabbatical_wbl/toggle_role_information.md

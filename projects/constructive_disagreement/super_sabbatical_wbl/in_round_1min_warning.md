@@ -3,6 +3,6 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/in_round_1min_warn
 type: noResponse
 ---
 
-# ❗ 1 minute warning! Please say goodbye to your partner.
+# ❗ 1 minute warning! Time to say goodbye.
 
 ---

@@ -314,18 +314,24 @@ treatments:
                 value: "⬇️ Display General Information (Optional Reading)"
 
     exitSequence:
-      - name: Member Impressions
+      - name: General Discussion Survey
         elements:
           - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/post_preamble.md
+            file: projects/constructive_disagreement/super_sabbatical_wbl/discussionGeneralSurveyInstructions.md
+          - type: survey
+            surveyName: DiscussionGeneral
+      - name: Perception of Others
+        elements:
           - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/post_liked.md
+            file: projects/constructive_disagreement/super_sabbatical_wbl/perceptionOfOthers_instructions_scientist.md
+            showToPositions:
+              - 0
           - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/post_competent.md
-          - type: prompt
-            file: projects/constructive_disagreement/super_sabbatical_wbl/post_tension.md
-          - type: submitButton
-            buttonText: Continue
+            file: projects/constructive_disagreement/super_sabbatical_wbl/perceptionOfOthers_instructions_provost.md
+            showToPositions:
+              - 1
+          - type: survey
+            surveyName: PerceptionOfOthers
       - name: DV Questions
         elements:
           - type: prompt
@@ -355,6 +361,8 @@ treatments:
           - type: prompt
             name: openEndedNegotiationFeedback
             file: projects/constructive_disagreement/super_sabbatical_wbl/final_open_ended_feedback.md
+          - type: prompt
+            file: projects/constructive_disagreement/super_sabbatical_wbl/questionProblems.md
           - type: submitButton
             buttonText: Continue
             conditions:

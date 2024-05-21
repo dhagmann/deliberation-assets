@@ -3,7 +3,7 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provos
 type: multipleChoice
 ---
 
-## What is the maximum amount (in $) authorized by the IP Committee for this faculty member's interest in patents?
+## What is the maximum amount (in $) authorized by the IP Committee for 100% of the patent portfolio?
 
 ---
 

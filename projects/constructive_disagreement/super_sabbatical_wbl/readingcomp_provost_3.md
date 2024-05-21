@@ -3,11 +3,11 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_provos
 type: multipleChoice
 ---
 
-## Why are you considering buying out a faculty member's interest in the university's patent portfolio?
+## How much are you authorized to pay for the sabbatical?
 
 ---
 
-- To retain a star faculty member
-- To support the development of valuable intellectual property
-- To enhance revenue for the university
-- To attract new faculty members
+- $7,500 / month for 6 months
+- $13,000 / month for 5 months
+- $10,000 / month for 6 months
+- $10,000 / month for 12 months

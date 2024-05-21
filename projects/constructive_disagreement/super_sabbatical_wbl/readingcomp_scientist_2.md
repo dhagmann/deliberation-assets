@@ -3,11 +3,11 @@ name: projects/constructive_disagreement/super_sabbatical_wbl/readingcomp_scient
 type: multipleChoice
 ---
 
-## Why did you decide to sell your condo?
+## What potential consequence do you face if you cannot pay the additional $150,000 required for your boat?
 
 ---
 
-- To pay off debts
-- To invest in a new venture
-- To finance the purchase of a boat
-- To cover living costs during the sabbatical
+- Paying $25,000 in maintenance expenses
+- Losing $20,000 down payment and needing to secure a new home
+- Having to get a job at another university
+- The boat losing its Certificate of Seaworthiness

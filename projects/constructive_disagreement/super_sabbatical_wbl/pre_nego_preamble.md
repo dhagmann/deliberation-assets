@@ -5,7 +5,7 @@ type: noResponse
 
 # Please take a moment to write down your strategy for this negotiation.
 
-Studies have shown that negotiators tend to perform better when they plan beforehand! Thus, reflecting on your role and the information you have just reviewed, please take a moment to think about how you plan to achieve your goals in this negotiation.
+Studies have shown that negotiators tend to perform better when they plan beforehand! Thus, reflecting on your role and the information you have just reviewed, please take a moment to think about how you plan to achieve your goals in this negotiation. (_Everything you write here is just for your personal reference!_)
 
 You may want to consider:
 

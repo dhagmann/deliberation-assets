@@ -1,0 +1,38 @@
+{
+  "batchName": "demo",
+  "cdn": "prod",
+  "treatmentFile": "projects/constructive_disagreement/super_sabbatical_wbl/super_sabbatical_wbl.treatments.yaml",
+  "customIdInstructions": "shared/id_instructions/WBL.md",
+  "platformConsent": "US",
+  "consentAddendum": "projects/constructive_disagreement/00_consentAddendum.md",
+  "checkAudio": true,
+  "checkVideo": true,
+  "introSequence": "baseline",
+  "treatments": ["negotiation"],
+  "payoffs": "equal",
+  "knockdowns": "none",
+  "dispatchWait": 2,
+  "launchDate": "immediate",
+  "centralPrereg": false,
+  "preregRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "constructive-disagreement",
+      "branch": "main",
+      "directory": "super_sabbatical_wbl_20240522"
+    }
+  ],
+  "dataRepos": [
+    {
+      "owner": "JamesPHoughton",
+      "repo": "constructive-disagreement",
+      "branch": "main",
+      "directory": "super_sabbatical_wbl_20240522"
+    }
+  ],
+  "videoStorage": {
+    "bucket": "deliberation-lab-recordings-constructive-disagreement-us-east-1",
+    "region": "us-east-1"
+  },
+  "exitCodes": "none"
+}

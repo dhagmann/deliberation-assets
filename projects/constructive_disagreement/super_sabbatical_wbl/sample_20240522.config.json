@@ -1,5 +1,5 @@
 {
-  "batchName": "demo",
+  "batchName": "WBLMay",
   "cdn": "prod",
   "treatmentFile": "projects/constructive_disagreement/super_sabbatical_wbl/super_sabbatical_wbl.treatments.yaml",
   "customIdInstructions": "shared/id_instructions/WBL.md",

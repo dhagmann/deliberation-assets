@@ -32,6 +32,4 @@ Before you start your negotiation, here is a summary of the boundaries of your n
 - You **must retain** the star scientist or risk losing your own job.
 - You cannot authorize more than **6 months of paid sabbatical**. You can, however, offer longer sabbaticals of up to 24 months away.
 
-Now to negotiate...
-
 ---

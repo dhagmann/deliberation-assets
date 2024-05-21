@@ -430,7 +430,6 @@ treatments:
           - type: prompt
             file: projects/constructive_disagreement/super_sabbatical_wbl/maintask_done.md
           - type: submitButton
-            name: submitDealSheet
             buttonText: Continue
       - name: General Discussion Survey
         elements:

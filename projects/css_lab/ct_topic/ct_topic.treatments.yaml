@@ -4,7 +4,12 @@ templates:
       type: prompt
       name: "${topicName}_presurvey"
       file: "shared/yesNo/${topicName}_survey.md"
-      analysisRole: predictor
+      tags: ["predictor"]
+
+  - templateName: topicCondition
+    templateContent:
+      reference: prompt.${topicName}_presurvey
+      comparator: exists
 
   - templateName: introSequence
     templateDesc: generic presurvey
@@ -16,18 +21,16 @@ templates:
             - type: survey
               surveyName: PoliticalPartyUS
               name: partyAffiliation
-              analysisRole: predictor
+              tags: ["predictor"]
 
-        - name: Feeling Thermometer Pretest
-          note: 2 questions
+        - name: Feeling Thermometer Pretest # 2 questions
           elements:
             - type: survey
               name: feelingThermometerPretest
               surveyName: PartisanFeelingThermometerUS # asks about both parties
-              analysisRole: predictor
+              tags: ["predictor"]
 
-        - name: Trait Ratings Pretest
-          note: 8 questions
+        - name: Trait Ratings Pretest # 8 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_democrats.md
@@ -43,20 +46,22 @@ templates:
                   value: 0.5
             - type: survey
               surveyName: TraitRatings
-              analysisRole: predictor
-
-        - name: Big-5 Personality Inventory
-          note: 10 questions
-          elements:
-            - type: survey
-              surveyName: TIPI
-              analysisRole: predictor
+              name: traitRatingsPretest
+              tags: ["predictor"]
 
         - name: Reading the mind in the eyes
           elements:
             - type: survey
               surveyName: RmeTen
-              analysisRole: predictor
+              name: RME
+              tags: ["predictor"]
+
+        - name: Big-5 Personality Inventory # 10 questions
+          elements:
+            - type: survey
+              name: big5Personality
+              surveyName: TIPI
+              tags: ["predictor"]
 
         - name: Topic PreSurvey
           elements:
@@ -67,13 +72,23 @@ templates:
               broadcast:
                 d0: ${topicNames}
 
+            - type: prompt
+              file: projects/css_lab/ct_topic/all_mandatory.md
+
             - type: submitButton
+              buttonText: Continue
+              name: topicPreSurveySubmit
+              conditions:
+                - template: topicCondition
+                  broadcast:
+                    d0: ${topicNames}
 
         - name: Demographic Survey
           elements:
             - type: survey
               surveyName: DemographicsShortUS
-              analysisRole: predictor
+              name: demographics
+              tags: ["predictor"]
 
   - templateName: crossPartisanDiscussion
     templateDesc: for measuring the effect of topic on cross-party discussion outcomes
@@ -110,9 +125,10 @@ templates:
             - type: prompt
               file: "shared/yesNo/${topicName}_discussion.md"
             - type: display
-              promptName: ${topicName}_presurvey
+              reference: prompt.${topicName}_presurvey
               position: player
-            - file: projects/css_lab/ct_topic/attitude_attribute_instructions_B.md
+            - type: prompt
+              file: projects/css_lab/ct_topic/attitude_attribute_instructions_B.md
             - type: survey
               surveyName: AttitudeAttributes
 
@@ -154,58 +170,54 @@ templates:
             - type: submitButton
               buttonText: Proceed to Survey
 
-        - name: Attitude Change
-          note: 1 question
+        - name: Attitude Change # 1 question
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/attitude_change_instructions.md
             - type: prompt
               name: discussionTopicPostAttitude
               file: "shared/yesNo/${topicName}_survey.md"
-              analysisRole: outcome
+              tags: ["outcome"]
             - type: submitButton
 
-        - name: Manipulation Check
-          note: 2 questions
+        - name: Manipulation Check # 2 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/guess_partner_party.md
               name: guessPartnerParty
-              analysisRole: outcome
+              tags: ["outcome"]
             - type: prompt
               file: projects/css_lab/ct_topic/guess_partner_position.md
             - type: prompt
               file: "shared/yesNo/${topicName}_survey.md"
               name: guessPartnerPosition
-              analysisRole: outcome
+              tags: ["outcome"]
             - type: submitButton
 
-        - name: Discussion general perception
-          note: 9 questions
+        - name: Discussion general perception # 9 questions
           elements:
             - type: survey
               surveyName: DiscussionGeneral
-              analysisRole: outcome
+              tags: ["outcome"]
 
-        - name: Perception of Partner
-          note: 8 questions
+        - name: Perception of Partner # 8 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_partner.md
+            - type: display
+              reference: participantInfo.name
             - type: survey
               surveyName: PerceptionOfOthers
-              analysisRole: outcome
+              tags: ["outcome"]
 
-        - name: Feeling Thermometer
-          note: 2 questions
+        - name: Feeling Thermometer # 2 questions
           elements:
             - type: survey
               name: feelingThermometerPosttest
               surveyName: PartisanFeelingThermometerUS # asks about both parties
-              analysisRole: outcome
+              tags: ["outcome"]
 
-        - name: Trait Ratings
-          note: 8 questions
+        - name: Trait Ratings # 8 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_democrats.md
@@ -215,21 +227,19 @@ templates:
               showToPositions: [0]
             - type: survey
               surveyName: TraitRatings
-              analysisRole: outcome
+              tags: ["outcome"]
 
-        - name: Bipartisanship
-          note: 3 questions
+        - name: Bipartisanship # 3 questions
           elements:
             - type: survey
               surveyName: BipartisanshipUS
-              analysisRole: outcome
+              tags: ["outcome"]
 
-        - name: MetaDiscursive
-          note: 3 questions
+        - name: MetaDiscursive # 3 questions
           elements:
             - type: survey
               surveyName: MetaDiscursive
-              analysisRole: outcome
+              tags: ["outcome"]
 
 introSequences:
   - template: introSequence

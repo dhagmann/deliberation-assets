@@ -50,50 +50,13 @@ Start with a baseline, no interventions, describe:
 
 - effect of age, gender, race on outcomes
 
-## Demo Config
+# Todo:
 
-```json
-{
-  "batchName": "demo",
-  "preregister": "false",
-  "treatmentFile": "projects/css_lab/exploration.treatments.yaml",
-  "dispatchWait": 1,
-  "introSequence": "base_sequence",
-  "treatments": ["baseline"],
-  "cdn": "local",
-  "exitCodeStem": "local",
-  "platformConsent": "US",
-  "videoStorageLocation": "deliberation-lab-recordings-test",
-  "dataRepos": [
-    {
-      "owner": "Watts-Lab",
-      "repo": "deliberation-data-test",
-      "branch": "main",
-      "directory": "demo"
-    }
-  ]
-}
-```
+- [ ] make RME questions mandatory
+- [ ] remove back button in rme
+- [x] Make "republicans" more emphatic in trait ratings? Previously, "them" had refered to the discussion partner.
+- [x] Display nickname in partner ranking
+- [x] emphasize that headphones prevent sound from your computer being picked up by your microphone.
+- [ ] require all topic opinion questions to proceed
 
-```json
-{
-  "batchName": "demo",
-  "preregister": "false",
-  "treatmentFile": "projects/css_lab/exploration.treatments.yaml",
-  "dispatchWait": 1,
-  "introSequence": "base_sequence",
-  "treatments": ["baseline"],
-  "cdn": "prod",
-  "exitCodeStem": "local",
-  "platformConsent": "US",
-  "videoStorageLocation": "deliberation-lab-recordings-test",
-  "dataRepos": [
-    {
-      "owner": "Watts-Lab",
-      "repo": "deliberation-data-test",
-      "branch": "main",
-      "directory": "demo"
-    }
-  ]
-}
-```
+In this study. we're using an interesting knockdown strategy. Our goal is to uniformly sample over topics and levels of disagreement between partners, but we don't actually specify levels of disagreement as part of the treatment. Instead, we specify the absolute positions of each of the participants, using a 7 point scale. So, while there are 7 levels of disagreement (0-6), there are actually 49 different treatments. In order to make sure we sample evenly over the levels of disagreement, we use a knockdown matrix that reduces the reward for every treatment having the same level of payoff as the selected treatment (for the same topic). For example, if the Republican selects "Strongly No" and the democrat selects "Slightly yes", this is a difference of 4 scale points. We want to make sure we sample differences of 3, 2, etc. before we sample a difference of 4 scale points again, if possible. so, we knock down the payout not only for "Strongly No"/"Slightly Yes", but also for "Mostly No"/"Mostly Yes", which also has a difference of 4 scale points, and the other combinations with the same absolute difference.

@@ -3,6 +3,8 @@ name: projects/css_lab/ct_topic/consider_democrats.md
 type: noResponse
 ---
 
-# Please share your feelings about _Democrats_:
+![donkeyIcon](projects/css_lab/ct_topic/donkey.jpg)
+
+# Please share your feelings about **Democrats**:
 
 ---

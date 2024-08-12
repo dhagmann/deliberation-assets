@@ -52,8 +52,8 @@ Start with a baseline, no interventions, describe:
 
 # Todo:
 
-- [ ] make RME questions mandatory
-- [ ] remove back button in rme
+- [x] make RME questions mandatory
+- [x] remove back button in rme
 - [x] Make "republicans" more emphatic in trait ratings? Previously, "them" had refered to the discussion partner.
 - [x] Display nickname in partner ranking
 - [x] emphasize that headphones prevent sound from your computer being picked up by your microphone.

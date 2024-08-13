@@ -3,7 +3,7 @@ name: projects/css_lab/ct_topic/guess_partner_party.md
 type: multipleChoice
 ---
 
-# Can you guess **your conversation partner's** political affiliation?
+# Can you guess **your discussion partner's** political affiliation?
 
 ---
 

@@ -149,7 +149,7 @@ templates:
           discussion:
             chatType: video
             showNickname: true
-            showTitle: false
+            showTitle: true
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/discussion_instructions.md
@@ -178,10 +178,19 @@ templates:
               name: discussionTopicPostAttitude
               file: "shared/yesNo/${topicName}_survey.md"
               tags: ["outcome"]
+            - type: prompt
+              file: projects/css_lab/ct_topic/all_mandatory.md
             - type: submitButton
+              conditions:
+                - reference: prompt.discussionTopicPostAttitude
+                  comparator: exists
 
         - name: Manipulation Check # 2 questions
           elements:
+            - type: prompt
+              file: projects/css_lab/ct_topic/consider_partner.md
+            - type: display
+              reference: participantInfo.name
             - type: prompt
               file: projects/css_lab/ct_topic/guess_partner_party.md
               name: guessPartnerParty
@@ -192,13 +201,14 @@ templates:
               file: "shared/yesNo/${topicName}_survey.md"
               name: guessPartnerPosition
               tags: ["outcome"]
+            - type: prompt
+              file: projects/css_lab/ct_topic/all_mandatory.md
             - type: submitButton
-
-        - name: Discussion general perception # 9 questions
-          elements:
-            - type: survey
-              surveyName: DiscussionGeneral
-              tags: ["outcome"]
+              conditions:
+                - reference: prompt.guessPartnerParty
+                  comparator: exists
+                - reference: prompt.guessPartnerPosition
+                  comparator: exists
 
         - name: Perception of Partner # 8 questions
           elements:
@@ -208,6 +218,12 @@ templates:
               reference: participantInfo.name
             - type: survey
               surveyName: PerceptionOfOthers
+              tags: ["outcome"]
+
+        - name: Discussion general perception # 9 questions
+          elements:
+            - type: survey
+              surveyName: DiscussionGeneral
               tags: ["outcome"]
 
         - name: Feeling Thermometer # 2 questions

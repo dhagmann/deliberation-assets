@@ -2,7 +2,7 @@
   "batchName": "demo",
   "cdn": "local",
   "treatmentFile": "projects/css_lab/ct_topic/ct_topic.treatments.yaml",
-  "customIdInstructions": "none",
+  "customIdInstructions": "shared/id_instructions/prolific.md",
   "platformConsent": "US",
   "consentAddendum": "none",
   "checkAudio": true,
@@ -37,5 +37,9 @@
     "bucket": "deliberation-lab-recordings-test",
     "region": "us-east-1"
   },
-  "exitCodes": "none"
+  "exitCodes": {
+    "complete": "C1D0OZ1N",
+    "error": "CX8GUBBQ",
+    "lobbyTimeout": "C1BS10OU"
+  }
 }

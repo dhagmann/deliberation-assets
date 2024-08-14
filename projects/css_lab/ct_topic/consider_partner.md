@@ -3,6 +3,6 @@ name: projects/css_lab/ct_topic/consider_partner.md
 type: noResponse
 ---
 
-# Please share your feelings about **your discussion partner**:
+# We'd like to ask some questions about **your discussion partner**:
 
 ---

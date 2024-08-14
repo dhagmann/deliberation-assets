@@ -16,21 +16,21 @@ templates:
     templateContent:
       name: ${sequenceName}
       introSteps:
-        - name: Political Leanings Survey
+        - name: PoliticalLeaningsSurvey
           elements:
             - type: survey
               surveyName: PoliticalPartyUS
               name: partyAffiliation
               tags: ["predictor"]
 
-        - name: Feeling Thermometer Pretest # 2 questions
+        - name: FeelingThermometerPretest # 2 questions
           elements:
             - type: survey
               name: feelingThermometerPretest
               surveyName: PartisanFeelingThermometerUS # asks about both parties
               tags: ["predictor"]
 
-        - name: Trait Ratings Pretest # 8 questions
+        - name: TraitRatingsPretest # 8 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_democrats.md
@@ -49,21 +49,21 @@ templates:
               name: traitRatingsPretest
               tags: ["predictor"]
 
-        - name: Reading the mind in the eyes
+        - name: RME # 10 questions
           elements:
             - type: survey
               surveyName: RmeTen
               name: RME
               tags: ["predictor"]
 
-        - name: Big-5 Personality Inventory # 10 questions
+        - name: Big-5 # 10 questions
           elements:
             - type: survey
               name: big5Personality
               surveyName: TIPI
               tags: ["predictor"]
 
-        - name: Topic PreSurvey
+        - name: TopicPreSurvey
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/presurvey_instructions.md
@@ -83,7 +83,7 @@ templates:
                   broadcast:
                     d0: ${topicNames}
 
-        - name: Demographic Survey
+        - name: Demographics
           elements:
             - type: survey
               surveyName: DemographicsShortUS
@@ -117,7 +117,7 @@ templates:
               value: ${repPosition}
 
       gameStages:
-        - name: Attitude Attributes
+        - name: AttitudeAttributes
           duration: 300
           elements:
             - type: prompt
@@ -132,7 +132,7 @@ templates:
             - type: survey
               surveyName: AttitudeAttributes
 
-        - name: Pre-Discussion instructions
+        - name: PreDiscussionInstructions
           duration: 45
           elements:
             - type: prompt
@@ -159,18 +159,19 @@ templates:
               file: projects/css_lab/ct_topic/discussion_wrapup.md
               displayTime: 600
             - type: submitButton
+              name: endCall
               buttonText: End the call and proceed to surveys
               displayTime: 600
 
       exitSequence:
-        - name: Post-Discussion Instructions
+        - name: PostDiscussionInstructions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/post_discussion_instructions.md
             - type: submitButton
               buttonText: Proceed to Survey
 
-        - name: Attitude Change # 1 question
+        - name: AttitudeChange # 1 question
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/attitude_change_instructions.md
@@ -185,7 +186,7 @@ templates:
                 - reference: prompt.discussionTopicPostAttitude
                   comparator: exists
 
-        - name: Manipulation Check # 2 questions
+        - name: ManipulationCheck # 2 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_partner.md
@@ -210,30 +211,32 @@ templates:
                 - reference: prompt.guessPartnerPosition
                   comparator: exists
 
-        - name: Perception of Partner # 8 questions
+        - name: PerceptionOfPartner # 8 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_partner.md
             - type: display
               reference: participantInfo.name
             - type: survey
+              name: PerceptionOfPartner
               surveyName: PerceptionOfOthers
               tags: ["outcome"]
 
-        - name: Discussion general perception # 9 questions
+        - name: DiscussionGeneralPerception # 9 questions
           elements:
             - type: survey
+              name: discussionGeneral
               surveyName: DiscussionGeneral
               tags: ["outcome"]
 
-        - name: Feeling Thermometer # 2 questions
+        - name: FeelingThermometerPostTest # 2 questions
           elements:
             - type: survey
               name: feelingThermometerPosttest
               surveyName: PartisanFeelingThermometerUS # asks about both parties
               tags: ["outcome"]
 
-        - name: Trait Ratings # 8 questions
+        - name: TraitRatingsPostTest # 8 questions
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_democrats.md
@@ -243,18 +246,21 @@ templates:
               showToPositions: [0]
             - type: survey
               surveyName: TraitRatings
+              name: traitRatingsPosttest
               tags: ["outcome"]
 
         - name: Bipartisanship # 3 questions
           elements:
             - type: survey
               surveyName: BipartisanshipUS
+              name: bipartisanship
               tags: ["outcome"]
 
-        - name: MetaDiscursive # 3 questions
+        - name: Reengagement # 3 questions
           elements:
             - type: survey
-              surveyName: MetaDiscursive
+              surveyName: DiscussionReengagement
+              name: discussionReengagement
               tags: ["outcome"]
 
 introSequences:

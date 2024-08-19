@@ -6,8 +6,8 @@ type: noResponse
 ```
 We can display a variety of elements on each page:
 
-- videos (example in this stage)
-- timers (example in this stage, begins after 15 seconds)
+- videos
+- timers (example in this stage)
 - audio files
 - raw images
 - answers to previous prompts

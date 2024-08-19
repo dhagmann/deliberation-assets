@@ -81,21 +81,13 @@ templates:
           elements:
             - type: prompt
               file: projects/example/demo/describeConditionalAssignment.md
-            - type: submitButton
-              buttonText: Continue
-
-        - name: TrainingVideo
-          duration: 300
-          elements:
             - type: prompt
               file: projects/example/demo/describeVideos.md
             - type: timer
-              displayTime: 15
-              endTime: 180
-            - type: video
-              url: https://youtu.be/dKggA9k8DKw?si=EtrbJVZMfB9B5jqu
+              endTime: 10
             - type: submitButton
-              buttonText: Skip the rest of the video
+              buttonText: Continue
+              displayTime: 10
 
         - name: PreDiscussionInstructions
           duration: 45

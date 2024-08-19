@@ -1,5 +1,5 @@
 {
-  "batchName": "test_wave1_pilot",
+  "batchName": "miniPilot_wave1",
   "cdn": "prod",
   "treatmentFile": "projects/css_lab/ct_topic/ct_topic.treatments.yaml",
   "customIdInstructions": "shared/id_instructions/prolific.md",
@@ -8,7 +8,7 @@
   "checkAudio": true,
   "checkVideo": true,
   "dispatchWait": 30,
-  "launchDate": "07 Aug 2024 13:00:00 EDT",
+  "launchDate": "15 Aug 2024 17:00:00 EDT",
   "centralPrereg": false,
   "preregRepos": [
     {

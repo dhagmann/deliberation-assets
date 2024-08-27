@@ -70,7 +70,15 @@ templates:
 
             - template: topicPrompt
               broadcast:
-                d0: ${topicNames}
+                d0: ${discussionTopicNames}
+
+            - type: prompt
+              name: attentionCheck
+              file: projects/css_lab/ct_topic/attention_check.md
+
+            - template: topicPrompt
+              broadcast:
+                d0: ${otherWaveTopicNames}
 
             - type: prompt
               file: projects/css_lab/ct_topic/all_mandatory.md
@@ -81,7 +89,12 @@ templates:
               conditions:
                 - template: topicCondition
                   broadcast:
-                    d0: ${topicNames}
+                    d0: ${discussionTopicNames}
+                - template: topicCondition
+                  broadcast:
+                    d0: ${otherWaveTopicNames}
+                - reference: prompt.attentionCheck
+                  comparator: exists
 
         - name: Demographics
           elements:
@@ -142,6 +155,7 @@ templates:
               file: projects/css_lab/ct_topic/pre_discussion_instructions_republican.md
               showToPositions: [1]
             - type: submitButton
+              name: preDiscussionInstructions
               buttonText: Begin Discussion
 
         - name: Discussion
@@ -267,12 +281,13 @@ introSequences:
   - template: introSequence
     fields:
       sequenceName: wave1
-      topicNames:
+      discussionTopicNames:
         - topicName: fundNeedleExchange
         - topicName: israelAid
         - topicName: slaveReparations
         - topicName: universalIncome
         - topicName: schoolDressCode
+      otherWaveTopicNames:
         - topicName: freeInternet
         - topicName: gunControl
         - topicName: abortionLegality
@@ -282,12 +297,13 @@ introSequences:
   - template: introSequence
     fields:
       sequenceName: wave2
-      topicNames:
+      discussionTopicNames:
         - topicName: freeInternet
         - topicName: gunControl
         - topicName: abortionLegality
         - topicName: teacherTenure
         - topicName: reduceMilitaryBudget
+      otherWaveTopicNames:
         - topicName: prisonerVoting
         - topicName: altMedInsurance
         - topicName: wealthTax
@@ -297,12 +313,13 @@ introSequences:
   - template: introSequence
     fields:
       sequenceName: wave3
-      topicNames:
+      discussionTopicNames:
         - topicName: prisonerVoting
         - topicName: altMedInsurance
         - topicName: wealthTax
         - topicName: birthrightCitizenship
         - topicName: banWeaponsExport
+      otherWaveTopicNames:
         - topicName: athleteAnthem
         - topicName: ukraineAid
         - topicName: banJobExport
@@ -312,12 +329,13 @@ introSequences:
   - template: introSequence
     fields:
       sequenceName: wave4
-      topicNames:
+      discussionTopicNames:
         - topicName: athleteAnthem
         - topicName: ukraineAid
         - topicName: banJobExport
         - topicName: fundArtsCulture
         - topicName: immigrantCitizenship
+      otherWaveTopicNames:
         - topicName: puertoRicoStatehood
         - topicName: childcareSubsidy
         - topicName: carbonTax
@@ -327,12 +345,13 @@ introSequences:
   - template: introSequence
     fields:
       sequenceName: wave5
-      topicNames:
+      discussionTopicNames:
         - topicName: puertoRicoStatehood
         - topicName: childcareSubsidy
         - topicName: carbonTax
         - topicName: fastFoodHealth
         - topicName: limitExecPay
+      otherWaveTopicNames:
         - topicName: fundNeedleExchange
         - topicName: israelAid
         - topicName: slaveReparations

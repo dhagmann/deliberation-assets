@@ -143,7 +143,9 @@ templates:
             - type: prompt
               file: projects/css_lab/ct_topic/attitude_attribute_instructions_B.md
             - type: survey
+              name: attitudeAttributes
               surveyName: AttitudeAttributes
+              tags: ["predictor"]
 
         - name: PreDiscussionInstructions
           duration: 45
@@ -176,6 +178,7 @@ templates:
               name: endCall
               buttonText: End the call and proceed to surveys
               displayTime: 600
+              tags: ["outcome"]
 
       exitSequence:
         - name: PostDiscussionInstructions
@@ -229,8 +232,16 @@ templates:
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_partner.md
+
             - type: display
               reference: participantInfo.name
+              position: 0
+              showToPositions: [1]
+            - type: display
+              reference: participantInfo.name
+              position: 1
+              showToPositions: [0]
+
             - type: survey
               name: PerceptionOfPartner
               surveyName: PerceptionOfOthers

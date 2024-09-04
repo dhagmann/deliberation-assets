@@ -133,6 +133,8 @@ templates:
         - name: AttitudeAttributes
           duration: 300
           elements:
+            - type: audio
+              file: shared/westminster_short.mp3
             - type: prompt
               file: projects/css_lab/ct_topic/attitude_attribute_instructions_A.md
             - type: prompt

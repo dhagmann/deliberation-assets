@@ -209,8 +209,16 @@ templates:
           elements:
             - type: prompt
               file: projects/css_lab/ct_topic/consider_partner.md
+
             - type: display
               reference: participantInfo.name
+              position: 0
+              showToPositions: [1]
+            - type: display
+              reference: participantInfo.name
+              position: 1
+              showToPositions: [0]
+
             - type: prompt
               file: projects/css_lab/ct_topic/guess_partner_party.md
               name: guessPartnerParty

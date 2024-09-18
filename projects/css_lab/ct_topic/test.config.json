@@ -2,7 +2,7 @@
   "batchName": "demo",
   "cdn": "local",
   "treatmentFile": "projects/css_lab/ct_topic/ct_topic.treatments.yaml",
-  "customIdInstructions": "shared/id_instructions/prolific.md",
+  "customIdInstructions": "shared/id_instructions/CloudResearch.md",
   "platformConsent": "US",
   "consentAddendum": "none",
   "checkAudio": true,

@@ -42,7 +42,7 @@ templates:
               file: projects/css_lab/ct_topic/consider_republicans.md
               conditions:
                 - reference: survey.partyAffiliation.result.normPosition
-                  comparator: isAtMost # we haven't screened true independents yet, so have them rate republicans?
+                  comparator: isAtMost # we haven't screened true independents yet, so have them rate republicans
                   value: 0.5
             - type: survey
               surveyName: TraitRatings

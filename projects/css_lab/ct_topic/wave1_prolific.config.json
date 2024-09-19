@@ -1,5 +1,5 @@
 {
-  "batchName": "Pilot_wave1",
+  "batchName": "W1_pro",
   "cdn": "prod",
   "treatmentFile": "projects/css_lab/ct_topic/ct_topic.treatments.yaml",
   "customIdInstructions": "shared/id_instructions/prolific.md",
@@ -8,14 +8,14 @@
   "checkAudio": true,
   "checkVideo": true,
   "dispatchWait": 30,
-  "launchDate": "18 Sep 2024 16:30:00 EDT",
-  "centralPrereg": false,
+  "launchDate": "04 Sep 2024 12:30:00 EDT",
+  "centralPrereg": true,
   "preregRepos": [
     {
       "owner": "JamesPHoughton",
       "repo": "contact-theory-topic",
       "branch": "main",
-      "directory": "pilot"
+      "directory": "data"
     }
   ],
   "dataRepos": [
@@ -23,7 +23,7 @@
       "owner": "JamesPHoughton",
       "repo": "contact-theory-topic",
       "branch": "main",
-      "directory": "pilot"
+      "directory": "data"
     }
   ],
   "videoStorage": {

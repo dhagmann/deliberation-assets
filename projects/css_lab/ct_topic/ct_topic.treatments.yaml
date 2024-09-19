@@ -118,6 +118,12 @@ templates:
             - reference: prompt.${topicName}_presurvey
               comparator: equals
               value: ${demPosition}
+            - reference: connectionInfo.isKnownVpn
+              comparator: equals
+              value: False
+            - reference: connectionInfo.country
+              comparator: equals
+              value: US
 
         - position: 1
           title: "Republican"
@@ -128,6 +134,12 @@ templates:
             - reference: prompt.${topicName}_presurvey
               comparator: equals
               value: ${repPosition}
+            - reference: connectionInfo.isKnownVpn
+              comparator: equals
+              value: False
+            - reference: connectionInfo.country
+              comparator: equals
+              value: US
 
       gameStages:
         - name: AttitudeAttributes

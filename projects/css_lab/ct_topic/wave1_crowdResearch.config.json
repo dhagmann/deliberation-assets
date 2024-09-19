@@ -1,21 +1,21 @@
 {
-  "batchName": "Pilot_wave1",
+  "batchName": "CT_topic_w1_s1_CR",
   "cdn": "prod",
   "treatmentFile": "projects/css_lab/ct_topic/ct_topic.treatments.yaml",
-  "customIdInstructions": "shared/id_instructions/prolific.md",
+  "customIdInstructions": "shared/id_instructions/CloudResearch.md",
   "platformConsent": "US",
   "consentAddendum": "none",
   "checkAudio": true,
   "checkVideo": true,
   "dispatchWait": 30,
-  "launchDate": "18 Sep 2024 16:30:00 EDT",
-  "centralPrereg": false,
+  "launchDate": "19 Sep 2024 16:00:00 EDT",
+  "centralPrereg": true,
   "preregRepos": [
     {
       "owner": "JamesPHoughton",
       "repo": "contact-theory-topic",
       "branch": "main",
-      "directory": "pilot"
+      "directory": "data"
     }
   ],
   "dataRepos": [
@@ -23,7 +23,7 @@
       "owner": "JamesPHoughton",
       "repo": "contact-theory-topic",
       "branch": "main",
-      "directory": "pilot"
+      "directory": "data"
     }
   ],
   "videoStorage": {
@@ -31,7 +31,7 @@
     "region": "us-east-1"
   },
   "exitCodes": {
-    "complete": "C1D0OZ1N",
+    "complete": "E977AD11B7",
     "error": "CX8GUBBQ",
     "lobbyTimeout": "C1BS10OU"
   },

@@ -1,5 +1,5 @@
 {
-  "batchName": "W1_pro",
+  "batchName": "CTT_W1_S3",
   "cdn": "prod",
   "treatmentFile": "projects/css_lab/ct_topic/ct_topic.treatments.yaml",
   "customIdInstructions": "shared/id_instructions/prolific.md",
@@ -7,8 +7,8 @@
   "consentAddendum": "none",
   "checkAudio": true,
   "checkVideo": true,
-  "dispatchWait": 30,
-  "launchDate": "04 Sep 2024 12:30:00 EDT",
+  "dispatchWait": 20,
+  "launchDate": "23 Sep 2024 12:30:00 EDT",
   "centralPrereg": true,
   "preregRepos": [
     {

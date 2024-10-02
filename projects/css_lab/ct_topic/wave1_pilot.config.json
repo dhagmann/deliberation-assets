@@ -7,7 +7,7 @@
   "consentAddendum": "none",
   "checkAudio": true,
   "checkVideo": true,
-  "dispatchWait": 30,
+  "dispatchWait": 20,
   "launchDate": "18 Sep 2024 16:30:00 EDT",
   "centralPrereg": false,
   "preregRepos": [

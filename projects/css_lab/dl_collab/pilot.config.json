@@ -1,14 +1,20 @@
 {
-  "batchName": "annotated_demo",
+  "batchName": "pilot",
   "cdn": "prod",
-  "treatmentFile": "projects/example/demo/demo.treatments.yaml",
-  "customIdInstructions": "projects/example/demo/describeAnnotatedDemo.md",
+  "treatmentFile": "projects/css_lab/dl_collab/dl_collab.treatments.yaml",
+  "customIdInstructions": "none",
   "platformConsent": "US",
   "consentAddendum": "none",
   "checkAudio": true,
   "checkVideo": true,
-  "introSequence": "demo_intro_sequence",
-  "treatments": ["demo_israelAid", "demo_slaveReparations"],
+  "introSequence": "default",
+  "treatments": [
+    "gaza_aid_control",
+    "pardon_january_6_control",
+    "transgender_sports_control",
+    "fast_food_tax_control",
+    "religious_exemptions_control"
+  ],
   "payoffs": "equal",
   "knockdowns": "none",
   "dispatchWait": 1,
@@ -19,7 +25,7 @@
       "owner": "Watts-Lab",
       "repo": "deliberation-data-test",
       "branch": "main",
-      "directory": "demo"
+      "directory": "dl_collab"
     }
   ],
   "dataRepos": [
@@ -27,7 +33,7 @@
       "owner": "Watts-Lab",
       "repo": "deliberation-data-test",
       "branch": "main",
-      "directory": "demo"
+      "directory": "dl_collab"
     }
   ],
   "videoStorage": {
@@ -35,9 +41,9 @@
     "region": "us-east-1"
   },
   "exitCodes": {
-    "complete": "MyCompleteExitCode",
-    "error": "MyErrorExitCode",
-    "lobbyTimeout": "MyTimeoutExitCode",
-    "failedEquipmentCheck": "MyFailedEquipmentCheckExitCode"
+    "complete": "CN3M1AG5",
+    "error": "CX8GUBBQ",
+    "lobbyTimeout": "CNKR0OP8",
+    "failedEquipmentCheck": "C1JR13XY"
   }
 }

@@ -1,0 +1,58 @@
+introSequences:
+  - name: videoChatIntro
+    desc: Introduction for video chat test experiment
+    introSteps:
+      - name: Welcome
+        elements:
+          - type: prompt
+            file: projects/hagmann/video-chat-test/welcome.md
+          - type: submitButton
+
+treatments:
+  - name: videoChatTest
+    playerCount: 2
+
+    groupComposition:
+      - position: 0
+        title: Speaker
+        conditions: []
+
+      - position: 1
+        title: Listener
+        conditions: []
+
+    gameStages:
+      - name: PreDiscussionInstructions
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/hagmann/video-chat-test/speaker_instructions.md
+            showToPositions: [0]
+          - type: prompt
+            file: projects/hagmann/video-chat-test/listener_instructions.md
+            showToPositions: [1]
+          - type: submitButton
+            buttonText: Begin Discussion
+
+      - name: TextDiscussion
+        duration: 180
+        discussion:
+          chatType: text
+          showNickname: true
+          showTitle: true
+        elements:
+          - type: prompt
+            file: projects/hagmann/video-chat-test/discussion_prompt.md
+            shared: true
+
+          - type: submitButton
+            buttonText: End Discussion
+            displayTime: 10
+
+    exitSequence:
+      - name: Feedback
+        elements:
+          - type: prompt
+            file: projects/hagmann/video-chat-test/feedback_question.md
+          - type: submitButton
+            buttonText: Submit Feedback 

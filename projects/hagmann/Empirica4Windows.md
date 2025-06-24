@@ -46,6 +46,7 @@ but the batch will fail becasue you have to convert: dos2unix *.md in your proje
 THEN IT WILL WORK!
 
 I got the help from:
+https://chatgpt.com/share/685ab4a7-8920-800e-94cd-fdcb10a1e2f4
 https://chatgpt.com/share/685adc89-2818-8011-857d-616d3aeb7899
 
 

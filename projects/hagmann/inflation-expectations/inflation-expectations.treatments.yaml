@@ -14,12 +14,17 @@ treatments:
 
     groupComposition:
       - position: 0
-        title: Participant A
-        conditions: []
-
+        title: "Lower Inflation"
+        conditions:
+          - reference: survey.inflationForecast.result
+            comparator: isOneOf
+            value: ["Less than 0% (deflation)", "0% to 2%", "2% to 5%"]
       - position: 1
-        title: Participant B
-        conditions: []
+        title: "Higher Inflation"
+        conditions:
+          - reference: survey.inflationForecast.result
+            comparator: isOneOf
+            value: ["5% to 10%", "More than 10%"]
 
     gameStages:
       - name: InitialForecast

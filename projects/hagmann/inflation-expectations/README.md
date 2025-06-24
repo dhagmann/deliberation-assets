@@ -29,6 +29,18 @@ This experiment studies how people form inflation expectations and how these exp
 - Age group, education level, economic familiarity
 - Used for analysis of how different groups form expectations
 
+## Participant Pairing Strategy
+
+The experiment uses forecast-based pairing to ensure meaningful discussions:
+
+### Forecast-Based Pairing (`inflationExpectations`)
+- **Pairing Strategy**: Pairs participants with different inflation expectations
+- **Position 0**: "Lower Inflation" (forecasts: <0%, 0-2%, 2-5%)
+- **Position 1**: "Higher Inflation" (forecasts: 5-10%, >10%)
+- **Research Question**: How do discussions between people with different inflation expectations affect forecast revisions?
+
+This pairing strategy ensures that participants discuss inflation with someone who has a different perspective, potentially leading to more meaningful exchanges and greater forecast revisions.
+
 ## Research Questions
 
 1. How do people form inflation expectations?
@@ -36,6 +48,7 @@ This experiment studies how people form inflation expectations and how these exp
 3. How do social discussions influence inflation forecasts?
 4. What factors lead to forecast revisions?
 5. How do demographic characteristics relate to inflation expectations?
+6. How do discussions between people with different inflation expectations affect forecast revisions?
 
 ## Files
 
@@ -48,11 +61,18 @@ This experiment studies how people form inflation expectations and how these exp
 - `revised_forecast.md` - Post-discussion forecast change
 - `revision_reason.md` - Explanation of revision reasoning
 - `demographics.md` - Final demographic questions
+- `inflation_forecast_survey.md` - Survey for initial forecast
+- `information_sources_survey.md` - Survey for information sources
+- `revised_forecast_survey.md` - Survey for forecast revision
+- `revision_reason_survey.md` - Survey for revision reasoning
+- `demographics_survey.md` - Survey for demographics
+- `inflation-expectations.local.config.json` - Local testing configuration
 
 ## Implementation Notes
 
 - Uses text chat for discussion (not video)
 - 5-minute discussion duration
-- Pairs participants based on forecast categories
+- Forecast-based pairing ensures discussions between people with different expectations
 - Includes comprehensive instructions and examples
-- Focuses on respectful, constructive dialogue 
+- Focuses on respectful, constructive dialogue
+- Survey-based pairing uses `reference: survey.inflationForecast.result` with `isOneOf` comparator 

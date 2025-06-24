@@ -1,0 +1,26 @@
+{
+  "batchName": "inflation_expectations_test",
+  "cdn": "local",
+  "treatmentFile": "projects/hagmann/inflation-expectations/inflation-expectations.treatments.yaml",
+  "customIdInstructions": "none",
+  "platformConsent": "US",
+  "consentAddendum": "none",
+  "checkAudio": false,
+  "checkVideo": false,
+  "introSequence": "inflationIntro",
+  "treatments": ["inflationExpectations"],
+  "payoffs": "equal",
+  "knockdowns": "none",
+  "dispatchWait": 1,
+  "launchDate": "immediate",
+  "centralPrereg": false,
+  "preregRepos": [],
+  "dataRepos": [],
+  "videoStorage": "none",
+  "exitCodes": {
+    "complete": "InflationExpectationsComplete",
+    "error": "InflationExpectationsError",
+    "lobbyTimeout": "InflationExpectationsTimeout",
+    "failedEquipmentCheck": "InflationExpectationsEquipmentFailed"
+  }
+} 

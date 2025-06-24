@@ -69,17 +69,20 @@ treatments:
             file: projects/hagmann/inflation-expectations/discussion_prompt.md
             shared: true
           - type: prompt
-            text: "**Your information sources:**"
-            position: player
+            file: projects/hagmann/inflation-expectations/information_sources_display.md
           - type: display
             reference: prompt.informationSources
             position: player
           - type: prompt
-            text: "**Your partner's information sources:**"
-            position: player
+            file: projects/hagmann/inflation-expectations/partner_info_sources_display.md
           - type: display
             reference: prompt.informationSources
-            position: other
+            position: 0
+            showToPositions: [1]
+          - type: display
+            reference: prompt.informationSources
+            position: 1
+            showToPositions: [0]
 
     exitSequence:
       - name: RevisedForecast
@@ -89,7 +92,6 @@ treatments:
           - type: prompt
             file: projects/hagmann/inflation-expectations/revised_forecast_survey.md
             name: revisedForecast
-            defaultValue: prompt.inflationForecast
           - type: submitButton
             buttonText: Continue
 

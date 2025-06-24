@@ -2,7 +2,7 @@
 name: projects/hagmann/inflation-expectations/information_sources_survey.md
 title: informationSources
 type: multipleChoice
-multipleSelect: true
+select: multiple
 ---
 
 ### Which of the following information sources help you form your inflation forecasts? (Select all that apply)

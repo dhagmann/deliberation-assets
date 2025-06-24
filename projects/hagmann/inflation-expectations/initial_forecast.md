@@ -1,6 +1,6 @@
 ---
 name: projects/hagmann/inflation-expectations/initial_forecast.md
-type: noResponse
+type: multipleChoice
 ---
 # Your Inflation Forecast
 
@@ -22,4 +22,12 @@ Think about:
 
 **What do you expect the inflation rate to be over the next 12 months?**
 
-Please select the range that best matches your expectation: 
+Please select the range that best matches your expectation:
+
+---
+
+- Less than 0% (deflation)
+- 0% to 2%
+- 2% to 5%
+- 5% to 10%
+- More than 10%

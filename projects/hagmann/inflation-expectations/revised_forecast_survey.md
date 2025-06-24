@@ -4,10 +4,14 @@ title: revisedForecast
 type: multipleChoice
 ---
 
-### Has your inflation forecast changed after the discussion?
+### What is your revised inflation forecast after the discussion?
+
+**Your original forecast is selected by default. Please change it only if your estimate has changed after the conversation.**
 
 ---
 
-- Yes, my forecast increased
-- Yes, my forecast decreased
-- No, my forecast remained the same 
+- Less than 0% (deflation)
+- 0% to 2%
+- 2% to 5%
+- 5% to 10%
+- More than 10% 

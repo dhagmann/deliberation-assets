@@ -8,45 +8,48 @@ introSequences:
             file: projects/hagmann/inflation-expectations/welcome.md
           - type: submitButton
 
+      - name: InitialForecast
+        elements:
+          - type: prompt
+            file: projects/hagmann/inflation-expectations/initial_forecast.md
+            name: inflationForecast
+          - type: submitButton
+            buttonText: Submit Forecast
+
+      - name: InformationSources
+        elements:
+          - type: prompt
+            file: projects/hagmann/inflation-expectations/information_sources_survey.md
+            name: informationSources
+          - type: submitButton
+            buttonText: Continue
+
+      - name: IntroComplete
+        elements:
+          - type: prompt
+            file: projects/hagmann/inflation-expectations/intro_complete.md
+          - type: submitButton
+            buttonText: Continue to Lobby
+
 treatments:
   - name: inflationExpectations
     playerCount: 2
 
     groupComposition:
       - position: 0
-        title: "Lower Inflation"
+        title: "A"
         conditions:
-          - reference: survey.inflationForecast.result
+          - reference: prompt.inflationForecast
             comparator: isOneOf
-            value: ["Less than 0% (deflation)", "0% to 2%", "2% to 5%"]
+            value: ["Less than 0% (deflation)", "0% to 2%"]
       - position: 1
-        title: "Higher Inflation"
+        title: "B"
         conditions:
-          - reference: survey.inflationForecast.result
+          - reference: prompt.inflationForecast
             comparator: isOneOf
-            value: ["5% to 10%", "More than 10%"]
+            value: ["2% to 5%", "5% to 10%", "More than 10%"]
 
     gameStages:
-      - name: InitialForecast
-        duration: 120
-        elements:
-          - type: prompt
-            file: projects/hagmann/inflation-expectations/initial_forecast.md
-          - type: survey
-            surveyName: inflationForecast
-          - type: submitButton
-            buttonText: Submit Forecast
-
-      - name: InformationSources
-        duration: 90
-        elements:
-          - type: prompt
-            file: projects/hagmann/inflation-expectations/information_sources.md
-          - type: survey
-            surveyName: informationSources
-          - type: submitButton
-            buttonText: Continue
-
       - name: PreDiscussionInstructions
         duration: 60
         elements:
@@ -65,17 +68,28 @@ treatments:
           - type: prompt
             file: projects/hagmann/inflation-expectations/discussion_prompt.md
             shared: true
-          - type: submitButton
-            buttonText: End Discussion
-            displayTime: 10
+          - type: prompt
+            text: "**Your information sources:**"
+            position: player
+          - type: display
+            reference: prompt.informationSources
+            position: player
+          - type: prompt
+            text: "**Your partner's information sources:**"
+            position: player
+          - type: display
+            reference: prompt.informationSources
+            position: other
 
     exitSequence:
       - name: RevisedForecast
         elements:
           - type: prompt
             file: projects/hagmann/inflation-expectations/revised_forecast.md
-          - type: survey
-            surveyName: revisedForecast
+          - type: prompt
+            file: projects/hagmann/inflation-expectations/revised_forecast_survey.md
+            name: revisedForecast
+            defaultValue: prompt.inflationForecast
           - type: submitButton
             buttonText: Continue
 
@@ -83,8 +97,9 @@ treatments:
         elements:
           - type: prompt
             file: projects/hagmann/inflation-expectations/revision_reason.md
-          - type: survey
-            surveyName: revisionReason
+          - type: prompt
+            file: projects/hagmann/inflation-expectations/revision_reason_survey.md
+            name: revisionReason
           - type: submitButton
             buttonText: Continue
 
@@ -92,7 +107,8 @@ treatments:
         elements:
           - type: prompt
             file: projects/hagmann/inflation-expectations/demographics.md
-          - type: survey
-            surveyName: demographics
+          - type: prompt
+            file: projects/hagmann/inflation-expectations/demographics_survey.md
+            name: demographics
           - type: submitButton
             buttonText: Complete Survey 

@@ -1,0 +1,26 @@
+{
+    "batchName": "extensive_margin_test",
+    "cdn": "local",
+    "treatmentFile": "projects/hagmann/extensive-margin-test/extensive-margin.treatments.yaml",
+    "customIdInstructions": "none",
+    "platformConsent": "US",
+    "consentAddendum": "none",
+    "checkAudio": false,
+    "checkVideo": false,
+    "introSequence": "extensive-margin-intro",
+    "treatments": ["No_Choice_0", "Bonus_Choice_0", "Choice_0", "No_Choice_1", "Bonus_Choice_1", "Choice_1"],
+    "payoffs": "equal",
+    "knockdowns": "none",
+    "dispatchWait": 1,
+    "launchDate": "immediate",
+    "centralPrereg": false,
+    "preregRepos": [],
+    "dataRepos": [],
+    "videoStorage": "none",
+    "exitCodes": {
+      "complete": "ExtensiveMarginComplete",
+      "error": "ExtensiveMarginError",
+      "lobbyTimeout": "ExtensiveMarginLobbyTimeout",
+      "failedEquipmentCheck": "ExtensiveMarginFailedEquipmentCheck"
+    }
+  } 

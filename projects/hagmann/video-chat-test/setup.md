@@ -21,6 +21,38 @@
    }
    ```
 
+   If the above does not work, try the following as it initializes all configurations:
+
+   ```json
+   {
+  "batchName": "video_chat_test",
+  "cdn": "local",
+  "treatmentFile": "projects/hagmann/video-chat-test/video-chat-test.treatments.yaml",
+  "customIdInstructions": "none",
+  "platformConsent": "US",
+  "consentAddendum": "none",
+  "checkAudio": false,
+  "checkVideo": false,
+  "introSequence": "videoChatIntro",
+  "treatments": [
+    "videoChatTest"
+  ],
+  "payoffs": "equal",
+  "knockdowns": "none",
+  "dispatchWait": 1,
+  "launchDate": "immediate",
+  "centralPrereg": false,
+  "preregRepos": [],
+  "dataRepos": [],
+  "videoStorage": "none",
+  "exitCodes": {
+    "complete": "VideoChatTestComplete",
+    "error": "VideoChatTestError",
+    "lobbyTimeout": "VideoChatTestTimeout",
+    "failedEquipmentCheck": "VideoChatTestEquipmentFailed"
+  }
+   ``` 
+
 ## What this experiment does:
 
 1. **Welcome Screen**: Introduces participants to the experiment

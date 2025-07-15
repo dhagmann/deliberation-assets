@@ -1,222 +1,82 @@
 introSequences:
-  - name: extensive-margin-intro
-    desc: A simple intro sequence with pre-questions.
-    consentItems: []
+  - name: extensiveMarginIntro
+    desc: Introduction sequence for extensive margin disagreement experiment
     introSteps:
       - name: Welcome
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/welcome.md
-      - name: PreQuestions
+          - type: submitButton
+            buttonText: Continue
+
+      - name: PreQuestion
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/pre_question.md
+          - type: submitButton
+            buttonText: Continue
+
+      - name: MissouriAbortionSurvey
+        elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+            name: projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+          - type: submitButton
+            buttonText: Continue
+
+      - name: RegretBonusSurvey
+        elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/regret_bonus_survey.md
+            name: projects/hagmann/extensive-margin-test/regret_bonus_survey.md
           - type: submitButton
+            buttonText: Continue
 
 treatments:
   - name: No_Choice_0
-    desc: Participants are forced into a chat with a disagreeing partner.
     playerCount: 2
     groupComposition:
       - position: 0
+        title: "Oppose Group"
         conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
             comparator: isOneOf
             value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
       - position: 1
+        title: "Favor Group"
         conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
             comparator: isOneOf
-            value: ["Strongly favor", "Favor", "Somewhat favor"]
+            value: ["Somewhat favor", "Favor", "Strongly favor"]
+
     gameStages:
       - name: ChoicePrompt
-        duration: 300
+        duration: 60
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/no_choice.md
           - type: submitButton
-      - name: ImaginedConversation
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_intro.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_angry.md
-          - type: submitButton
-      - name: GoalPrompt
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
-            showToPositions: [0]
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
-            showToPositions: [1]
-          - type: submitButton
-      - name: Discussion
-        duration: 300
-        discussion:
-          chatType: "text"
-          showNickname: true
-          showTitle: false
-      - name: PostChatSurvey
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_angry.md
-          - type: submitButton
-      - name: Demographics
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_intro.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_gender.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_age.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_education.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_politics.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_comments.md
-          - type: submitButton
+            buttonText: Continue
 
-  - name: Bonus_Choice_0
-    desc: Participants can choose to chat with a disagreeing partner for a bonus.
-    playerCount: 2
-    groupComposition:
-      - position: 0
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
-            comparator: isOneOf
-            value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
-      - position: 1
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
-            comparator: isOneOf
-            value: ["Strongly favor", "Favor", "Somewhat favor"]
-    gameStages:
-      - name: ChoicePrompt
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/bonus_choice.md
-          - type: submitButton
       - name: ImaginedConversation
-        duration: 300
+        duration: 120
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_intro.md
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
+            name: imaginedPleasant
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
+            name: imaginedAnnoyed
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_angry.md
+            name: imaginedAngry
           - type: submitButton
-      - name: GoalPrompt
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
-            showToPositions: [0]
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
-            showToPositions: [1]
-          - type: submitButton
-      - name: Discussion
-        duration: 300
-        discussion:
-          chatType: "text"
-          showNickname: true
-          showTitle: false
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md.value
-            comparator: "equals"
-            value: "Yes"
-      - name: PostChatSurvey
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_angry.md
-          - type: submitButton
-      - name: Demographics
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_intro.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_gender.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_age.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_education.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_politics.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_comments.md
-          - type: submitButton
+            buttonText: Continue
 
-  - name: Choice_0
-    desc: Participants can choose to chat with a disagreeing partner.
-    playerCount: 2
-    groupComposition:
-      - position: 0
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
-            comparator: isOneOf
-            value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
-      - position: 1
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
-            comparator: isOneOf
-            value: ["Strongly favor", "Favor", "Somewhat favor"]
-    gameStages:
-      - name: ChoicePrompt
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/volunteer_choice.md
-          - type: submitButton
-      - name: ImaginedConversation
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_intro.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_angry.md
-          - type: submitButton
       - name: GoalPrompt
-        duration: 300
+        duration: 60
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/prompt_persuade.md
@@ -225,291 +85,672 @@ treatments:
             file: projects/hagmann/extensive-margin-test/prompt_reminder.md
             showToPositions: [1]
           - type: submitButton
+            buttonText: Begin Chat
+
       - name: Discussion
         duration: 300
         discussion:
-          chatType: "text"
-          showNickname: true
+          chatType: text
+          showNickname: false
           showTitle: false
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md.value
-            comparator: "equals"
-            value: "Yes"
+        elements:
+          - type: submitButton
+            buttonText: End Discussion
+            displayTime: 30
+
       - name: PostChatSurvey
-        duration: 300
+        duration: 180
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
+            name: postChatReviseEstimate
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
+            name: postChatPleasant
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
+            name: postChatAnnoyed
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_angry.md
+            name: postChatAngry
           - type: submitButton
+            buttonText: Continue
+
+    exitSequence:
       - name: Demographics
-        duration: 300
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_intro.md
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_gender.md
+            name: demographicsGender
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_age.md
+            name: demographicsAge
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
+            name: demographicsEthnicity
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_education.md
+            name: demographicsEducation
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_politics.md
+            name: demographicsPolitics
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_comments.md
+            name: demographicsComments
           - type: submitButton
+            buttonText: Complete Study
 
   - name: No_Choice_1
-    desc: Participants are forced into a chat with a disagreeing partner.
     playerCount: 2
     groupComposition:
       - position: 0
+        title: "Oppose Group"
         conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
             comparator: isOneOf
             value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
       - position: 1
+        title: "Favor Group"
         conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
             comparator: isOneOf
-            value: ["Strongly favor", "Favor", "Somewhat favor"]
+            value: ["Somewhat favor", "Favor", "Strongly favor"]
+
     gameStages:
       - name: ChoicePrompt
-        duration: 300
+        duration: 60
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/no_choice.md
           - type: submitButton
+            buttonText: Continue
+
       - name: ImaginedConversation
-        duration: 300
+        duration: 120
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_intro.md
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
+            name: imaginedPleasant
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
+            name: imaginedAnnoyed
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_angry.md
+            name: imaginedAngry
           - type: submitButton
+            buttonText: Continue
+
       - name: GoalPrompt
-        duration: 300
+        duration: 60
         elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
-            showToPositions: [0]
           - type: prompt
             file: projects/hagmann/extensive-margin-test/prompt_persuade.md
             showToPositions: [1]
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
+            showToPositions: [0]
           - type: submitButton
+            buttonText: Begin Chat
+
       - name: Discussion
         duration: 300
         discussion:
-          chatType: "text"
-          showNickname: true
+          chatType: text
+          showNickname: false
           showTitle: false
+        elements:
+          - type: submitButton
+            buttonText: End Discussion
+            displayTime: 30
+
       - name: PostChatSurvey
-        duration: 300
+        duration: 180
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
+            name: postChatReviseEstimate
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
+            name: postChatPleasant
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
+            name: postChatAnnoyed
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_angry.md
+            name: postChatAngry
           - type: submitButton
+            buttonText: Continue
+
+    exitSequence:
       - name: Demographics
-        duration: 300
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_intro.md
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_gender.md
+            name: demographicsGender
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_age.md
+            name: demographicsAge
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
+            name: demographicsEthnicity
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_education.md
+            name: demographicsEducation
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_politics.md
+            name: demographicsPolitics
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_comments.md
+            name: demographicsComments
           - type: submitButton
+            buttonText: Complete Study
 
-  - name: Bonus_Choice_1
-    desc: Participants can choose to chat with a disagreeing partner for a bonus.
+  - name: Choice_0
     playerCount: 2
     groupComposition:
       - position: 0
+        title: "Oppose Group"
         conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
             comparator: isOneOf
             value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
       - position: 1
+        title: "Favor Group"
         conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
             comparator: isOneOf
-            value: ["Strongly favor", "Favor", "Somewhat favor"]
-    gameStages:
-      - name: ChoicePrompt
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/bonus_choice.md
-          - type: submitButton
-      - name: ImaginedConversation
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_intro.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/imagined_angry.md
-          - type: submitButton
-      - name: GoalPrompt
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
-            showToPositions: [0]
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
-            showToPositions: [1]
-          - type: submitButton
-      - name: Discussion
-        duration: 300
-        discussion:
-          chatType: "text"
-          showNickname: true
-          showTitle: false
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md.value
-            comparator: "equals"
-            value: "Yes"
-      - name: PostChatSurvey
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/post_chat_angry.md
-          - type: submitButton
-      - name: Demographics
-        duration: 300
-        elements:
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_intro.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_gender.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_age.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_education.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_politics.md
-          - type: prompt
-            file: projects/hagmann/extensive-margin-test/demographics_comments.md
-          - type: submitButton
+            value: ["Somewhat favor", "Favor", "Strongly favor"]
 
-  - name: Choice_1
-    desc: Participants can choose to chat with a disagreeing partner.
-    playerCount: 2
-    groupComposition:
-      - position: 0
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
-            comparator: isOneOf
-            value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
-      - position: 1
-        conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md.value
-            comparator: isOneOf
-            value: ["Strongly favor", "Favor", "Somewhat favor"]
     gameStages:
       - name: ChoicePrompt
-        duration: 300
+        duration: 60
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/volunteer_choice.md
+            name: projects/hagmann/extensive-margin-test/volunteer_choice.md
           - type: submitButton
+            buttonText: Continue
+
       - name: ImaginedConversation
-        duration: 300
+        duration: 120
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_intro.md
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
+            name: imaginedPleasant
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
+            name: imaginedAnnoyed
           - type: prompt
             file: projects/hagmann/extensive-margin-test/imagined_angry.md
+            name: imaginedAngry
           - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
+            value: "Yes"
+
       - name: GoalPrompt
-        duration: 300
+        duration: 60
         elements:
           - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
+            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
             showToPositions: [0]
           - type: prompt
-            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
+            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
             showToPositions: [1]
           - type: submitButton
+            buttonText: Begin Chat
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
+            value: "Yes"
+
       - name: Discussion
         duration: 300
         discussion:
-          chatType: "text"
-          showNickname: true
+          chatType: text
+          showNickname: false
           showTitle: false
+        elements:
+          - type: submitButton
+            buttonText: End Discussion
+            displayTime: 30
         conditions:
-          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md.value
-            comparator: "equals"
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
             value: "Yes"
+
       - name: PostChatSurvey
-        duration: 300
+        duration: 180
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
+            name: postChatReviseEstimate
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
+            name: postChatPleasant
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
+            name: postChatAnnoyed
           - type: prompt
             file: projects/hagmann/extensive-margin-test/post_chat_angry.md
+            name: postChatAngry
           - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
+            value: "Yes"
+
+    exitSequence:
       - name: Demographics
-        duration: 300
         elements:
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_intro.md
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_gender.md
+            name: demographicsGender
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_age.md
+            name: demographicsAge
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
+            name: demographicsEthnicity
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_education.md
+            name: demographicsEducation
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_politics.md
+            name: demographicsPolitics
           - type: prompt
             file: projects/hagmann/extensive-margin-test/demographics_comments.md
+            name: demographicsComments
           - type: submitButton
+            buttonText: Complete Study
+
+  - name: Choice_1
+    playerCount: 2
+    groupComposition:
+      - position: 0
+        title: "Oppose Group"
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+            comparator: isOneOf
+            value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
+      - position: 1
+        title: "Favor Group"
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+            comparator: isOneOf
+            value: ["Somewhat favor", "Favor", "Strongly favor"]
+
+    gameStages:
+      - name: ChoicePrompt
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/volunteer_choice.md
+            name: projects/hagmann/extensive-margin-test/volunteer_choice.md
+          - type: submitButton
+            buttonText: Continue
+
+      - name: ImaginedConversation
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_intro.md
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
+            name: imaginedPleasant
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
+            name: imaginedAnnoyed
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_angry.md
+            name: imaginedAngry
+          - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: GoalPrompt
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
+            showToPositions: [1]
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
+            showToPositions: [0]
+          - type: submitButton
+            buttonText: Begin Chat
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: Discussion
+        duration: 300
+        discussion:
+          chatType: text
+          showNickname: false
+          showTitle: false
+        elements:
+          - type: submitButton
+            buttonText: End Discussion
+            displayTime: 30
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: PostChatSurvey
+        duration: 180
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
+            name: postChatReviseEstimate
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
+            name: postChatPleasant
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
+            name: postChatAnnoyed
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_angry.md
+            name: postChatAngry
+          - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/volunteer_choice.md
+            comparator: equals
+            value: "Yes"
+
+    exitSequence:
+      - name: Demographics
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_intro.md
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_gender.md
+            name: demographicsGender
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_age.md
+            name: demographicsAge
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
+            name: demographicsEthnicity
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_education.md
+            name: demographicsEducation
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_politics.md
+            name: demographicsPolitics
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_comments.md
+            name: demographicsComments
+          - type: submitButton
+            buttonText: Complete Study
+
+  - name: Bonus_Choice_0
+    playerCount: 2
+    groupComposition:
+      - position: 0
+        title: "Oppose Group"
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+            comparator: isOneOf
+            value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
+      - position: 1
+        title: "Favor Group"
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+            comparator: isOneOf
+            value: ["Somewhat favor", "Favor", "Strongly favor"]
+
+    gameStages:
+      - name: ChoicePrompt
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/bonus_choice.md
+            name: projects/hagmann/extensive-margin-test/bonus_choice.md
+          - type: submitButton
+            buttonText: Continue
+
+      - name: ImaginedConversation
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_intro.md
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
+            name: imaginedPleasant
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
+            name: imaginedAnnoyed
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_angry.md
+            name: imaginedAngry
+          - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: GoalPrompt
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
+            showToPositions: [0]
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
+            showToPositions: [1]
+          - type: submitButton
+            buttonText: Begin Chat
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: Discussion
+        duration: 300
+        discussion:
+          chatType: text
+          showNickname: false
+          showTitle: false
+        elements:
+          - type: submitButton
+            buttonText: End Discussion
+            displayTime: 30
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: PostChatSurvey
+        duration: 180
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
+            name: postChatReviseEstimate
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
+            name: postChatPleasant
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
+            name: postChatAnnoyed
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_angry.md
+            name: postChatAngry
+          - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+    exitSequence:
+      - name: Demographics
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_intro.md
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_gender.md
+            name: demographicsGender
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_age.md
+            name: demographicsAge
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
+            name: demographicsEthnicity
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_education.md
+            name: demographicsEducation
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_politics.md
+            name: demographicsPolitics
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_comments.md
+            name: demographicsComments
+          - type: submitButton
+            buttonText: Complete Study
+
+  - name: Bonus_Choice_1
+    playerCount: 2
+    groupComposition:
+      - position: 0
+        title: "Oppose Group"
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+            comparator: isOneOf
+            value: ["Strongly oppose", "Oppose", "Somewhat oppose"]
+      - position: 1
+        title: "Favor Group"
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/missouri_abortion_survey.md
+            comparator: isOneOf
+            value: ["Somewhat favor", "Favor", "Strongly favor"]
+
+    gameStages:
+      - name: ChoicePrompt
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/bonus_choice.md
+            name: projects/hagmann/extensive-margin-test/bonus_choice.md
+          - type: submitButton
+            buttonText: Continue
+
+      - name: ImaginedConversation
+        duration: 120
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_intro.md
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_pleasant.md
+            name: imaginedPleasant
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_annoyed.md
+            name: imaginedAnnoyed
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/imagined_angry.md
+            name: imaginedAngry
+          - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: GoalPrompt
+        duration: 60
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/prompt_persuade.md
+            showToPositions: [1]
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/prompt_reminder.md
+            showToPositions: [0]
+          - type: submitButton
+            buttonText: Begin Chat
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: Discussion
+        duration: 300
+        discussion:
+          chatType: text
+          showNickname: false
+          showTitle: false
+        elements:
+          - type: submitButton
+            buttonText: End Discussion
+            displayTime: 30
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+      - name: PostChatSurvey
+        duration: 180
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_revise_estimate.md
+            name: postChatReviseEstimate
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_pleasant.md
+            name: postChatPleasant
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_annoyed.md
+            name: postChatAnnoyed
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/post_chat_angry.md
+            name: postChatAngry
+          - type: submitButton
+            buttonText: Continue
+        conditions:
+          - reference: prompt.projects/hagmann/extensive-margin-test/bonus_choice.md
+            comparator: equals
+            value: "Yes"
+
+    exitSequence:
+      - name: Demographics
+        elements:
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_intro.md
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_gender.md
+            name: demographicsGender
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_age.md
+            name: demographicsAge
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_ethnicity.md
+            name: demographicsEthnicity
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_education.md
+            name: demographicsEducation
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_politics.md
+            name: demographicsPolitics
+          - type: prompt
+            file: projects/hagmann/extensive-margin-test/demographics_comments.md
+            name: demographicsComments
+          - type: submitButton
+            buttonText: Complete Study 
